@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESL {{code}}</title>
+    <link rel='stylesheet' href='index.css'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <div id = 'wrap'>
+        <div id = "header">
+            <h1 class = 'logo'>
+                <a href = "#">LInvest</a>
+            </h1>
+            <nav class = 'nav'>
+                <ul>
+                    <li><a href = "#">메뉴1</a></li>
+                    <li><a href = "#">메뉴2</a></li>
+                    <li><a href = "#">메뉴3</a></li>
+                    <li><a href = "#">메뉴4</a></li>
+                </ul>
+            </nav>
+            <!-- header -->
+        </div>
+
+        <div id = 'section-wrap'>
+            <div id = 'left-section'>
+                <div class = 'chart'>
+                </div>
+            </div>
+            <div id = 'right-section'>
+                <div class = 'predict'>
+                    예측 섹션
+                </div>
+                    <div class = 'news'>
+                    뉴스 섹션
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

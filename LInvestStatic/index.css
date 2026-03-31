@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+#wrap{
+    width: 100%;
+}
+#header{
+    width: 100%;
+    display: flex;
+    height: 50px;
+    background-color: #eee;
+}
+#header .logo{
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: block;
+    text-align: center;
+    background-image: url('https://cdn.discordapp.com/attachments/625200220539715594/1437055577175101510/LInvestLogo.png?ex=6911d9cc&is=6910884c&hm=e8c959f5a53643f314a61c5403869cc7025eaf7c2612a7943e5d5b7035ddc49c&');
+}
+
+.nav > ul{
+    display: flex;
+}
+
+.nav > ul > li > a{
+    display: block;
+    text-align: center;
+    padding: 13px 10px;
+}
+
+.nav > ul > li > a:hover{
+    background-color: #ddd;
+}
