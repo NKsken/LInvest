@@ -1,0 +1,29 @@
+{
+    "code": "005930",
+    "date": "20260314",
+    "positive_count": 2,
+    "negative_count": 1,
+    "details": [
+        {
+            "date": "2026-03-13",
+            "title": "이재용-최주선, 유럽 출장 후 귀국…삼성SDI 신규 수주 '주목'",
+            "sentiment": "호재",
+            "reason": "이재용 회장의 유럽 출장으로 삼성SDI 신규 수주 가능성 부각",
+            "link": "https://news.einfomax.co.kr/"
+        },
+        {
+            "date": "2026-03-14",
+            "title": "삼전·하이닉스 뚝뚝 떨어지는데…'놀라운 전망' 나왔다",
+            "sentiment": "호재",
+            "reason": "중동 분쟁 여파에도 불구하고 증권사들의 긍정적 목표주가 전망",
+            "link": "https://www.hankyung.com/koreamarket/news/equities"
+        },
+        {
+            "date": "2026-03-14",
+            "title": "삼전·하이닉스 뚝뚝 떨어지는데…'놀라운 전망' 나왔다",
+            "sentiment": "악재",
+            "reason": "중동 분쟁 여파로 삼성전자 주가가 이달에만 10% 넘게 하락",
+            "link": "https://www.hankyung.com/koreamarket/news/equities"
+        }
+    ]
+}

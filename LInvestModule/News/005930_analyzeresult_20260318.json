@@ -1,0 +1,358 @@
+{
+    "code": "005930",
+    "date": "20260318",
+    "positive_count": 45,
+    "negative_count": 4,
+    "details": [
+        {
+            "date": "2026-03-18",
+            "title": "삼성전자, 주총장에 HBM4·HBM4E 전면 배치…AI 메모리 주도권 강조",
+            "sentiment": "호재",
+            "reason": "삼성전자가 AI 메모리 시장에서의 경쟁력을 강조하며 HBM4와 HBM4E를 전면 배치함.",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4404326"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "‘20만전자’·‘100만닉스’ 회복…코스피, 장중 5800선 탈환 [마켓시그...",
+            "sentiment": "호재",
+            "reason": "삼성전자가 장중 4.05% 상승하며 지수 상승세를 이끌고 있다.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004600560?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "[서울데이터랩]개장 직후 인기 검색 종목 20選",
+            "sentiment": "호재",
+            "reason": "삼성전자가 높은 검색 비율로 투자자들의 관심을 받고 있다.",
+            "link": "https://n.news.naver.com/mnews/article/081/0003626924?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "삼성전자, 약 2주 만에 20만원대 회복…100만닉스 재돌파[핫종목]",
+            "sentiment": "호재",
+            "reason": "삼성전자가 주가 20만원대를 회복하며 긍정적인 시장 반응을 얻음.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008832496?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "'이란 전쟁' 이후 처음 '20만전자·100만닉스' 회복[개장시황]",
+            "sentiment": "호재",
+            "reason": "삼성전자가 '20만전자' 회복으로 긍정적인 시장 반응을 얻음",
+            "link": "https://n.news.naver.com/mnews/article/421/0008832479?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "[국내증시 개장시황] 국내 증시 상승세, 삼성전자와 SK하이닉스 주도",
+            "sentiment": "호재",
+            "reason": "삼성전자가 주도하는 국내 증시 상승세로 긍정적인 투자 심리 형성",
+            "link": "https://www.tokenpost.kr/news/market/340523"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "전영현 &quot;실적 안주 안해…외부 환경 변화에 선제적 대응 노력&quot;",
+            "sentiment": "호재",
+            "reason": "외부 환경 변화에 선제적 대응 의지를 보임",
+            "link": "https://n.news.naver.com/mnews/article/421/0008832447?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "코스피, 5800선 탈환…20만전자·100만닉스 돌아왔다",
+            "sentiment": "호재",
+            "reason": "삼성전자의 주가 상승으로 긍정적인 시장 분위기 형성",
+            "link": "https://n.news.naver.com/mnews/article/018/0006237605?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "‘420만 국민주’ 삼성전자 오늘 주총…1년새 180도 ‘분위기 반전’",
+            "sentiment": "호재",
+            "reason": "주주 수 증가로 인한 긍정적인 분위기 반전",
+            "link": "https://n.news.naver.com/mnews/article/016/0002615325?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "“전쟁 맷집 생겼나”...프리마켓서 2%대 상승 [코주부]",
+            "sentiment": "호재",
+            "reason": "삼성전자가 2.63% 상승하며 '20만전자' 복귀를 시도하고 있어 긍정적인 시장 반응을 보임.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004600518?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "&quot;마이크론 신고가 경신에&quot;…삼성전자, 프리마켓서 '20만전자' 재돌파",
+            "sentiment": "호재",
+            "reason": "삼성전자가 프리마켓에서 주가 20만원을 재돌파하며 긍정적인 시장 반응을 보임.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008832247?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "이란, 원유 수출 하루 150만 배럴 유지…엔비디아 AI 칩 1조 달러 매출 ...",
+            "sentiment": "악재",
+            "reason": "중동 의존도가 높아 헬륨 공급 불안정성이 우려됨",
+            "link": "https://n.news.naver.com/mnews/article/011/0004600496?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "젠슨 황 “컴퓨팅 수요 2년간 100만배 증가”…추론칩 승부수",
+            "sentiment": "호재",
+            "reason": "반도체 생산에 필수적인 헬륨 재활용 방안 마련으로 공급 안정성 증가",
+            "link": "https://n.news.naver.com/mnews/article/011/0004600493?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "삼성 파운드리, 엔비디아 AI 추론칩 ‘그록3 LPU’ 생산 공식 수주",
+            "sentiment": "호재",
+            "reason": "삼성전자가 엔비디아의 AI 칩 생산을 수주하여 반도체 시장에서의 위상이 강화됨.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004600491?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "리사 수 AMD CEO, 이재용 회장과 만찬 회동…‘반도체 동맹’ 확장 주목",
+            "sentiment": "호재",
+            "reason": "AMD와의 협력 강화로 반도체 시장에서의 경쟁력 향상 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004600477?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "“메모리 못 구하면 도태”…삼성·하닉, 엔비디아부터 애플까지 목줄 ...",
+            "sentiment": "호재",
+            "reason": "메모리 반도체 수요 증가로 인한 시장 지배력 강화",
+            "link": "https://n.news.naver.com/mnews/article/011/0004600464?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "'전자 지분 수익' 자본으로, '손실'은 고객에게…&quot;삼성생명, IFRS17 취지 ...",
+            "sentiment": "악재",
+            "reason": "삼성생명이 삼성전자 주식을 처분하더라도 계약자에게 배당을 하지 않아 논란이 발생하고 있음.",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1294518&inflow=N"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "삼성전자 '빅데이'…주총서 미래 청사진 공개·총파업 여부 결론",
+            "sentiment": "중립",
+            "reason": "주총과 파업 투표 결과가 경영에 큰 영향을 미칠 수 있지만, 결과에 따라 호재 또는 악재로 변동 가능성이 있음.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008832095?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "'베라 루빈을 선점하라'…GTC 2026서 삼성 vs SK의 HBM 신경전",
+            "sentiment": "호재",
+            "reason": "삼성전자가 HBM4E 기술력을 공개하며 경쟁 우위를 강조",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4404258"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "젠슨 황 &quot;삼성이 베라 루빈 파트너&quot;…토털 솔루션 '유일 공급'",
+            "sentiment": "호재",
+            "reason": "삼성과 엔비디아의 협업으로 차세대 AI 칩 생산 증가 기대",
+            "link": "https://www.apnews.kr/news/articleView.html?idxno=3046858"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "젠슨 황 “생큐 삼성”…HBM 이어 파운드리로 진화한 AI 동맹[엔비디아...",
+            "sentiment": "호재",
+            "reason": "엔비디아 CEO가 삼성전자 부스를 방문하며 긍정적인 관계를 강조",
+            "link": "https://n.news.naver.com/mnews/article/011/0004600370?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "'엔비디아 훈풍'코스피, 5640선…유가 변수에 상승폭 제한",
+            "sentiment": "호재",
+            "reason": "삼성전자가 반도체주 강세를 이끌며 주가 상승에 기여함.",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1294597&inflow=N"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "SK하이닉스 곽노정 CEO &quot;HBM4 적기공급·커스텀 HBM 준비해 1등 유지&quot;",
+            "sentiment": "호재",
+            "reason": "삼성전자가 HBM4를 양산하며 경쟁력을 강화하고 있어 긍정적인 신호로 해석됨.",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4404240"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "SK하이닉스 작년 평균 급여 1.85억·58%↑…삼성전자 추월",
+            "sentiment": "악재",
+            "reason": "SK하이닉스의 급여 상승으로 삼성전자의 경쟁력이 약화될 가능성",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4404228"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "[서울데이터랩]마감 직후 인기 검색 종목 20選",
+            "sentiment": "호재",
+            "reason": "투자자 관심 증가와 주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/081/0003626702?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "AMD 리사 수, 삼성 평택캠퍼스 방문…HBM·파운드리 등 협력 논의",
+            "sentiment": "호재",
+            "reason": "AMD와의 협력 논의로 반도체 사업 확장 가능성 증가",
+            "link": "https://n.news.naver.com/mnews/article/421/0008831579?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "젠슨황이 끌어올린 코스피…삼성전자·현대차 동반 강세",
+            "sentiment": "호재",
+            "reason": "젠슨황의 발표로 삼성전자의 주가가 상승하며 긍정적인 시장 반응을 이끌어냄",
+            "link": "https://n.news.naver.com/mnews/article/421/0008831514?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "&quot;올해 첫 폴더블 아이폰 내놓는 애플, 북미 점유율 46% 전망&quot;",
+            "sentiment": "악재",
+            "reason": "애플의 폴더블 아이폰 출시로 삼성전자의 시장 점유율 감소 우려",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4404216"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "엔비디아 호재 타고 코스피 5600선 회복…이틀 연속 강세 마감[시황종합...",
+            "sentiment": "호재",
+            "reason": "엔비디아의 긍정적인 영향으로 삼성전자가 상승세를 보임",
+            "link": "https://n.news.naver.com/mnews/article/421/0008831457?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "코스피, 이틀 연속 상승 마감…5700선 안착은 실패",
+            "sentiment": "호재",
+            "reason": "삼성전자가 전 거래일 대비 2.76% 상승하여 긍정적인 시장 반응을 보임",
+            "link": "https://n.news.naver.com/mnews/article/018/0006237217?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "&quot;'만도초차' 전략 中, 韓 디스플레이 신용도 위협요인&quot;",
+            "sentiment": "호재",
+            "reason": "프리미엄 제품 중심으로 OLED 패널 채택 확대",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4404210"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "삼성전자, GTC서 HBM4E 공개…엔비디아 AI 협력 강화",
+            "sentiment": "호재",
+            "reason": "삼성전자가 차세대 HBM4E를 공개하며 엔비디아와의 협력을 강화하여 AI 시장에서의 경쟁력을 높임.",
+            "link": "https://www.nspna.com/news/?mode=view&newsid=806444"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "젠슨 황 &quot;AI칩 매출 1조달러&quot;…'최대 수혜' 삼전·SK하닉 반등",
+            "sentiment": "호재",
+            "reason": "AI 칩 매출 증가로 삼성전자에 긍정적인 영향 예상",
+            "link": "https://n.news.naver.com/mnews/article/421/0008831220?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "삼성전자 “올해 HBM 생산 3배 늘린다…절반은 HBM4 집중”",
+            "sentiment": "호재",
+            "reason": "HBM 생산량 증가와 HBM4 집중으로 시장 경쟁력 강화",
+            "link": "https://n.news.naver.com/mnews/article/011/0004600218?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "돌아온 '100만닉스', '20만전자'도 탈환?…상승세 탄 코스피",
+            "sentiment": "호재",
+            "reason": "삼성전자의 주가 상승이 증시를 이끌고 있어 긍정적인 투자 심리를 유도하고 있다.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006237101?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "[서울데이터랩]금일 코스피 거래량 1위 흥아해운 거래대금 8173억원 돌파",
+            "sentiment": "호재",
+            "reason": "삼성전자가 4.24% 상승하며 거래량 1000만 주를 기록함",
+            "link": "https://n.news.naver.com/mnews/article/081/0003626613?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "[위클리오늘] 17일 정오의 인기종목",
+            "sentiment": "호재",
+            "reason": "투자자들의 높은 관심과 주가 상승",
+            "link": "http://www.weeklytoday.com/news/articleView.html?idxno=765546"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "엔비디아 'AI 인프라 기업' 선언…젠슨황 &quot;1조달러 시장 열린다&quot;",
+            "sentiment": "호재",
+            "reason": "엔비디아와의 협업으로 AI 시장 확장 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008830625?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "젠슨황, 삼성·SK하이닉스·현대차 콕…감사·협력 메시지 전해(종합)",
+            "sentiment": "호재",
+            "reason": "엔비디아 CEO가 삼성전자의 협력 관계를 강조하며 긍정적인 신호를 보임",
+            "link": "https://n.news.naver.com/mnews/article/421/0008830527?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "[단독]삼성 응원 온 前 수장, 젠슨 황 “놀라워” 사인에 ‘엄지 척’",
+            "sentiment": "호재",
+            "reason": "엔비디아 CEO의 긍정적인 반응으로 삼성 반도체 사업에 대한 신뢰도 상승",
+            "link": "https://n.news.naver.com/mnews/article/011/0004600171?sid=104"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "삼성 TV로 들어온 마티스·폴록…거실이 ‘샌프란 현대미술관’으로",
+            "sentiment": "호재",
+            "reason": "삼성 TV를 통한 현대미술관 작품 감상으로 브랜드 이미지 및 고객 경험 향상",
+            "link": "https://n.news.naver.com/mnews/article/011/0004600161?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "신한운용, '삼전닉스 비중 65% 최대' 반도체 ETF 신규 상장",
+            "sentiment": "호재",
+            "reason": "삼성전자 비중이 높은 ETF 신규 상장으로 투자 수요 증가 예상",
+            "link": "https://n.news.naver.com/mnews/article/421/0008830367?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "테슬라·퀄컴 이어 엔비디아 ‘그록3’까지…삼성 파운드리 '부활'",
+            "sentiment": "호재",
+            "reason": "삼성 파운드리의 부활과 AMD와의 협업 논의가 긍정적인 신호",
+            "link": "https://n.news.naver.com/mnews/article/421/0008830330?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "&quot;놀라운 HBM4·진짜 빠른 그록&quot;…GTC 삼성 부스 찾은 젠슨 황",
+            "sentiment": "호재",
+            "reason": "엔비디아 CEO의 긍정적인 평가로 삼성전자의 기술력 부각",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4404115"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "삼성·SK, GTC 2026 출격…AI 메모리 경쟁 치열",
+            "sentiment": "호재",
+            "reason": "AI 메모리 기술 경쟁 참여로 시장 주목",
+            "link": "http://www.newsprime.co.kr/news/article.html?no=727198"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "[서울데이터랩]개장 직후 인기 검색 종목 20選",
+            "sentiment": "호재",
+            "reason": "삼성전자가 개장 5분 만에 높은 검색 비율을 기록하며 투자자들의 관심을 받고 있음",
+            "link": "https://n.news.naver.com/mnews/article/081/0003626529?sid=101"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "[GTC 2026]삼성전자, 엔비디아 새 추론용 AI칩 생산한다…젠슨 황 “삼성...",
+            "sentiment": "호재",
+            "reason": "삼성전자가 엔비디아의 AI 반도체 칩 생산을 맡아 협력 관계가 강화됨.",
+            "link": "https://www.inthenews.co.kr/news/article.html?no=84300"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "[N2 증시 풍향계] 현대차·삼성전자·SK하이닉스·미래에셋생명 ‘강세...",
+            "sentiment": "호재",
+            "reason": "삼성전자가 강세를 보이며 주가가 상승하고 있다.",
+            "link": "https://www.news2day.co.kr/article/20260317500094"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "젠슨 황 &quot;삼성이 그록 칩 제조&quot;…힘 받는 파운드리",
+            "sentiment": "호재",
+            "reason": "삼성의 파운드리 사업이 엔비디아와의 협력으로 강화됨",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4404090"
+        },
+        {
+            "date": "2026-03-18",
+            "title": "[위클리오늘] 삼성전자, 4.40% 상승으로 주도적 상승세",
+            "sentiment": "호재",
+            "reason": "삼성전자가 4.40% 상승하며 주도적 상승세를 보임",
+            "link": "http://www.weeklytoday.com/news/articleView.html?idxno=765483"
+        }
+    ]
+}

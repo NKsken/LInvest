@@ -1,0 +1,36 @@
+{
+    "code": "005930",
+    "date": "20260316",
+    "positive_count": 1,
+    "negative_count": 2,
+    "details": [
+        {
+            "date": "2026-03-16",
+            "title": "[뉴욕증시-주간전망] 호재가 없다…美 이란 공격 속 고용 ...",
+            "sentiment": "악재",
+            "reason": "미국-이란 갈등으로 위험자산 회피 심리가 고조되어 글로벌 증시 약세 압력 예상",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4401067"
+        },
+        {
+            "date": "2026-03-16",
+            "title": "다음 금융",
+            "sentiment": "중립",
+            "reason": "삼성전자 주가가 상승했으나, 중동발 지정학적 리스크로 인한 증시 변동성과 반도체 대형주의 약세 흐름이 언급됨.",
+            "link": "https://finance.daum.net/"
+        },
+        {
+            "date": "2026-03-16",
+            "title": "Investing.com: 주식시장 시세와 금융뉴스",
+            "sentiment": "악재",
+            "reason": "글로벌 증시 하락세와 주요 지수 하락",
+            "link": "https://kr.investing.com/"
+        },
+        {
+            "date": "2026-03-16",
+            "title": "코스피, 고유가ㆍ환율 부담에도 5520선 강세 ⋯SK하이닉스 4%",
+            "sentiment": "호재",
+            "reason": "삼성전자가 개인과 기관 매수세에 힘입어 주가가 1.80% 상승",
+            "link": "https://www.etoday.co.kr/news/view/2565744?trc=right_categori_news"
+        }
+    ]
+}

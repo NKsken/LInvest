@@ -1,0 +1,6 @@
+/__pycache__
+/Trash
+.env
+Test.py
+*.csv
+To_csv.py
