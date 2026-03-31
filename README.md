@@ -1,4 +1,4 @@
-<h1>LInvestarFianlSession</h1>
+<h1>LInvestFianlSession</h1>
 Python 3.13.7(venv)</br>
 Requried Package : numpy, pandas, tensorflow, keras, openai, dotenv</br>
 Project created at : March-31-2026</br></br>
