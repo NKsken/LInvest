@@ -1,6 +1,6 @@
 import os
 import json
-import KRX_Finance as KF
+import LInvestModule.KRX_Finance as KF
 from dotenv import load_dotenv, find_dotenv
 
 class Request():

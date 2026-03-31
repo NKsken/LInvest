@@ -1,10 +1,10 @@
 import os
 import json
 import numpy as np
-import DataFrameRequest as DFR
+import LInvestModule.DataFrameRequest as DFR
 import tensorflow as tf
 import numpy as np
-import News_Collecter as nc
+import LInvestModule.News_Collecter as nc
 from keras.models import Sequential
 from keras.layers import GRU, Dense, Dropout
 from pandas.tseries.offsets import BDay

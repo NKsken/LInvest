@@ -1,10 +1,10 @@
 import os
-import Predicter
+import LInvestModule.Predicter as Predicter
 import datetime
 import keras
 import json
 import numpy as np
-import News_Collecter as nc
+import LInvestModule.News_Collecter as nc
 
 class Print:
     def __init__(self):
