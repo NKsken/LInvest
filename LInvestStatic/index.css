@@ -43,3 +43,31 @@ li{
 .nav > ul > li > a:hover{
     background-color: #ddd;
 }
+
+/* 검색창 묶음 스타일 */
+.search-box {
+    display: flex;
+    padding: 8px 15px;
+    gap: 0px;
+}
+
+.search-box input {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    justify-content: right;
+}
+
+.search-box button {
+    padding: 8px 15px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #2ecc71;
+}
