@@ -6,7 +6,7 @@ Project created at : March-31-2026</br></br>
 </br></br>
 ## Disclaimer: All prediction data provided by this service is based on data analysis models and is for informational purposes only. It does not constitute investment advice or a recommendation to buy or sell any securities. The final responsibility for any investment decisions lies solely with the user. The developer shall not be held liable for any financial losses or damages resulting from the use of this information.
 </br></br>
-.env
+.env</br>
 KRX_API = YOUR_KRX_KEY_HERE</br>
 NAVER_KEY = YOUR_NAVER_API_KEY_HERE</br>
 NAVER_SECRET = YOUR_NAVER_SECRET_KEY_HERE</br>
