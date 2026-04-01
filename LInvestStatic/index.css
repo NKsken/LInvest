@@ -58,16 +58,3 @@ li{
     outline: none;
     justify-content: right;
 }
-
-.search-box button {
-    padding: 8px 15px;
-    background-color: #27ae60;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.search-box button:hover {
-    background-color: #2ecc71;
-}

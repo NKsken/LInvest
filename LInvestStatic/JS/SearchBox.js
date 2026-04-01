@@ -1,10 +1,10 @@
-function goToPredict() {
-    const code = document.getElementById('stockInput').value;
-        if (code.trim().length > 0) {
-            window.location.href = "/" + code;
-        } 
-        }
+const stockInput = document.getElementById('stockInput');
 
-        document.getElementById('stockInput').addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') goToPredict();
-        });
+if (stockInput) {
+    stockInput.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter' && this.value.trim().length > 0) {
+            // form이 자동으로 action="/search"로 제출됩니다.
+            console.log("Searching for:", this.value);
+        }
+    });
+}
