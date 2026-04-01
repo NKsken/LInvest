@@ -30,7 +30,8 @@ def search():
 @app.route('/<code_tag>')
 def stock_page(code_tag):
     # 실제 예측 로직이 들어갈 자리
-    return render_template('stock.html', code=code_tag, stock_names = STOCK_DATA)
+    stock_name = next((k for k, v in STOCK_DATA.items() if v == code_tag), "알 수 없는 종목")
+    return render_template('stock.html', code=code_tag, stock_names = STOCK_DATA, code_value = stock_name)
 
 if __name__ == '__main__':
     app.run(debug=True)
