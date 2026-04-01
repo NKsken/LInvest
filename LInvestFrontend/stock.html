@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESL {{code}}</title>
     <link rel='stylesheet' href='index.css'>
-    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stock.css') }}">
 </head>
 <body>
     <div id = 'wrap'>
         <div id = "header">
             <h1 class = 'logo'>
-                <a href = "#">LInvest</a>
+                <a href = "{{url_for('index')}}">ESL Invest</a>
             </h1>
             <nav class = 'nav'>
                 <ul>
                     <li><a href = "#">메뉴1</a></li>
-                    <li><a href = "#">메뉴2</a></li>
-                    <li><a href = "#">메뉴3</a></li>
-                    <li><a href = "#">메뉴4</a></li>
                 </ul>
             </nav>
+            <div class="search-box">
+                <div class="search-container">
+                    <form action="/search" method="get" class="search-box" autocomplete="off">
+                        <input type="text" name="query" id="stockInput" placeholder="종목명 또는 코드 입력" required>
+                    </form>
+                    <div id="autocomplete-list" class="autocomplete-items"></div>
+                </div>
+            </div>
             <!-- header -->
         </div>
 
@@ -39,5 +44,11 @@
             </div>
         </div>
     </div>
+    <script>
+        // 파이썬 딕셔너리를 JS 객체로 변환
+        const stockData = {{ stock_names | tojson | safe }};
+    </script>
+    <script src="{{ url_for('static', filename='js/SearchBox.js') }}"></script>
+</div>
 </body>
 </html>

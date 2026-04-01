@@ -11,7 +11,7 @@ STOCK_DATA = krx_list.load()
 @app.route('/')
 def index():
     # 자동완성을 위해 종목명 리스트 전달
-    return render_template('index.html', stock_names=list(STOCK_DATA.keys()))
+    return render_template('index.html', stock_names=STOCK_DATA)
 
 # [검색 처리] 검색창에서 입력 후 넘어오는 곳
 @app.route('/search')
@@ -30,7 +30,7 @@ def search():
 @app.route('/<code_tag>')
 def stock_page(code_tag):
     # 실제 예측 로직이 들어갈 자리
-    return render_template('stock.html', code=code_tag)
+    return render_template('stock.html', code=code_tag, stock_names = STOCK_DATA)
 
 if __name__ == '__main__':
     app.run(debug=True)

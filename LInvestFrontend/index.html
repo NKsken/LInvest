@@ -6,20 +6,16 @@
     <title>ESL Invest</title>
     <link rel='stylesheet' href='index.css'>
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='js/SearchBox.js') }}">
 </head>
 <body>
     <div id = "wrap">
         <div id = "header">
             <h1 class = 'logo'>
-                <a href = "#">LInvest</a>
+                <a href = "{{url_for('index')}}">ESL Invest</a>
             </h1>
             <nav class = 'nav'>
                 <ul>
                     <li><a href = "#">메뉴1</a></li>
-                    <li><a href = "#">메뉴2</a></li>
-                    <li><a href = "#">메뉴3</a></li>
-                    <li><a href = "#">메뉴4</a></li>
                 </ul>
             </nav>
             <div class="search-box">
@@ -31,6 +27,13 @@
                 </div>
             </div>
             <!-- header -->
+
+
+        <script>
+            // 파이썬 딕셔너리를 JS 객체로 변환
+            const stockData = {{ stock_names | tojson | safe }};
+        </script>
+        <script src="{{ url_for('static', filename='js/SearchBox.js') }}"></script>
     </div>
 </body>
 </html>

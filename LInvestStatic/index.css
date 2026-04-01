@@ -19,12 +19,11 @@ li{
     width: 100%;
     display: flex;
     height: 50px;
-    background-color: #eee;
+    background-color: #E5EFFF;
 }
 #header .logo{
     height: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 10px 0 30px;
     display: block;
     text-align: center;
     background-image: url('https://cdn.discordapp.com/attachments/625200220539715594/1437055577175101510/LInvestLogo.png?ex=6911d9cc&is=6910884c&hm=e8c959f5a53643f314a61c5403869cc7025eaf7c2612a7943e5d5b7035ddc49c&');
@@ -49,6 +48,8 @@ li{
     position: relative;
     width: 200px;
     margin-left: auto;
+    margin-top: 4px;
+    padding-left: 10px;
 }
 
 .search-box input {
@@ -62,8 +63,8 @@ li{
 }
 
 .search-box input:focus {
-    border-color: #27ae60;
-    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.2);
+    border-color: #0062FF;
+    box-shadow: 0 4px 12px #E5EFFF;
 }
 
 /* 추천 결과 창 스타일 */
@@ -75,7 +76,7 @@ li{
     z-index: 99;
     background-color: #fff;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 24px #0062ff5b;
     max-height: 300px;
     overflow-y: auto;
     display: none; /* 기본적으로는 숨김 */
@@ -95,7 +96,7 @@ li{
 
 .autocomplete-item:hover {
     background-color: #f1f3f5;
-    color: #27ae60;
+    color: #0062FF;
 }
 
 /* 종목 코드는 연하게 표시 */

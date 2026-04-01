@@ -19,12 +19,11 @@ li{
     width: 100%;
     display: flex;
     height: 50px;
-    background-color: #eee;
+    background-color: #E5EFFF;
 }
 #header .logo{
     height: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 10px 0 30px;
     display: block;
     text-align: center;
     background-image: url('https://cdn.discordapp.com/attachments/625200220539715594/1437055577175101510/LInvestLogo.png?ex=6911d9cc&is=6910884c&hm=e8c959f5a53643f314a61c5403869cc7025eaf7c2612a7943e5d5b7035ddc49c&');
@@ -44,7 +43,67 @@ li{
     background-color: #ddd;
 }
 
-/* header */
+/* 검색창 전체를 감싸는 컨테이너 */
+.search-container {
+    position: relative;
+    width: 200px;
+    margin-left: auto;
+    margin-top: 4px;
+    padding-left: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.search-box input:focus {
+    border-color: #0062FF;
+    box-shadow: 0 4px 12px #E5EFFF;
+}
+
+/* 추천 결과 창 스타일 */
+.autocomplete-items {
+    position: absolute;
+    top: 110%; /* 입력창 바로 아래 */
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px #0062ff5b;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none; /* 기본적으로는 숨김 */
+}
+
+/* 각 추천 항목 스타일 */
+.autocomplete-item {
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 1px solid #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+}
+
+.autocomplete-item:last-child { border-bottom: none; }
+
+.autocomplete-item:hover {
+    background-color: #f1f3f5;
+    color: #0062FF;
+}
+
+/* 종목 코드는 연하게 표시 */
+.item-code {
+    font-size: 12px;
+    color: #adb5bd;
+}
 
 #section-wrap{
     margin: 0 auto;
