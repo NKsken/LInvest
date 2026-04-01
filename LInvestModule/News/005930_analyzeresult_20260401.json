@@ -1,0 +1,357 @@
+{
+    "code": "005930",
+    "positive_count": 47,
+    "negative_count": 2,
+    "details": [
+        {
+            "date": "2026-04-01",
+            "title": "AI發 메모리 급등에 폴드7·플립7도 올랐다…삼성, 고용량폰 가격 인상",
+            "sentiment": "호재",
+            "reason": "고용량 스마트폰 가격 인상으로 매출 증가 기대",
+            "link": "https://n.news.naver.com/mnews/article/018/0006247756?sid=105"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "삼성전자, 英 콘월 주거단지에 히트펌프 공급…스마트싱스 프로도 도입",
+            "sentiment": "호재",
+            "reason": "영국 대규모 주거단지에 고효율 히트펌프 공급으로 매출 증가 기대",
+            "link": "https://www.nspna.com/news/?mode=view&newsid=808358"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "코스피, 종전 기대감에 8% 폭등…나흘 낙폭 하루 만에 만회",
+            "sentiment": "호재",
+            "reason": "주가가 13.40% 상승하며 긍정적인 시장 반응을 보임",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1296401&inflow=N"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "[오늘증시]코스피, 전쟁 종결 기대에 폭등 &quot;5478 마감&quot;…역대 두 번째 상...",
+            "sentiment": "호재",
+            "reason": "전쟁 종결 기대에 따른 코스피 상승으로 반도체주 강세가 나타남",
+            "link": "http://www.queen.co.kr/news/articleView.html?idxno=454224"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "삼성전자 13.4% 폭등, 24년래 최대 상승…종전·실적 기대[핫종목](종합...",
+            "sentiment": "호재",
+            "reason": "삼성전자의 주가가 13.4% 급등하며 24년래 최대 상승률을 기록함.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008864109?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "(마감시황) 코스피, 8%대 폭발적 반등… 장중 매수 사이드카",
+            "sentiment": "호재",
+            "reason": "삼성전자가 13.40% 급등하여 시장에서 긍정적인 반응을 얻음",
+            "link": "https://www.news2day.co.kr/article/20260401500201"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "벌써 '종전 랠리?'…코스피 8%대 폭등, 역대 5번째 상승률[시황종합]",
+            "sentiment": "호재",
+            "reason": "반도체주 강세로 삼성전자의 주가 상승 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008864050?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "코스피, 8%대 올라 5400선 회복…반도체주 급등[마감]",
+            "sentiment": "호재",
+            "reason": "삼성전자가 13.40% 상승하며 18만원선을 회복하여 투자 심리가 개선되었음.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006247506?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "[위클리오늘] 코스피 시총 상위종목 마감시황",
+            "sentiment": "호재",
+            "reason": "삼성전자의 주가가 큰 폭으로 상승하며 긍정적인 시장 반응을 나타냄",
+            "link": "http://www.weeklytoday.com/news/articleView.html?idxno=768731"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "[서울데이터랩]마감 직후 인기 검색 종목 20選",
+            "sentiment": "호재",
+            "reason": "투자자 관심 증가와 주가 급등으로 긍정적인 시장 반응을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/081/0003631468?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "코스피 8%대 급등 5500 눈앞…삼성전자 12% SK하이닉스 10% [장중시황]",
+            "sentiment": "호재",
+            "reason": "삼성전자의 주가가 12.92% 급등하며 시장에서 긍정적인 반응을 얻고 있다.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008863437?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "삼성전자, 영국 1500세대 규모 재개발 사업에 히트펌프 공급",
+            "sentiment": "호재",
+            "reason": "영국 대규모 재개발 프로젝트에 고효율 히트펌프 공급으로 매출 증가 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004605944?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "코스피, 7%대 올라 5400선 회복…삼성전자 11%↑",
+            "sentiment": "호재",
+            "reason": "삼성전자의 주가가 11% 상승하여 긍정적인 시장 반응을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/018/0006247367?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "[서울데이터랩]삼성전자 10.47% 상승하며 강세 지속 SK하이닉스와 삼성...",
+            "sentiment": "호재",
+            "reason": "삼성전자의 주가가 10.47% 상승하며 강력한 상승세를 기록 중이다.",
+            "link": "https://n.news.naver.com/mnews/article/081/0003631381?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "[서울데이터랩]금일 코스피 거래량 1위 흥아해운 거래대금 무려 4,114억 ...",
+            "sentiment": "호재",
+            "reason": "삼성전자의 주가가 10.71% 상승하며 높은 거래량을 기록함.",
+            "link": "https://n.news.naver.com/mnews/article/081/0003631383?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "[ET특징주] 중동 종전 기대감에 韓 증시에 '불기둥'… 삼전·SK하닉 강세",
+            "sentiment": "호재",
+            "reason": "중동 종전 기대감으로 인해 삼성전자 주가가 크게 상승함.",
+            "link": "https://n.news.naver.com/mnews/article/030/0003413560?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "[특징주] 외인·기관, 대우건설 '러브콜'…SK증권 변동성 확대",
+            "sentiment": "호재",
+            "reason": "기관의 집중 매수로 인해 주가 상승 기대",
+            "link": "http://www.newstnt.com/news/articleView.html?idxno=602793"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "갤럭시 S26 효과에 3월 번호이동 11만 명 증가",
+            "sentiment": "호재",
+            "reason": "갤럭시 S26 출시로 인해 번호이동 가입자가 증가하여 삼성전자의 시장 점유율과 매출에 긍정적인 영향을 미침.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008863021?sid=105"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "기관 '매수세 폭발' 코스피 6%대 상승…이틀 하락분 단번에 만회[장중시...",
+            "sentiment": "호재",
+            "reason": "반도체주 급등으로 삼성전자 주가가 상승할 것으로 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/421/0008862885?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "코스피 오름폭 키워 5,370대 회복…삼성전자 18만·하이닉스 87만",
+            "sentiment": "호재",
+            "reason": "삼성전자가 18만원대를 회복하며 주가 상승세를 보이고 있어 긍정적인 시장 반응을 나타냄.",
+            "link": "https://www.slist.kr/news/articleView.html?idxno=728449"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "[써볼까]삼성전자 갤럭시 북6…49 TOPS NPU로 키운 실속형 AI PC",
+            "sentiment": "호재",
+            "reason": "갤럭시 북6의 성능과 가격 경쟁력 강화로 매출 증가 기대",
+            "link": "https://www.nspna.com/news/?mode=view&newsid=808352"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "[N2 증시 풍향계] 반도체·건설株 ‘불기둥’…동국제약·이루온·대한광...",
+            "sentiment": "호재",
+            "reason": "삼성전자가 8.49% 급등하며 긍정적인 시장 반응을 얻고 있다.",
+            "link": "https://www.news2day.co.kr/article/20260401500123"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "삼성전자, AI PC ‘갤럭시 북6’ 국내 출시",
+            "sentiment": "호재",
+            "reason": "최신 프로세서를 탑재한 AI PC 출시로 기술 경쟁력 강화 및 매출 증가 기대",
+            "link": "https://www.inthenews.co.kr/news/article.html?no=85032"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "&quot;삼성전자, 26만원 간다&quot; 올 영업익 396% 폭증 전망… &quot;LG이노텍 주가 여...",
+            "sentiment": "호재",
+            "reason": "영업익 396% 급증 전망으로 긍정적인 성장세 예상",
+            "link": "https://n.news.naver.com/mnews/article/014/0005500795?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "삼성전자, 英 콘월 지역 주거단지에 고효율 히트펌프 솔루션 대량 공급",
+            "sentiment": "호재",
+            "reason": "고효율 히트펌프 솔루션 공급으로 지속 가능한 에너지 시장에서의 경쟁력 강화",
+            "link": "https://www.inthenews.co.kr/news/article.html?no=85016"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "“유가만 잡히면 반등 여지 충분…4월 코스피 상단 5,900p”&lt;삼성證&gt;",
+            "sentiment": "호재",
+            "reason": "삼성전자가 최선호주로 지목되어 긍정적인 투자 신호가 나타남.",
+            "link": "https://www.news2day.co.kr/article/20260401500113"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "[N2 특징주] 삼성전자, 장 초반 8%대 급등…글로벌 훈풍 영향",
+            "sentiment": "호재",
+            "reason": "글로벌 훈풍으로 인해 주가가 급등하고 있다.",
+            "link": "https://www.news2day.co.kr/article/20260401500101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "[특징주] 중동전 종전 기대감 살아나자 '삼전닉스' 6%대 급등",
+            "sentiment": "호재",
+            "reason": "중동전 종전 기대감으로 인해 주가 급등",
+            "link": "https://www.namdonews.com/news/articleView.html?idxno=906016"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "(특징주)종전 기대감에 반도체 투톱 급등…삼성전자·SK하이닉스 7%대 강...",
+            "sentiment": "호재",
+            "reason": "중동 전쟁 종전 기대감으로 반도체 주가 상승",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1296301&inflow=N"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "삼성전자, AI 연산속도 3.8배 높인 ‘갤럭시북6’ 출시",
+            "sentiment": "호재",
+            "reason": "AI 연산속도 향상으로 인한 제품 경쟁력 강화",
+            "link": "https://n.news.naver.com/mnews/article/011/0004605800?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "메모리·환율 부담에 삼성 폴드7·플립7 가격 인상…고용량 최대 19만원...",
+            "sentiment": "악재",
+            "reason": "메모리 반도체와 환율 부담으로 인해 출고가 인상이 소비자 수요에 부정적 영향을 미칠 수 있음.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006247114?sid=105"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "&quot;어제 살걸&quot; 종전 기대감에 삼전·SK하닉 급반등 [핫종목]",
+            "sentiment": "호재",
+            "reason": "미-이란 전쟁의 조기 종식 기대감으로 매수세가 유입됨",
+            "link": "https://n.news.naver.com/mnews/article/421/0008862270?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "코스피 '종전 기대' 매수 사이드카…외국인·기관 팔아도 5%↑[개장시황...",
+            "sentiment": "호재",
+            "reason": "반도체주 강세로 인해 삼성전자의 주가 상승 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008862232?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "[서울데이터랩]개장 직후 인기 검색 종목 20選",
+            "sentiment": "호재",
+            "reason": "삼성전자가 개장 5분 만에 높은 검색 비율을 기록하며 투자자들의 관심을 끌고 있다.",
+            "link": "https://n.news.naver.com/mnews/article/081/0003631278?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "[위클리오늘] SK하이닉스, 8.67% 급등하며 강세 주도",
+            "sentiment": "중립",
+            "reason": "삼성전자가 보합세를 유지하고 있어 큰 변화가 없음.",
+            "link": "http://www.weeklytoday.com/news/articleView.html?idxno=768565"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "&quot;종전 희망 보인다&quot; 코스피 '쾌속 출발'…삼전·닉스 7%↑",
+            "sentiment": "호재",
+            "reason": "삼성전자의 주가가 7% 상승하며 긍정적인 시장 반응을 보이고 있다.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006247070?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "삼성 'AI PC' 승부수…갤럭시 북6 국내 출시",
+            "sentiment": "호재",
+            "reason": "AI PC 출시로 인한 기술 경쟁력 강화 및 시장 점유율 확대 기대",
+            "link": "https://www.jnilbo.com/news/articleView.html?idxno=90000028633"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "SK하이닉스, 중동 긴장 완화 기대에 8%대 강세…삼성전자도 7%↑[특징주...",
+            "sentiment": "호재",
+            "reason": "중동 긴장 완화 기대에 따른 주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/018/0006247047?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "삼성전자, 英 콘월 주거단지에 히트펌프 솔루션 대량 공급",
+            "sentiment": "호재",
+            "reason": "영국 대규모 프로젝트에 고효율 솔루션 공급으로 매출 증가 기대",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4407059"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "&quot;내년 영업익 250조 전망&quot;…NH證, 삼성전자 목표가 26만원 상향",
+            "sentiment": "호재",
+            "reason": "NH투자증권이 삼성전자의 목표가를 상향 조정하며 실적 개선을 기대하고 있음.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008862081?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "삼성전자, '갤럭시 북6' 출시…AI PC 시장 공략 강화",
+            "sentiment": "호재",
+            "reason": "AI 성능 강화로 인한 시장 점유율 확대 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008862059?sid=105"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "[코스피·코스닥,삼성전자 한화시스템 교보생명 빗썸 토스 롯데호텔 유...",
+            "sentiment": "호재",
+            "reason": "14조5806억원 규모의 자기주식 소각으로 주주가치 증가 기대",
+            "link": "https://www.public25.com/news/articleView.html?idxno=43026"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "한앤코, SK스페셜티 '비과세배당' 기반 마련해 중간회수 시동",
+            "sentiment": "호재",
+            "reason": "안정적인 현금흐름과 우호적인 반도체 업황이 긍정적 영향을 미침",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4407046"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "삼성전자, AI PC ‘갤럭시 북6’ 국내 출시…시리즈 풀 라인업 완성",
+            "sentiment": "호재",
+            "reason": "AI PC 시장에서의 경쟁력 강화 및 제품 라인업 확대로 매출 증가 기대",
+            "link": "https://n.news.naver.com/mnews/article/018/0006246991?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "삼성전자, 영국 콘월 지역 주거단지에 고효율 히트펌프 설루션 대량 공...",
+            "sentiment": "호재",
+            "reason": "영국 대규모 주거단지 프로젝트에 고효율 제품 공급으로 매출 증가 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008861959?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "“반도체, 물러설 수 없는 주가…최근 조정은 과도”",
+            "sentiment": "호재",
+            "reason": "반도체 업종 비중확대 의견과 높은 목표주가 제시",
+            "link": "https://n.news.naver.com/mnews/article/018/0006246970?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "삼성전자, 업황 살아있다…목표가 28만원으로 상향-iM",
+            "sentiment": "호재",
+            "reason": "목표주가 상향 조정으로 긍정적인 투자 신호",
+            "link": "https://n.news.naver.com/mnews/article/018/0006246948?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "주식·채권·금 동반 하락…투자자 ‘피난처’ 사라졌다",
+            "sentiment": "호재",
+            "reason": "목표가 상향 리포트가 다수 발표되어 긍정적인 투자 심리를 유도할 가능성이 있음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004605740?sid=105"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "목표가 상향 리포트 63% 급감…중동 쇼크 한 달의 성적표",
+            "sentiment": "악재",
+            "reason": "전쟁 장기화로 인한 시장 불안과 시총 감소",
+            "link": "https://n.news.naver.com/mnews/article/011/0004605732?sid=101"
+        },
+        {
+            "date": "2026-04-01",
+            "title": "[N2 모닝 경제 브리핑-4월 1일] 美증시, 이란 종전 기대감에 ‘폭풍 랠리...",
+            "sentiment": "호재",
+            "reason": "주식 소각 결정으로 주식 가치 상승 기대",
+            "link": "https://www.news2day.co.kr/article/20260331500168"
+        }
+    ]
+}
