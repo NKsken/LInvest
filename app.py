@@ -1,4 +1,5 @@
 from list import list_request
+from LInvestModule.Printer import Predicter
 from flask import Flask, render_template, redirect, url_for, request
 
 app = Flask(__name__, template_folder='LInvestFrontend', static_folder='LInvestStatic')
@@ -29,7 +30,7 @@ def search():
 # [상세 페이지] 코드를 입력했을 때 보이는 페이지
 @app.route('/<code_tag>')
 def stock_page(code_tag):
-    # 실제 예측 로직이 들어갈 자리
+    result_value = Predicter()
     stock_name = next((k for k, v in STOCK_DATA.items() if v == code_tag), "알 수 없는 종목")
     return render_template('stock.html', code=code_tag, stock_names = STOCK_DATA, code_value = stock_name)
 
