@@ -17,4 +17,5 @@ class list_request:
         krx_list = requests.get(self.url, params=self.param)
         datajs = krx_list.json()
         df = pd.json_normalize(datajs, record_path = ['response', 'body', 'items', 'item'])
+        df.drop('basDt')
         return df.to_dict()
