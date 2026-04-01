@@ -4,7 +4,7 @@ from flask import Flask, render_template, redirect, url_for, request
 app = Flask(__name__, template_folder='LInvestFrontend', static_folder='LInvestStatic')
 krx_list = list_request()
 
-# 주식 데이터 (예시)
+# 주식 데이터
 STOCK_DATA = krx_list.load()
 
 # [메인 페이지] 코드를 입력하기 전
