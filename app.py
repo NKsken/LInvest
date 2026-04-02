@@ -34,11 +34,20 @@ def search():
 def stock_page(code_tag):
     # result_value = Predicter()
     stock_name = next((k for k, v in STOCK_DATA.items() if v == code_tag), "알 수 없는 종목")
-    news = news_manager.get_stock_news(code_tag, display_count=7)
-    return render_template('stock.html', code=code_tag,
-                            stock_names = STOCK_DATA,
-                            code_value = stock_name,
-                            news_list = news)
+
+    page = request.args.get('page', 1, type=int)
+    display_count = 5
+    start_index = ((page - 1) * display_count) + 1
+
+    # NewsManager에서 반환하는 딕셔너리에서 'items'만 추출하여 전달
+    news_data = news_manager.get_stock_news(stock_name, display_count=display_count, start_index=start_index)
+    
+    return render_template('stock.html', 
+                            code=code_tag,
+                            stock_names=STOCK_DATA,
+                            code_value=stock_name,
+                            news_list=news_data['items'], # 리스트만 추출
+                            current_page=page)
 
 if __name__ == '__main__':
     app.run(debug=True)

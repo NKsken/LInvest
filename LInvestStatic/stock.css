@@ -1,3 +1,10 @@
+:root {
+    --main-color: #0062FF;
+    --bg-color: #ffffff;
+    --text-color: #2d3436;
+    --point-color: #E5EFFF;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -127,11 +134,152 @@ li{
     margin: 5px 5px 5px 0px;
 }
 
+/* 뉴스 / 공시 탭*/
 #right-section .news{
     width: 100%;
-    background-color: #ddd;
+    background-color: var(--point-color);
     height: calc(50vh - 30px);
 }
+/* 뉴스 컨테이너 내부 스타일 */
+.news-container {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--gray-100);
+}
+
+.tab-content ul {
+    padding: 15px;
+    list-style: none;
+}
+
+.tab-content li {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #fcfcfc;
+}
+
+.meta-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.news-title {
+    font-size: 14px;
+    color: var(--dark-navy);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.news-title:hover {
+    color: var(--primary-blue);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid var(--gray-100);
+}
+
+.empty-msg {
+    padding: 50px;
+    text-align: center;
+    color: var(--gray-400);
+}
+
+.tab-menu {
+    display: flex;
+    background-color: var(--gray-100);
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--gray-400);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tab-btn.active {
+    background-color: var(--white);
+    color: var(--primary-blue);
+    border-bottom: 2px solid var(--primary-blue);
+}
+
+.source-tag {
+    background: var(--light-blue);
+    color: var(--primary-blue);
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.date-tag {
+    font-size: 11px;
+    color: var(--gray-400);
+}
+
+/* 페이징 컨테이너 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    gap: 20px;
+    border-top: 1px solid var(--gray-100);
+    /* 아래 설정을 통해 버튼 유무와 상관없이 숫자를 중앙에 고정 */
+    width: 100%; 
+}
+
+.page-btn {
+    min-width: 80px; /* '이전', '다음' 버튼의 너비를 동일하게 맞춰주면 더 안정적입니다. */
+}
+
+/* 페이지 번호 스타일 */
+#current-page-num {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--dark-navy);
+    min-width: 20px; /* 숫자가 바뀌어도 간격이 유지되도록 설정 */
+    text-align: center;
+}
+
+/* 페이지 버튼 공통 스타일 */
+.page-btn {
+    padding: 8px 18px;
+    border: 1.5px solid var(--primary-blue);
+    background-color: var(--white);
+    color: var(--primary-blue);
+    border-radius: 20px; /* 더 둥글게 변경 */
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* 버튼 호버 효과 */
+.page-btn:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    box-shadow: 0 4px 8px rgba(0, 98, 255, 0.2);
+    transform: translateY(-1px); /* 살짝 떠오르는 효과 */
+}
+
+/* 버튼 클릭 시 효과 */
+.page-btn:active {
+    transform: translateY(0);
+}
+
+/* 뉴스 / 공시 탭*/
 
 #right-section .predict{
     width: 100%;
