@@ -1,8 +1,9 @@
 import urllib.request
 import json
 import re
-from dotenv import load_dotenv
 import os
+from dotenv import load_dotenv
+from datetime import datetime, timedelta
 
 class NewsManager:
     def __init__(self):
@@ -13,13 +14,34 @@ class NewsManager:
         with open('Press_List.json', 'r', encoding='utf-8') as f:
             self.press_data = json.load(f)
 
+    def _format_date(self, date_str):
+        """RFC 822 날짜 형식을 한글 상대 날짜로 변환"""
+        try:
+            # 네이버 API 날짜 포맷 파싱
+            api_date = datetime.strptime(date_str, '%a, %d %b %Y %H:%M:%S +0900')
+            now = datetime.now()
+            diff = now - api_date
+
+            if diff < timedelta(minutes=1):
+                return "방금 전"
+            elif diff < timedelta(hours=1):
+                return f"{diff.seconds // 60}분 전"
+            elif diff < timedelta(days=1):
+                return f"{diff.seconds // 3600}시간 전"
+            elif diff < timedelta(days=7):
+                return f"{diff.days}일 전"
+            else:
+                return api_date.strftime('%Y년 %m월 %d일')
+        except:
+            return date_str # 변환 실패 시 원본 반환
+
     def get_stock_news(self, stock_name, display_count=5, start_index=1):
         """
         start_index: 검색 시작 위치 (최대 1000)
         """
         encText = urllib.parse.quote(stock_name)
         # start 파라미터 추가
-        url = f"https://openapi.naver.com/v1/search/news.json?query={encText}&display={display_count}&start={start_index}&sort=sim"
+        url = f"https://openapi.naver.com/v1/search/news.json?query={encText}&display={display_count}&start={start_index}&sort=date"
         
         request = urllib.request.Request(url)
         request.add_header("X-Naver-Client-Id", self.NAVER_KEY)
@@ -67,5 +89,5 @@ class NewsManager:
             'title': title,
             'link': item['link'], # 사용자가 클릭 시 이동할 링크
             'source': source,
-            'date': item['pubDate'][:16]
+            'date': self._format_date(item['pubDate']) # 한글 변환 적용
         }
