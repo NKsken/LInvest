@@ -150,6 +150,8 @@ li{
 
 .tab-content ul {
     padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     list-style: none;
 }
 
@@ -190,28 +192,44 @@ li{
     color: var(--gray-400);
 }
 
+/* 뉴스 / 공시 탭 메뉴 컨테이너 */
 .tab-menu {
     display: flex;
-    background-color: var(--gray-100);
-}
-
-.tab-btn {
-    flex: 1;
-    padding: 12px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    color: var(--gray-400);
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.tab-btn.active {
+    gap: 10px;        /* 버튼 사이 간격 */
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 0px;
     background-color: var(--white);
-    color: var(--primary-blue);
-    border-bottom: 2px solid var(--primary-blue);
+    border-bottom: 1px solid var(--gray-100);
 }
 
+/* 탭 버튼 공통 스타일 (이전/다음 버튼 스타일 계승) */
+.tab-btn {
+    padding: 8px 20px;
+    border: 1.5px solid var(--gray-100); /* 기본은 연한 회색 */
+    background-color: var(--white);
+    color: var(--gray-400);
+    border-radius: 20px; /* 이전/다음 버튼과 동일한 곡률 */
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* 마우스를 올렸을 때 */
+.tab-btn:hover {
+    background-color: var(--light-blue);
+    color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+/* 활성화된 탭 (현재 선택된 탭) */
+.tab-btn.active {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border-color: var(--primary-blue);
+    box-shadow: 0 4px 8px rgba(0, 98, 255, 0.2);
+}
 .source-tag {
     background: var(--light-blue);
     color: var(--primary-blue);
@@ -232,7 +250,6 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 0;
     gap: 20px;
     border-top: 1px solid var(--gray-100);
     /* 아래 설정을 통해 버튼 유무와 상관없이 숫자를 중앙에 고정 */

@@ -1,3 +1,11 @@
+:root {
+    --main-color: #0062FF;
+    --bg-color: #ffffff;
+    --text-color: #2d3436;
+    --point-color: #E5EFFF;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -103,4 +111,14 @@ li{
 .item-code {
     font-size: 12px;
     color: #adb5bd;
+}
+
+/* 마켓타이머 */
+.market-timer {
+    background-color: var(--white);
+    padding: 15px 25px;
+    border-radius: 15px;
+    border: 1px solid var(--gray-100);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: inline-block; /* 중앙 정렬을 위해 */
 }
