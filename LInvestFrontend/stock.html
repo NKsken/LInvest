@@ -39,7 +39,15 @@
                     예측 섹션
                 </div>
                     <div class = 'news'>
-                    뉴스 섹션
+                        <ul style="padding: 15px; list-style: none;">
+                            {% for news in news_list %}
+                            <li style="margin-bottom: 15px; border-bottom: 1px solid #f9f9f9; padding-bottom: 8px;">
+                                <a href="{{ news.link }}" target="_blank" style="font-size: 14px; color: var(--dark-navy); line-height: 1.4;">
+                                    {{ news.title }}
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
                     </div>
             </div>
         </div>
