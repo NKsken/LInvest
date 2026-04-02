@@ -1,10 +1,13 @@
 :root {
-    --main-color: #0062FF;
-    --bg-color: #ffffff;
-    --text-color: #2d3436;
-    --point-color: #E5EFFF;
+    --primary-blue: #0062FF;      /* 메인 브랜드 컬러 */
+    --light-blue: #F0F6FF;        /* 부드러운 배경색 */
+    --dark-navy: #1A1F2B;         /* 텍스트 및 헤더 강조색 */
+    --gray-100: #F8F9FA;          /* 연한 회색 배경 */
+    --gray-400: #ADB5BD;          /* 보조 텍스트 색상 */
+    --white: #ffffff;
+    --open-green: #a7ff91;
+    --closed-red: #ff8484;
 }
-
 
 *{
     margin: 0;
@@ -34,7 +37,6 @@ li{
     padding: 0 10px 0 30px;
     display: block;
     text-align: center;
-    background-image: url('https://cdn.discordapp.com/attachments/625200220539715594/1437055577175101510/LInvestLogo.png?ex=6911d9cc&is=6910884c&hm=e8c959f5a53643f314a61c5403869cc7025eaf7c2612a7943e5d5b7035ddc49c&');
 }
 
 .nav > ul{
@@ -49,6 +51,12 @@ li{
 
 .nav > ul > li > a:hover{
     background-color: #ddd;
+}
+
+body {
+    font-family: 'Pretendard', -apple-system, sans-serif;
+    background-color: var(--white);
+    color: var(--dark-navy);
 }
 
 /* 검색창 전체를 감싸는 컨테이너 */
@@ -112,13 +120,25 @@ li{
     font-size: 12px;
     color: #adb5bd;
 }
+/* 헤더 */
 
-/* 마켓타이머 */
-.market-timer {
-    background-color: var(--white);
-    padding: 15px 25px;
-    border-radius: 15px;
-    border: 1px solid var(--gray-100);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    display: inline-block; /* 중앙 정렬을 위해 */
+/* 바디 */
+.body{
+    padding: 15px 20px;
+}
+
+.online-status{
+    border-radius: 12px;
+    padding: 2px 10px;
+    display: inline-block;
+    transition: all 0.3s ease; /* 색상 변경 시 부드럽게 */
+}
+
+.status-open{
+    border: 2px solid var(--open-green);
+
+}
+
+.status-close{
+    border: 2px solid var(--closed-red);
 }

@@ -27,21 +27,24 @@
             </div>
         </div>
             <!-- header -->
-        <div id = "body">
-            <!--market timer-->
-            <div class = 'market-timer'>
-                <p>장 종료까지</p>
-                <div id = "MarketCountdown">00:00:00</div>
+        <main class = "body">
+            <div id = "online-status" class = "online-status">
+                장 상태 확인
             </div>
-        </div>
-
+            <div class = "index">
+                KOSPI KOSDAQ
+            </div>
+            <div class = "interested">
+                내 관심 종목
+            </div>
+        </main>
 
         <script>
             // 파이썬 딕셔너리를 JS 객체로 변환
             const stockData = {{ stock_names | tojson | safe }};
         </script>
         <script src="{{ url_for('static', filename='js/SearchBox.js') }}"></script>
-        <script src="{{ url_for('static', filename='js/MarketTimer.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/MarketStatus.js') }}"></script>
     </div>
 </body>
 </html>

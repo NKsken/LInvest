@@ -13,8 +13,8 @@ STOCK_DATA = krx_list.load()
 # 메인 페이지
 @app.route('/')
 def index():
-    # 자동완성을 위해 종목명 리스트 전달
-    return render_template('index.html', stock_names=STOCK_DATA)
+    return render_template('index.html', 
+                           stock_names=STOCK_DATA)
 
 # 검색창
 @app.route('/search')
