@@ -7,6 +7,7 @@
     --white: #ffffff;
     --open-green: #a7ff91;
     --closed-red: #ff8484;
+    --closed-gray: #b1b1b1;
 }
 
 *{
@@ -141,4 +142,8 @@ body {
 
 .status-close{
     border: 2px solid var(--closed-red);
+}
+
+.status-weekend{
+    border: 2px solid var(--closed-gray);
 }
