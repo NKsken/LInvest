@@ -16,14 +16,14 @@ function updateMarketStatus() {
 
     // 1. 주말 체크
     if (day === 0 || day === 6) {
-        statusText = "휴장 (주말)";
+        statusText = "주말 휴장";
         isOpen = false;
         weekend = true;
     } else {
         weekend = false;
         // 2. 시간대별 상태 판별
         if (currentTime >= 900 && currentTime < 1530) {
-            statusText = "국내 정규장";
+            statusText = "정규장";
             isOpen = true;
         } else if (currentTime >= 800 && currentTime < 900) {
             statusText = "프리마켓";

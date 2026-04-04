@@ -80,7 +80,7 @@ class NewsCollector:
 
             # OpenAI SDK 방식 호출로 수정 (client.chat.completions.create 사용)
             response = self.client.chat.completions.create(
-                model="gpt-4o", # 사용할 모델명 명시
+                model="gpt-4o-mini", # 사용할 모델명 명시
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.1,
                 response_format={"type": "json_object"}

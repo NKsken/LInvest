@@ -54,7 +54,7 @@ li{
     background-color: #ddd;
 }
 
-body {
+.body {
     font-family: 'Pretendard', -apple-system, sans-serif;
     background-color: var(--white);
     color: var(--dark-navy);
@@ -125,7 +125,16 @@ body {
 
 /* 바디 */
 .body{
-    padding: 15px 20px;
+    padding: 10px;
+}
+
+/* 장 상태 표시 */
+.status-wrap{
+    display: block;
+    border: 2px solid var(--primary-blue);
+    border-radius: 12px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
 }
 
 .online-status{
@@ -137,7 +146,6 @@ body {
 
 .status-open{
     border: 2px solid var(--open-green);
-
 }
 
 .status-close{
@@ -146,4 +154,19 @@ body {
 
 .status-weekend{
     border: 2px solid var(--closed-gray);
+}
+
+/* 장 상태 표시 */
+
+/* 인덱스 */
+.index-wrap{
+    display: block;
+    border: 2px solid var(--primary-blue);
+    border-radius: 12px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+#index{
+    display: flex;
+    gap: 30px;
 }

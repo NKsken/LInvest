@@ -1,5 +1,5 @@
 from News import NewsManager
-from List import list_request
+from list import list_request
 # from LInvestModule.Printer import Predicter
 from flask import Flask, render_template, redirect, url_for, request
 
