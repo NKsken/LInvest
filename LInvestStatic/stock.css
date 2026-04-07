@@ -1,8 +1,14 @@
 :root {
-    --main-color: #0062FF;
-    --bg-color: #ffffff;
-    --text-color: #2d3436;
-    --point-color: #E5EFFF;
+    --primary-blue: #0062FF;      /* 메인 브랜드 컬러 */
+    --sub-blue: #2b80ff;
+    --light-blue: #F0F6FF;        /* 부드러운 배경색 */
+    --dark-navy: #1A1F2B;         /* 텍스트 및 헤더 강조색 */
+    --gray-100: #F8F9FA;          /* 연한 회색 배경 */
+    --gray-400: #ADB5BD;          /* 보조 텍스트 색상 */
+    --white: #ffffff;
+    --open-green: #a7ff91;
+    --closed-red: #ff8484;
+    --closed-gray: #b1b1b1;
 }
 
 *{
@@ -112,40 +118,68 @@ li{
     color: #adb5bd;
 }
 
+/* 종목 정보 */
+
+#top-section{
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid var(--primary-blue);
+    border-radius: 15px;
+    height: 4vh;
+}
+
+.compValue-wrap{
+    display: flex;
+}
+
+.compName{
+    font-size: 15px;
+}
+.compCode{
+    font-size: 12px;
+}
+
+.compStock-wrap{
+    display: flex;
+}
+
 #section-wrap{
     margin: 0 auto;
     width: 100%;
     display: flex;
 }
+/* 종목 정보 */
 
 #left-section{
+    margin: 0px 5px 0px 5px;
     width: 50%;
-    margin: 5px;
+    height: calc(96vh - 65px);
+    border: 2px solid var(--sub-blue);
+    border-radius: 15px;
 }
 
 #left-section .chart{
-    width: 100%;
-    background-color: #eee;
-    height: calc(100vh - 60px);
+
 }
 
 #right-section{
     width: 50%;
-    margin: 5px 5px 5px 0px;
+    margin: 5px 5px 0px 0px;
 }
 
 /* 뉴스 / 공시 탭*/
 #right-section .news{
     width: 100%;
-    background-color: var(--point-color);
-    height: calc(50vh - 30px);
+    background-color: var(--light-blue);
+    padding: 5px;
+    height: calc(48vh - 60px);
 }
 /* 뉴스 컨테이너 내부 스타일 */
-.news-container {
+.news .news-container {
     background: var(--white);
     border-radius: 12px;
     overflow: hidden;
-    border: 1px solid var(--gray-100);
 }
 
 .tab-content ul {
@@ -157,7 +191,6 @@ li{
 
 .tab-content li {
     margin-bottom: 12px;
-    border-bottom: 1px solid #fcfcfc;
 }
 
 .meta-info {
@@ -196,11 +229,9 @@ li{
 .tab-menu {
     display: flex;
     gap: 10px;        /* 버튼 사이 간격 */
-    padding: 15px;
-    padding-top: 5px;
-    padding-bottom: 0px;
+    padding: 5px;
+    margin: 3px;
     background-color: var(--white);
-    border-bottom: 1px solid var(--gray-100);
 }
 
 /* 탭 버튼 공통 스타일 (이전/다음 버튼 스타일 계승) */
@@ -298,8 +329,9 @@ li{
 
 /* 뉴스 / 공시 탭*/
 
+/* 예측 탭*/
 #right-section .predict{
     width: 100%;
     background-color: #ccc;
-    height: calc(50vh - 30px);
+    height: calc(48vh - 55px);
 }
