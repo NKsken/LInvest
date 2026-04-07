@@ -121,9 +121,9 @@ li{
 /* 종목 정보 */
 
 #top-section{
+    box-shadow: 0 4px 8px rgba(0, 98, 255, 0.2);
     display: block;
     padding: 5px;
-    margin: 5px;
     border: 2px solid var(--primary-blue);
     border-radius: 15px;
     height: 4vh;
@@ -153,9 +153,7 @@ li{
 /* 종목 정보 */
 
 #left-section{
-    margin: 0px 5px 0px 5px;
     width: 50%;
-    height: calc(96vh - 100px);
     border: 2px solid var(--sub-blue);
     border-radius: 15px;
 }
@@ -166,16 +164,12 @@ li{
 
 #right-section{
     width: 50%;
-    margin: 5px 5px 0px 0px;
-    height: 0;
 }
 
 /* 뉴스 / 공시 탭*/
 #right-section .news{
-    width: 100%;
     background-color: var(--light-blue);
-    padding: 5px;
-    height: calc(48vh - 50px);
+    padding: 5px; 
 }
 /* 뉴스 컨테이너 내부 스타일 */
 .news .news-container {
@@ -335,5 +329,4 @@ li{
 #right-section .predict{
     width: 100%;
     background-color: #ccc;
-    height: calc(48vh - 50px);
 }
