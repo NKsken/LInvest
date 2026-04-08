@@ -1,0 +1,357 @@
+{
+    "code": "005930",
+    "positive_count": 49,
+    "negative_count": 1,
+    "details": [
+        {
+            "date": "2026-04-08",
+            "title": "21만전자·104만닉스 안착…코스피, 5900선 탈환하나",
+            "sentiment": "호재",
+            "reason": "삼성전자의 주가가 7.76% 상승하여 긍정적인 시장 반응을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/018/0006252829?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "[ET특징주] 미국-이란 2주 휴전에… '21만전자 · 100만닉스' 회복",
+            "sentiment": "호재",
+            "reason": "삼성전자가 21만원선을 회복하며 주가가 상승세를 보이고 있다.",
+            "link": "https://n.news.naver.com/mnews/article/030/0003415857?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "[서울데이터랩]금일 코스피 거래량 1위 대우건설 거래대금 무려 1조 6,00...",
+            "sentiment": "호재",
+            "reason": "삼성전자가 6.87% 상승하여 긍정적인 시장 반응을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/081/0003633414?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "코스피 미·이란 휴전에 5,800대 '강세'…21만전자·100만닉스 복귀",
+            "sentiment": "호재",
+            "reason": "삼성전자의 주가가 6.87% 상승하며 긍정적인 시장 반응을 보임.",
+            "link": "https://www.slist.kr/news/articleView.html?idxno=730151"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "삼성, '갤럭시XR'에 기업용 시스템 올려…&quot;구글과 공동 설계&quot;",
+            "sentiment": "호재",
+            "reason": "삼성전자가 구글과 협력하여 기업용 관리 시스템을 적용함으로써 새로운 시장 기회를 창출할 가능성이 높아짐.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008877252?sid=105"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "[주요공시] 삼성전자, SK스퀘어, 휴림에이텍, 진원생명과학 외",
+            "sentiment": "호재",
+            "reason": "삼성전자의 1분기 연결재무제표 기준 영업 실적 발표로 긍정적인 투자 신호가 예상됨",
+            "link": "https://www.kdpress.co.kr/news/articleView.html?idxno=204079"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "삼성전자, 갤럭시 XR 기업관리 기능 확대…안드로이드 엔터프라이즈 첫...",
+            "sentiment": "호재",
+            "reason": "기업용 기기 관리 기능 강화로 시장 점유율 확대 기대",
+            "link": "https://www.nspna.com/news/?mode=view&newsid=809076"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "D램 가격 ‘끝 모를 질주’…1분기 80%, 2분기 50% 상승 전망",
+            "sentiment": "호재",
+            "reason": "D램 가격 상승 전망으로 인한 매출 증가 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004608419?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "&quot;삼성전자, 1Q 메모리 매출 504억 달러…전체의 56%&quot;",
+            "sentiment": "호재",
+            "reason": "삼성전자의 메모리 사업 매출 증가로 인해 전체 매출의 56%를 차지하며 긍정적인 실적을 나타냄.",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4408337"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "무디스 &quot;韓 기업 신용등급 격차 확대…배터리·화학·철강 하방 압력&quot;",
+            "sentiment": "호재",
+            "reason": "AI 붐의 최대 수혜자로 예상되어 성장 가능성이 높음",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4408338"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "갤럭시 XR, 2D→3D 변환·기업 관리 솔루션 대거 탑재(종합)",
+            "sentiment": "호재",
+            "reason": "갤럭시 XR의 대규모 소프트웨어 업데이트로 XR 생태계 확장이 기대됨.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006252706?sid=105"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "삼성전자 메모리 504억불 ‘새 역사’… D램·낸드 동시 신기록",
+            "sentiment": "호재",
+            "reason": "삼성전자가 메모리 반도체 부문에서 사상 최대 매출을 기록하여 긍정적인 실적을 보임.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004608404?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "&quot;휴전이다&quot;…코스피 5% 급등, 환율 -24원, 국제유가 -10% [장중시황]",
+            "sentiment": "호재",
+            "reason": "코스피 급등으로 삼성전자 주가 상승 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008876974?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "[N2 증시 풍향계] 반도체·증권·건설주 ‘방긋’…아이엠반도체·앤씨...",
+            "sentiment": "호재",
+            "reason": "삼성전자의 사상 최대 실적 발표로 반도체주에 강한 매수세가 유입되고 있음",
+            "link": "https://www.news2day.co.kr/article/20260408500137"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "[카드] 삼성 14개 모델, 獨 TUV 라인란드 '탄소저감' 인증 획득",
+            "sentiment": "호재",
+            "reason": "탄소저감 인증 획득으로 브랜드 이미지 및 시장 경쟁력 강화",
+            "link": "http://www.newsprime.co.kr/news/article.html?no=729568"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "&quot;삼성전자, 메모리 매출 75.5조 '역대 최고'…D램·낸드 동시 신기록&quot;",
+            "sentiment": "호재",
+            "reason": "삼성전자의 메모리 매출이 역대 최고치를 기록하여 시장 1위를 유지",
+            "link": "https://n.news.naver.com/mnews/article/421/0008876874?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "삼성전자 TV·사운드바, 독일 TUV 라인란드 ‘탄소저감’ 인증 획득",
+            "sentiment": "호재",
+            "reason": "탄소저감 인증 획득으로 브랜드 이미지 및 시장 경쟁력 강화",
+            "link": "https://www.inthenews.co.kr/news/article.html?no=85322"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "[토큰주식] 삼성전자, 중동 휴전 합의에 강세…투자심리 회복",
+            "sentiment": "호재",
+            "reason": "중동 긴장 완화로 투자심리가 회복되어 반도체주에 긍정적인 영향을 미침",
+            "link": "https://www.tokenpost.kr/news/economy/347263"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "휴전에 살아난 투심…코스피 6% 급등, 매수사이드카[개장시황]",
+            "sentiment": "호재",
+            "reason": "코스피 급등에 따른 삼성전자 주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/421/0008876674?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "코스피·코스닥 6% 급등에 '매수 사이드카'…21만전자·100만닉스 회복",
+            "sentiment": "호재",
+            "reason": "코스피와 코스닥의 급등으로 삼성전자의 주가가 상승하며 긍정적인 투자 심리를 반영",
+            "link": "https://n.news.naver.com/mnews/article/018/0006252590?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "[서울데이터랩]개장 직후 인기 검색 종목 20選",
+            "sentiment": "호재",
+            "reason": "투자자들의 높은 관심으로 인해 주가 상승 가능성이 높아짐",
+            "link": "https://n.news.naver.com/mnews/article/081/0003633328?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "미-이란 휴전에 '호실적' 늦반영…'21만전자·100만닉스' 회복[핫종목]",
+            "sentiment": "호재",
+            "reason": "삼성전자의 주가 급등으로 긍정적인 시장 반응이 나타남.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008876650?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "'갤S25·폴드·플립'도 아이폰과 에어드롭 호환된다",
+            "sentiment": "호재",
+            "reason": "삼성전자의 갤럭시 모델들이 애플과의 호환성을 강화하여 시장 점유율 확대 가능성 증가",
+            "link": "https://n.news.naver.com/mnews/article/421/0008876628?sid=105"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "21만전자·100만닉스 회복…휴전 소식에 반도체주 급등[특징주]",
+            "sentiment": "호재",
+            "reason": "미국과 이란의 휴전 합의로 반도체주가 급등하며 삼성전자 주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/018/0006252571?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "&quot;2D 앱도 한번에 3D 변환&quot;...구글, 삼성 갤럭시XR 대규모 업데이트",
+            "sentiment": "호재",
+            "reason": "구글의 대규모 업데이트로 삼성 갤럭시XR의 경쟁력이 강화될 것으로 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/018/0006252563?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "‘탄소 다이어트’ 성과낸 삼성 TV…사운드바까지 친환경 인증 싹쓸이",
+            "sentiment": "호재",
+            "reason": "삼성전자의 프리미엄 제품들이 친환경 인증을 받아 브랜드 이미지와 판매 증가에 긍정적 영향을 미칠 것으로 예상됨.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004608349?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "에어비앤비, 삼성전자와 맞손…49개국 갤럭시 이용자 잡는다",
+            "sentiment": "호재",
+            "reason": "에어비앤비와의 협업으로 삼성 갤럭시 사용자 기반 확대 및 서비스 이용 증가 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008876499?sid=103"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "삼성전자 2026년형 TV·사운드바, TUV 라인란드 '탄소저감' 인증 획득",
+            "sentiment": "호재",
+            "reason": "탄소 저감 인증 획득으로 브랜드 이미지 및 시장 경쟁력 강화",
+            "link": "https://n.news.naver.com/mnews/article/421/0008876487?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "신한證 &quot;반도체, 할인율 충격 끝났다…밸류에이션 복원 구간 진입&quot;",
+            "sentiment": "호재",
+            "reason": "반도체 산업의 밸류에이션 복원으로 긍정적인 실적 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008876478?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "&quot;반도체, 외국인 지분율 ‘역사적 저점’… 2028년까지 완만한 사이클 ...",
+            "sentiment": "악재",
+            "reason": "외국인 지분율이 역사적 저점에 도달하여 투자 심리가 위축될 가능성이 있음",
+            "link": "https://www.news2day.co.kr/article/20260408500026"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "증권가 &quot;삼성전자, 36만원 간다…빅테크 장기계약 주요 변수 될 것&quot;",
+            "sentiment": "호재",
+            "reason": "증권가의 영업이익 전망 상향과 목표주가 상승이 긍정적 요소로 작용",
+            "link": "https://n.news.naver.com/mnews/article/421/0008876440?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "100만닉스 돌아오나…휴전 소식에 삼전 5%·하닉%6↑[특징주]",
+            "sentiment": "호재",
+            "reason": "미국과 이란의 휴전 소식으로 투자심리가 개선되어 주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/018/0006252496?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "美-이란 휴전 소식, 프리마켓 3%대 급등…삼전 4%·SK하닉 5%",
+            "sentiment": "호재",
+            "reason": "기록적인 1분기 영업이익 발표로 투자자 신뢰 증가",
+            "link": "https://n.news.naver.com/mnews/article/421/0008876410?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "‘40만전자·200만닉스’ 전망 나왔다…“메모리 재평가 시작 단계”",
+            "sentiment": "호재",
+            "reason": "목표주가 상향으로 긍정적인 투자 전망이 제시됨",
+            "link": "https://n.news.naver.com/mnews/article/018/0006252482?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "삼성전자 1분기 깜짝 실적에…&quot;반도체, 할인 구간 벗어날 것&quot;",
+            "sentiment": "호재",
+            "reason": "삼성전자의 1분기 실적 개선으로 반도체 업종의 긍정적인 전망이 강화됨.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006252459?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "인텔, 머스크 '테라팹' 반도체 만든다…주가 4%↑",
+            "sentiment": "호재",
+            "reason": "인텔의 테라팹 프로젝트로 인해 삼성전자의 반도체 수요 증가 예상",
+            "link": "https://n.news.naver.com/mnews/article/018/0006252445?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "삼성전자, 메모리 이익에 주당가치 급증…목표가 30만원-iM",
+            "sentiment": "호재",
+            "reason": "메모리 이익 급증으로 목표주가가 상향 조정됨",
+            "link": "https://n.news.naver.com/mnews/article/018/0006252434?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "삼성전자, 올해 영업익 100조 높여 336조 전망…35만전자 간다-다올",
+            "sentiment": "호재",
+            "reason": "삼성전자가 1분기 매출과 영업이익 모두 시장 예상을 초과하여 긍정적인 실적을 기록함.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006252432?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "엔비디아, 슈퍼컴 핵심 SW ‘슬럼’ 인수…업계 독점 우려 확산",
+            "sentiment": "호재",
+            "reason": "삼성전자가 1분기 영업이익에서 어닝 서프라이즈를 기록하며 시장 기대를 초과 달성",
+            "link": "https://n.news.naver.com/mnews/article/011/0004608295?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "모건스탠리, 韓 성장률 1.8%로 하향…중동 리스크 반영",
+            "sentiment": "호재",
+            "reason": "삼성전자의 1분기 영업이익이 시장 예상을 크게 초과하며 메모리 슈퍼사이클이 본격화됨.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004608294?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "[코스피·코스닥,삼성전자 하나금융 LG전자 텔콘RF제약 LG에너지솔루션...",
+            "sentiment": "호재",
+            "reason": "1분기 영업이익이 작년 동기 대비 증가하여 긍정적인 실적을 나타냄",
+            "link": "https://www.public25.com/news/articleView.html?idxno=43610"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "삼성전자 1분기 영업익 57조…시장 전망 42% 뛰어넘어",
+            "sentiment": "호재",
+            "reason": "삼성전자의 1분기 영업이익이 시장 전망을 크게 초과하여 긍정적인 실적을 기록함.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004608290?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "삼성전자, AI가 주도한 메모리 수요 확대…'35만전자' 갈 것-IBK",
+            "sentiment": "호재",
+            "reason": "IBK투자증권이 목표주가를 상향 조정하며 긍정적인 투자 의견을 제시함.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006252427?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "삼성전자 영업이익 57조 ‘사상 최대’…D램·낸드 급등 효과",
+            "sentiment": "호재",
+            "reason": "역대급 영업이익 증가로 시장 기대치를 크게 초과함",
+            "link": "https://n.news.naver.com/mnews/article/011/0004608289?sid=105"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "[투데이 Pick] 삼성전자, MS와 어깨 나란히…반도체 호황에 소부장까지...",
+            "sentiment": "호재",
+            "reason": "삼성전자가 분기 영업이익 57조원을 돌파하며 긍정적인 실적을 기록함.",
+            "link": "https://www.news2day.co.kr/article/20260408500008"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "[N2 모닝 경제 브리핑-4월 8일] 美증시, 트럼프 협상 시한 앞두고 보합 ...",
+            "sentiment": "호재",
+            "reason": "1분기 잠정 매출과 영업이익이 예상보다 높아 긍정적인 실적을 나타냄",
+            "link": "https://www.news2day.co.kr/article/20260407500134"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "구글 잡은 삼성전자, 내년엔 엔비디아 꺾고 ‘1위’ 노린다 [biz-플러스...",
+            "sentiment": "호재",
+            "reason": "삼성전자가 1분기 영업이익을 초과 달성하며 AI 인프라 투자로 성장 가능성이 높아짐.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004608263?sid=101"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "코스피·코스닥 전 거래일(7일) 주요공시는?...LG에너지솔루션 1분기 영...",
+            "sentiment": "호재",
+            "reason": "1분기 영업이익이 작년 동기 대비 755% 증가하여 긍정적인 실적을 기록함.",
+            "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=443656"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "인텔, 머스크의 초대형 AI 반도체 생산 프로젝트 합류",
+            "sentiment": "호재",
+            "reason": "테슬라의 AI 칩 생산에 참여함으로써 삼성전자의 수익 증가 가능성이 높아짐.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004608234?sid=104"
+        },
+        {
+            "date": "2026-04-08",
+            "title": "영업익 올해 320조, 내년엔 488조…엔비디아 제치고 세계 1위 노린다[韓...",
+            "sentiment": "호재",
+            "reason": "삼성전자가 올해 1분기 실적에서 어닝 서프라이즈를 기록하며 긍정적인 성장 전망을 제시함.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004608133?sid=101"
+        }
+    ]
+}

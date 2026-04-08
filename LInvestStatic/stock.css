@@ -1,19 +1,51 @@
 :root {
     --primary-blue: #0062FF;      /* 메인 브랜드 컬러 */
     --sub-blue: #2b80ff;
+    --sky-blue: #8ecbff;
+    --deep-blue: #003d99;
     --light-blue: #F0F6FF;        /* 부드러운 배경색 */
+    --soft-blue: #dbeafe;
+    --blue-50: #f5f9ff;
     --dark-navy: #1A1F2B;         /* 텍스트 및 헤더 강조색 */
+    --slate: #5f6d84;
     --gray-100: #F8F9FA;          /* 연한 회색 배경 */
+    --gray-200: #eef2f6;
+    --gray-300: #d7dde5;
     --gray-400: #ADB5BD;          /* 보조 텍스트 색상 */
+    --gray-600: #667085;
+    --graphite: #344054;
     --white: #ffffff;
+    --surface: #fbfcff;
+    --surface-2: #f3f7fc;
+    --border: #d8e2f0;
+    --border-strong: #b7c6dd;
     --open-green: #a7ff91;
+    --success-green: #2fb344;
+    --mint: #c9f7df;
     --closed-red: #ff8484;
+    --danger-red: #e03131;
+    --rose: #ffd6d6;
     --closed-gray: #b1b1b1;
+    --warning-amber: #ffca66;
+    --warning-soft: #fff4d6;
+    --purple-accent: #8c7bff;
+    --purple-soft: #ece8ff;
+    --teal: #2dc2c2;
+    --teal-soft: #d9f7f7;
+    --orange: #ff9f43;
+    --orange-soft: #ffe7cc;
 }
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f7faff;
+    color: var(--dark-navy);
 }
 
 a{
@@ -27,20 +59,27 @@ li{
 
 #wrap{
     width: 100%;
+    min-height: 100vh;
+    display: flex;
     flex-direction: column;
 }
 #header{
     width: 100%;
     display: flex;
+    align-items: center;
+    gap: 12px;
     height: 50px;
+    padding: 0 16px;
     background-color: #E5EFFF;
 }
 #header .logo{
     height: 50px;
-    padding: 0 10px 0 30px;
+    line-height: 50px;
+    padding: 0 10px;
     display: block;
     text-align: center;
-    background-image: url('https://cdn.discordapp.com/attachments/625200220539715594/1437055577175101510/LInvestLogo.png?ex=6911d9cc&is=6910884c&hm=e8c959f5a53643f314a61c5403869cc7025eaf7c2612a7943e5d5b7035ddc49c&');
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .nav > ul{
@@ -54,16 +93,15 @@ li{
 }
 
 .nav > ul > li > a:hover{
-    background-color: #ddd;
+    background-color: #d7e5ff;
 }
 
 /* 검색창 전체를 감싸는 컨테이너 */
 .search-container {
     position: relative;
-    width: 200px;
+    width: min(280px, 42vw);
     margin-left: auto;
-    margin-top: 4px;
-    padding-left: 10px;
+    margin-top: 0;
 }
 
 .search-box input {
@@ -126,10 +164,11 @@ li{
     min-height: 50px;         /* 최소 높이 보장 */
     height: auto;             /* 내용물(종목명, 가격)에 따라 늘어남 */
     max-height: 15vh;         /* 화면 전체 높이의 15%를 넘지 않도록 제한 */
-    padding: 10px;
-    margin: 5px;
+    padding: 14px 16px;
+    margin: 8px;
     border: 2px solid var(--primary-blue);
     border-radius: 15px;
+    background: var(--white);
     box-sizing: border-box;   /* 패딩이 높이에 영향을 주지 않음 */
 }
 
@@ -138,22 +177,31 @@ li{
 }
 
 .compName{
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 6px;
 }
 .compCode{
-    font-size: 12px;
+    font-size: 13px;
+    color: #5f6d84;
+    display: flex;
+    align-items: center;
 }
 
 .compStock-wrap{
     display: flex;
+    margin-top: 6px;
+    gap: 10px;
+    align-items: baseline;
 }
 
 #section-wrap{
     display: flex;
-    width: 99.5%;
+    width: 100%;
+    gap: 10px;
     /* min-height를 설정하여 푸터가 생겨도 줄어들지 않게 함 */
     min-height: calc(100vh - 50px - 60px); /* 화면 높이에서 헤더와 톱섹션을 뺀 최소 높이 확보 */
-    padding: 0 5px 5px 5px;
+    padding: 0 8px 8px 8px;
 }
 
 /* 종목 정보 */
@@ -164,22 +212,28 @@ li{
     min-height: 600px; /* 원하는 최소 높이 수치 입력 */
     border: 2px solid var(--sub-blue);
     border-radius: 15px;
-    margin-right: 5px;
+    margin-right: 0;
+    background: var(--white);
 }
 
 #left-section .chart{
     flex: 1;
     width: 100%;
+    min-height: 520px;
 }
 
 #right-section{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* 뉴스 / 공시 탭*/
 #right-section .news{
     background-color: var(--light-blue);
-    padding: 5px; 
+    padding: 6px;
+    border-radius: 12px;
 }
 /* 뉴스 컨테이너 내부 스타일 */
 .news .news-container {
@@ -238,6 +292,7 @@ li{
     padding: 5px;
     margin: 3px;
     background-color: var(--white);
+    border-radius: 10px;
 }
 
 /* 탭 버튼 공통 스타일 (이전/다음 버튼 스타일 계승) */
@@ -338,5 +393,42 @@ li{
 /* 예측 탭*/
 #right-section .predict{
     width: 100%;
-    background-color: #ccc;
+    background-color: #eef4ff;
+    border: 2px solid #d9e8ff;
+    border-radius: 12px;
+    min-height: 70px;
+    padding: 14px;
+    font-weight: 600;
+    color: #36527a;
+}
+
+@media (max-width: 980px) {
+    #header {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 8px 12px;
+    }
+
+    .search-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #section-wrap {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    #left-section,
+    #right-section {
+        width: 100%;
+    }
+
+    #left-section {
+        min-height: 380px;
+    }
+
+    #left-section .chart {
+        min-height: 360px;
+    }
 }
