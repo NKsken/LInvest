@@ -41,12 +41,14 @@ def stock_page(code_tag):
 
     # NewsManager에서 반환하는 딕셔너리에서 'items'만 추출하여 전달
     news_data = news_manager.get_stock_news(stock_name, display_count=display_count, start_index=start_index)
+    dummy_stock_predict_result = 1.23
     
     return render_template('stock.html', 
                             code=code_tag,
                             stock_names=STOCK_DATA,
                             code_value=stock_name,
                             news_list=news_data['items'], # 리스트만 추출
+                            predict_result = dummy_stock_predict_result,
                             current_page=page)
 
 if __name__ == '__main__':
