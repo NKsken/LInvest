@@ -164,6 +164,7 @@ li{
     min-height: 600px; /* 원하는 최소 높이 수치 입력 */
     border: 2px solid var(--sub-blue);
     border-radius: 15px;
+    margin-right: 5px;
 }
 
 #left-section .chart{
