@@ -27,6 +27,7 @@ li{
 
 #wrap{
     width: 100%;
+    flex-direction: column;
 }
 #header{
     width: 100%;
@@ -121,12 +122,15 @@ li{
 /* 종목 정보 */
 
 #top-section{
-    box-shadow: 0 4px 8px rgba(0, 98, 255, 0.2);
-    display: block;
-    padding: 5px;
+    flex-shrink: 0;           /* 공간이 부족해도 줄어들지 않음 */
+    min-height: 50px;         /* 최소 높이 보장 */
+    height: auto;             /* 내용물(종목명, 가격)에 따라 늘어남 */
+    max-height: 15vh;         /* 화면 전체 높이의 15%를 넘지 않도록 제한 */
+    padding: 10px;
+    margin: 5px;
     border: 2px solid var(--primary-blue);
     border-radius: 15px;
-    height: 4vh;
+    box-sizing: border-box;   /* 패딩이 높이에 영향을 주지 않음 */
 }
 
 .compValue-wrap{
@@ -145,21 +149,26 @@ li{
 }
 
 #section-wrap{
-    margin: 0 auto;
-    width: 100%;
     display: flex;
+    width: 99.5%;
+    /* min-height를 설정하여 푸터가 생겨도 줄어들지 않게 함 */
+    min-height: calc(100vh - 50px - 60px); /* 화면 높이에서 헤더와 톱섹션을 뺀 최소 높이 확보 */
+    padding: 0 5px 5px 5px;
 }
 
 /* 종목 정보 */
 
 #left-section{
     width: 50%;
+    /* 내부 콘텐츠(차트 등)에 맞춰 높이가 유지되도록 설정 */
+    min-height: 600px; /* 원하는 최소 높이 수치 입력 */
     border: 2px solid var(--sub-blue);
     border-radius: 15px;
 }
 
 #left-section .chart{
-
+    flex: 1;
+    width: 100%;
 }
 
 #right-section{
