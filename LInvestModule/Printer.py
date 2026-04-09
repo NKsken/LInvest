@@ -32,9 +32,9 @@ class Print:
 
         try:
             model = keras.models.load_model(file_name)
-        except FileNotFoundError:
+        except FileNotFoundError as e:
             self.ModelFitter(code)
-            return "모델이 존재하지 않아 새로 학습을 시작합니다. 다시 시도해주세요."
+            return e
         
         # 파일의 마지막 수정시간 가져오기
         file_date = datetime.datetime.fromtimestamp(os.path.getmtime(file_name)).date()
@@ -60,4 +60,4 @@ class Print:
             return prediction
         elif file_date != today:
             self.ModelFitter(code)
-            return "모델이 최신이 아니어서 새로 학습을 시작합니다. 다시 시도해주세요."
+            return np.nan

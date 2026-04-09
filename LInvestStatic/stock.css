@@ -402,6 +402,75 @@ li{
     color: #36527a;
 }
 
+/* 로딩 애니메이션 (선택 사항) */
+.loader {
+    border: 3px solid var(--gray-100);
+    border-top: 3px solid var(--primary-blue);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    margin: 10px auto;
+}
+
+/* 게이지 전체 감싸는 통 */
+.variation-container {
+    width: 100%;
+    max-width: 280px; /* 너무 넓으면 안 예쁘므로 고정 */
+    margin: 0 auto 20px;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: var(--gray-400);
+    margin-bottom: 4px;
+}
+
+/* 게이지 회색 배경 - 이게 안 보이면 바가 안 보임 */
+.gauge-background {
+    position: relative;
+    width: 100%;
+    height: 10px; /* 높이가 반드시 있어야 함 */
+    background-color: #e9ecef; /* 연한 회색 */
+    border-radius: 5px;
+    overflow: hidden; /* 바가 튀어나가지 않게 */
+}
+
+.center-line {
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #adb5bd;
+    z-index: 2;
+}
+
+/* 움직이는 게이지 바 본체 */
+.gauge-bar {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 0%; /* 기본값 0 */
+    left: 50%; /* 시작점 중앙 */
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 1;
+}
+
+/* 성공 시 입혀질 색상 클래스 */
+.gauge-up { background-color: #ff8484 !important; }   /* 빨간색 */
+.gauge-down { background-color: #0062FF !important; } /* 파란색 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 @media (max-width: 980px) {
     #header {
         flex-wrap: wrap;

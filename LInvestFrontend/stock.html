@@ -1,61 +1,82 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESL {{code_value}}</title>
-    <link rel='stylesheet' href='index.css'>
-    <link rel="stylesheet" href="{{ url_for('static', filename='stock.css') }}">
-</head>
-<body>
-    <div id = 'wrap'>
-        <div id = "header">
-            <h1 class = 'logo'>
-                <a href = "{{url_for('index')}}">ESL Invest</a>
-            </h1>
-            <nav class = 'nav'>
-                <ul>
-                    <li><a href = "#">메뉴1</a></li>
-                </ul>
-            </nav>
-            <div class="search-box">
-                <div class="search-container">
-                    <form action="/search" method="get" class="search-box" autocomplete="off">
-                        <input type="text" name="query" id="stockInput" placeholder="종목명 또는 코드 입력" required>
-                    </form>
-                    <div id="autocomplete-list" class="autocomplete-items"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ESL {{code_value}}</title>
+        <link rel='stylesheet' href='index.css'>
+        <link rel="stylesheet" href="{{ url_for('static', filename='stock.css') }}">
+    </head>
+    <body>
+        <div id = 'wrap'>
+            <div id = "header">
+                <h1 class = 'logo'>
+                    <a href = "{{url_for('index')}}">ESL Invest</a>
+                </h1>
+                <nav class = 'nav'>
+                    <ul>
+                        <li><a href = "#">메뉴1</a></li>
+                    </ul>
+                </nav>
+                <div class="search-box">
+                    <div class="search-container">
+                        <form action="/search" method="get" class="search-box" autocomplete="off">
+                            <input type="text" name="query" id="stockInput" placeholder="종목명 또는 코드 입력" required>
+                        </form>
+                        <div id="autocomplete-list" class="autocomplete-items"></div>
+                    </div>
                 </div>
+                <!-- header -->
             </div>
-            <!-- header -->
-        </div>
 
-        <div id = 'top-section'>
-            <div class = 'company'>
-                <div class = 'compValue-wrap'>
-                    <p class = 'compName'>{{code_value}}</p> <p class = 'compCode'>{{code}}</p>
-                </div>
-                <div class = 'compStock-wrap'>
-                    <p class = 'now'>199,000원</p>
-                    <p class = 'past'>어제보다 +0.37%</p>
-                </div>
-            </div>
-        </div>
-        <div id = 'section-wrap'>
-            <div id = 'left-section'>
-                <div class = 'chart'>
+            <div id = 'top-section'>
+                <div class = 'company'>
+                    <div class = 'compValue-wrap'>
+                        <p class = 'compName'>{{code_value}}</p> <p class = 'compCode'>{{code}}</p>
+                    </div>
+                    <div class = 'compStock-wrap'>
+                        <p class = 'now'>199,000원</p>
+                        <p class = 'past'>어제보다 +0.37%</p>
+                    </div>
                 </div>
             </div>
-            <div id = 'right-section'>
-                <div class = 'predict'>
-                    {{ predict_result }}
+            <div id = 'section-wrap'>
+                <div id = 'left-section'>
+                    <div class = 'chart'>
+                    </div>
                 </div>
+                <div id = 'right-section'>
+                    <div class='predict'>
+                        <div id="predict-wrap" style="width: 100%; padding: 20px;">
+                            <h4 style="text-align: center; color: var(--primary-blue); margin-bottom: 15px;">AI 예측 결과</h4>
+                            
+                            <div class="variation-container">
+                                <div class="range-labels">
+                                    <span>-30%</span>
+                                    <span>0%</span>
+                                    <span>+30%</span>
+                                </div>
+                                <div class="gauge-background">
+                                    <div class="center-line"></div>
+                                    <div id="gauge-bar" class="gauge-bar"></div>
+                                </div>
+                            </div>
+                    
+                            <div id="predict-status" style="text-align: center;">
+                                <p class="empty-msg">아직 예측이 되지 않았습니다.</p>
+                                <button onclick="runPrediction('{{ code }}')" class="tab-btn active" style="margin-top: 10px;">
+                                    예측
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                     <div class = 'news'>
                         <div class='news-container'>
                             <div class="tab-menu">
                                 <button class="tab-btn active" onclick="showTab('news')">뉴스</button>
                                 <button class="tab-btn" onclick="showTab('dart')">공시</button>
                             </div>
-                        
+                            
                             <div id="news-tab-content" class="tab-content">
                                 <ul id="news-list">
                                     {% for news in news_list %}
@@ -63,39 +84,39 @@
                                         <div class="meta-info">
                                             <span class="source-tag">{{ news.source }}</span>
                                             <span class="date-tag">{{ news.date }}</span>
-                                        </div>
+                                    </div>
                                         <a href="{{ news.link }}" target="_blank" class="news-title">{{ news.title }}</a>
                                     </li>
                                     {% endfor %}
                                 </ul>
-                        
-                                <div class="pagination">
-                                    <button onclick="changePage(-1)" class="page-btn" 
-                                            style="{% if current_page <= 1 %}visibility: hidden; pointer-events: none;{% endif %}">
-                                        이전
-                                    </button>
-                                    
-                                    <span id="current-page-num">{{ current_page }}</span>
-                                    
-                                    <button onclick="changePage(1)" class="page-btn">다음</button>
+                            
+                                    <div class="pagination">
+                                        <button onclick="changePage(-1)" class="page-btn" 
+                                                style="{% if current_page <= 1 %}visibility: hidden; pointer-events: none;{% endif %}">
+                                            이전
+                                        </button>
+                                        
+                                        <span id="current-page-num">{{ current_page }}</span>
+                                        
+                                        <button onclick="changePage(1)" class="page-btn">다음</button>
+                                    </div>
+                                </div>
+                            
+                                <div id="dart-tab-content" class="tab-content" style="display: none;">
+                                    <p class="empty-msg">준비 중인 서비스입니다.</p>
                                 </div>
                             </div>
-                        
-                            <div id="dart-tab-content" class="tab-content" style="display: none;">
-                                <p class="empty-msg">준비 중인 서비스입니다.</p>
-                            </div>
                         </div>
-                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <script>
-        // 파이썬 딕셔너리를 JS 객체로 변환
-        const stockData = {{ stock_names | tojson | safe }};
-        const CURRENT_PAGE = parseInt("{{ current_page }}") || 1;
-    </script>
-    <script src="{{ url_for('static', filename='js/SearchBox.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/NewsPage.js') }}"></script>
-</div>
-</body>
+        <script>
+            // 파이썬 딕셔너리를 JS 객체로 변환
+            const stockData = {{ stock_names | tojson | safe }};
+            const CURRENT_PAGE = parseInt("{{ current_page }}") || 1;
+        </script>
+        <script src="{{ url_for('static', filename='js/SearchBox.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/NewsPage.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/Predict.js') }}"></script>
+    </body>
 </html>
