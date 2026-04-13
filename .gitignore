@@ -208,3 +208,6 @@ __marimo__/
 
 # Dotenv
 .env
+
+#folder
+/Python-3.13.7
