@@ -48,14 +48,49 @@ document.addEventListener("DOMContentLoaded", function() {
  * 페이지 이동 함수 (쿼리 파라미터 업데이트)
  * @param {number} step - 이동할 페이지 단계 (-1 또는 1)
  */
-function changePage(step) {
-    if (typeof CURRENT_PAGE === 'undefined') return;
-    
-    let newPage = CURRENT_PAGE + step;
-    
-    if (newPage < 1) return; // 1페이지 미만 이동 방지
-    
-    // 현재 경로에 page 파라미터를 붙여서 이동
-    const currentPath = window.location.pathname;
-    window.location.href = `${currentPath}?page=${newPage}`;
+// NewsPage.js
+async function changePage(offset) {
+    // 1. 현재 페이지와 종목 코드 가져오기
+    // HTML에 <p class="compCode">{{code}}</p> 같은 요소가 있다고 가정
+    const stockCode = document.querySelector('.compCode')?.innerText || ""; 
+    const nextPage = CURRENT_PAGE + offset;
+
+    if (nextPage < 1) return;
+
+    try {
+        // 2. 여기서 Flask에 작성한 /api/news를 호출합니다 (이게 핵심!)
+        const response = await fetch(`/api/news?code=${stockCode}&page=${nextPage}`);
+        
+        if (!response.ok) throw new Error('Network response was not ok');
+        
+        const data = await response.json();
+
+        if (data.success) {
+            // 3. 화면의 뉴스 리스트만 갈아끼우기
+            const newsListUl = document.getElementById('news-list');
+            newsListUl.innerHTML = data.news_list.map(news => `
+                <li>
+                    <div class="meta-info">
+                        <span class="source-tag">${news.source}</span>
+                        <span class="date-tag">${news.date}</span>
+                    </div>
+                    <a href="${news.link}" target="_blank" class="news-title">${news.title}</a>
+                </li>
+            `).join('');
+
+            // 4. 페이지 번호 상태 업데이트 (새로고침 없이)
+            CURRENT_PAGE = nextPage;
+            document.getElementById('current-page-num').innerText = CURRENT_PAGE;
+
+            // 5. 버튼 가시성 제어
+            const prevBtn = document.querySelector('.page-btn:first-child');
+            if (prevBtn) {
+                prevBtn.style.visibility = (CURRENT_PAGE <= 1) ? 'hidden' : 'visible';
+                prevBtn.style.pointerEvents = (CURRENT_PAGE <= 1) ? 'none' : 'auto';
+            }
+        }
+    } catch (e) {
+        console.error("비동기 뉴스 로딩 실패:", e);
+    }
 }
+

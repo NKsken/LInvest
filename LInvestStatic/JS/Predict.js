@@ -57,3 +57,66 @@ async function runPrediction(stockCode) {
         `;
     }
 }
+// 예측 결과를 화면에 그리는 전용 함수
+function renderPredictionUI(diff, isUp) {
+    const statusContainer = document.getElementById('predict-status');
+    const gaugeBar = document.getElementById('gauge-bar');
+    
+    // 현재 종가(가정) - 실제 데이터가 있다면 서버에서 받아와야 합니다.
+    // 여기서는 예시로 '199,000'원을 기준으로 계산하는 로직을 넣거나 문구만 처리합니다.
+    const mockPrice = 199000; 
+    const predictedPrice = Math.round(mockPrice * (1 + diff / 100));
+
+    // 게이지 업데이트
+    const limitedDiff = Math.max(-30, Math.min(30, diff));
+    const widthPercentage = (Math.abs(limitedDiff) / 30) * 50;
+    const leftPos = isUp ? '50%' : (50 - widthPercentage) + '%';
+    
+    gaugeBar.className = 'gauge-bar ' + (isUp ? 'gauge-up' : 'gauge-down');
+    gaugeBar.style.left = leftPos;
+    gaugeBar.style.width = widthPercentage + '%';
+
+    // 텍스트 업데이트 (사용자 요청 문구 적용)
+    statusContainer.innerHTML = `
+        <div style="margin-top: 10px;">
+            <p style="font-size: 15px; color: var(--dark-navy);">
+                어제보다 <span style="color: ${isUp ? 'var(--danger-red)' : 'var(--primary-blue)'}; font-weight: bold;">
+                ${isUp ? '+' : ''}${diff}%</span>로
+            </p>
+            <p style="font-size: 16px; font-weight: bold; margin-top: 5px;">
+                오늘 종가는 <span style="text-decoration: underline;">${predictedPrice.toLocaleString()}원</span>으로 예측되었어요.
+            </p>
+        </div>
+        <button onclick="runPrediction('${document.querySelector('.compCode').innerText}')" class="tab-btn" style="margin-top: 15px; padding: 5px 15px; font-size: 11px;">다시 예측하기</button>
+    `;
+}
+
+async function runPrediction(stockCode) {
+    const statusContainer = document.getElementById('predict-status');
+    statusContainer.innerHTML = `<p>AI 분석 중...</p><div class="loader"></div>`;
+
+    try {
+        const response = await fetch('/predict', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ code: stockCode })
+        });
+        const data = await response.json();
+
+        if (data.status === "success") {
+            const diff = parseFloat(data.diff);
+            const isUp = diff >= 0;
+
+            // 1. 세션 저장소에 저장 (새로고침해도 유지되도록)
+            const predData = { diff, isUp, timestamp: new Date().getTime() };
+            sessionStorage.setItem(`pred_${stockCode}`, JSON.stringify(predData));
+
+            // 2. UI 그리기
+            renderPredictionUI(diff, isUp);
+        } else {
+            statusContainer.innerHTML = `<p class="empty-msg">${data.text}</p>`;
+        }
+    } catch (error) {
+        statusContainer.innerHTML = `<p class="empty-msg">서버 연결 실패</p>`;
+    }
+}

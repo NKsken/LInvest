@@ -78,30 +78,33 @@
                             </div>
                             
                             <div id="news-tab-content" class="tab-content">
-                                <ul id="news-list">
-                                    {% for news in news_list %}
-                                    <li>
-                                        <div class="meta-info">
-                                            <span class="source-tag">{{ news.source }}</span>
-                                            <span class="date-tag">{{ news.date }}</span>
-                                    </div>
-                                        <a href="{{ news.link }}" target="_blank" class="news-title">{{ news.title }}</a>
-                                    </li>
-                                    {% endfor %}
+                               <ul id="news-list">
+                                    {% if news_list %}
+                                        {% for news in news_list %}
+                                        <li>
+                                            <div class="meta-info">
+                                                <span class="source-tag">{{ news.source }}</span>
+                                                <span class="date-tag">{{ news.date }}</span>
+                                            </div>
+                                            <a href="{{ news.link }}" target="_blank" class="news-title">{{ news.title }}</a>
+                                        </li>
+                                        {% endfor %}
+                                    {% else %}
+                                        <p class="empty-msg">표시할 뉴스가 없습니다.</p>
+                                    {% endif %}
                                 </ul>
-                            
-                                    <div class="pagination">
-                                        <button onclick="changePage(-1)" class="page-btn" 
-                                                style="{% if current_page <= 1 %}visibility: hidden; pointer-events: none;{% endif %}">
-                                            이전
-                                        </button>
-                                        
-                                        <span id="current-page-num">{{ current_page }}</span>
-                                        
-                                        <button onclick="changePage(1)" class="page-btn">다음</button>
-                                    </div>
+
+                                <div class="pagination">
+                                    <button onclick="changePage(-1)" class="page-btn" 
+                                            style="{% if current_page <= 1 %}visibility: hidden; pointer-events: none;{% endif %}">
+                                        이전
+                                    </button>
+                                    
+                                    <span id="current-page-num">{{ current_page }}</span>
+                                    
+                                    <button onclick="changePage(1)" class="page-btn">다음</button>
                                 </div>
-                            
+                            </div>
                                 <div id="dart-tab-content" class="tab-content" style="display: none;">
                                     <p class="empty-msg">준비 중인 서비스입니다.</p>
                                 </div>
@@ -113,7 +116,11 @@
         <script>
             // 파이썬 딕셔너리를 JS 객체로 변환
             const stockData = {{ stock_names | tojson | safe }};
-            const CURRENT_PAGE = parseInt("{{ current_page }}") || 1;
+            let CURRENT_PAGE = parseInt("{{ current_page }}") || 1;
+
+            window.addEventListner("DOMContentLoaded", () => {
+                const savedData = sessionStorage.getItem(`pred_${STOCK_CODE}`);
+            })
         </script>
         <script src="{{ url_for('static', filename='js/SearchBox.js') }}"></script>
         <script src="{{ url_for('static', filename='js/NewsPage.js') }}"></script>
