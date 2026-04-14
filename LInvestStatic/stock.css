@@ -279,10 +279,21 @@ li{
     border-top: 1px solid var(--gray-100);
 }
 
-.empty-msg {
+.predicted-value-disabled{
     padding: 50px;
     text-align: center;
     color: var(--gray-400);
+}
+
+.predicted-value-enabled{
+    padding: 50px;
+    text-align: center;
+}
+
+
+.empty-msg {
+    padding: 50px;
+    text-align: center;
 }
 
 /* 뉴스 / 공시 탭 메뉴 컨테이너 */

@@ -40,13 +40,12 @@ async function runPrediction(stockCode) {
             }, 50);
 
             statusContainer.innerHTML = `
-                <p style="font-size: 16px; font-weight: bold;">내일은 ${diff}% ${isUp ? '상승' : '하락'}이 예상됩니다.</p>
-                <p class = "predicted-value">어제보다 ${isUp ? '+' : '-'}${diff}%로 예측되었어요</p>
+                <p class = "predicted-value-enabled">어제보다 ${isUp ? '+' : '-'}${diff}%로 예측되었어요</p>
                 <button onclick="runPrediction('${stockCode}')" class="tab-btn active" style="margin-top: 15px;">재시도</button>
             `;
         } else {
             statusContainer.innerHTML = `
-                <p class = "predicted-value">어제보다 +0.00%로 예측되었어요</p>
+                <p class = "predicted-value-disabled">어제보다 +0.00%로 예측되었어요</p>
                 <p class="empty-msg" style="color: var(--gray-400);">${data.text || '예측할 수 없습니다.'}</p>
                 <button onclick="runPrediction('${stockCode}')" class="tab-btn active" style="margin-top: 15px;">재시도</button>
             `;
@@ -54,7 +53,7 @@ async function runPrediction(stockCode) {
     } catch (error) {
         console.error("Prediction error:", error);
         statusContainer.innerHTML = `
-            <p class = "predicted-value">어제보다 +0.00%로 예측되었어요</p>
+            <p class = "predicted-value-disabled">어제보다 +0.00%로 예측되었어요</p>
             <p class="empty-msg" style="font-size: 12px;">오류: ${error.message}</p>
             <button onclick="runPrediction('${stockCode}')" class="tab-btn active" style="margin-top: 15px;">재시도</button>
         `;
@@ -82,7 +81,7 @@ function renderPredictionUI(diff, isUp) {
 
 async function runPrediction(stockCode) {
     const statusContainer = document.getElementById('predict-status');
-    statusContainer.innerHTML = `<p>AI 분석 중...</p><div class="loader"></div>`;
+    statusContainer.innerHTML = `<p style="padding:100px;">분석 중...</p><div class="loader"></div>`;
 
     try {
         const response = await fetch('/predict', {
@@ -103,9 +102,15 @@ async function runPrediction(stockCode) {
             // 2. UI 그리기
             renderPredictionUI(diff, isUp);
         } else {
-            statusContainer.innerHTML = `<p class="empty-msg">${data.text}</p>`;
+            statusContainer.innerHTML = `
+            <p class = "predicted-value-disabled">어제보다 +0.00%로 예측되었어요</p>
+            <p class="empty-msg">${data.text}</p>
+            <button onclick="runPrediction('${stockCode}')" class="tab-btn active" style="margin-top: 15px;">재시도</button>
+            `
         }
     } catch (error) {
-        statusContainer.innerHTML = `<p class="empty-msg">서버 연결 실패</p>`;
+        statusContainer.innerHTML = `<p class="empty-msg">서버 연결 실패</p>
+        <button onclick="runPrediction('${stockCode}')" class="tab-btn active" style="margin-top: 15px;">재시도</button>
+        `;
     }
 }
