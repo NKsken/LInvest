@@ -34,6 +34,7 @@
     --teal-soft: #d9f7f7;
     --orange: #ff9f43;
     --orange-soft: #ffe7cc;
+    --wishlist-yellow: #ffee00;
 }
 
 *{
@@ -172,6 +173,13 @@ li{
     box-sizing: border-box;   /* 패딩이 높이에 영향을 주지 않음 */
 }
 
+.company {
+    display: flex;
+    justify-content: space-between; /* 좌우 끝으로 배치 */
+    align-items: center;
+    width: 100%;
+}
+
 .compValue-wrap{
     display: flex;
 }
@@ -193,6 +201,38 @@ li{
     margin-top: 6px;
     gap: 10px;
     align-items: baseline;
+}
+
+.wishlist-btn {
+    background-color: transparent;
+    border: 1px solid var(--gray-300);
+    color: var(--dark-navy);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.wishlist-btn:hover {
+    background-color: var(--gray-100);
+    border-color: var(--wishlist-yellow);
+    color: var(--wishlist-yellow);
+}
+
+/* 관심 등록된 상태의 스타일 (나중에 JS로 클래스 추가) */
+.wishlist-btn.active {
+    background-color: var(--wishlist-yellow);
+    color: white;
+    border-color: var(--wishlist-yellow);
+}
+
+.wishlist-btn .star-icon {
+    font-size: 18px;
+    line-height: 1;
 }
 
 #section-wrap{

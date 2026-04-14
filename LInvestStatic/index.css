@@ -1,13 +1,39 @@
 :root {
     --primary-blue: #0062FF;      /* 메인 브랜드 컬러 */
+    --sub-blue: #2b80ff;
+    --sky-blue: #8ecbff;
+    --deep-blue: #003d99;
     --light-blue: #F0F6FF;        /* 부드러운 배경색 */
+    --soft-blue: #dbeafe;
+    --blue-50: #f5f9ff;
     --dark-navy: #1A1F2B;         /* 텍스트 및 헤더 강조색 */
+    --slate: #5f6d84;
     --gray-100: #F8F9FA;          /* 연한 회색 배경 */
+    --gray-200: #eef2f6;
+    --gray-300: #d7dde5;
     --gray-400: #ADB5BD;          /* 보조 텍스트 색상 */
+    --gray-600: #667085;
+    --graphite: #344054;
     --white: #ffffff;
+    --surface: #fbfcff;
+    --surface-2: #f3f7fc;
+    --border: #d8e2f0;
+    --border-strong: #b7c6dd;
     --open-green: #a7ff91;
+    --success-green: #2fb344;
+    --mint: #c9f7df;
     --closed-red: #ff8484;
+    --danger-red: #e03131;
+    --rose: #ffd6d6;
     --closed-gray: #b1b1b1;
+    --warning-amber: #ffca66;
+    --warning-soft: #fff4d6;
+    --purple-accent: #8c7bff;
+    --purple-soft: #ece8ff;
+    --teal: #2dc2c2;
+    --teal-soft: #d9f7f7;
+    --orange: #ff9f43;
+    --orange-soft: #ffe7cc;
 }
 
 *{
@@ -26,18 +52,27 @@ li{
 
 #wrap{
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 #header{
     width: 100%;
     display: flex;
+    align-items: center;
+    gap: 12px;
     height: 50px;
+    padding: 0 16px;
     background-color: #E5EFFF;
 }
 #header .logo{
     height: 50px;
-    padding: 0 10px 0 30px;
+    line-height: 50px;
+    padding: 0 10px;
     display: block;
     text-align: center;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .nav > ul{
@@ -51,7 +86,7 @@ li{
 }
 
 .nav > ul > li > a:hover{
-    background-color: #ddd;
+    background-color: #d7e5ff;
 }
 
 .body {

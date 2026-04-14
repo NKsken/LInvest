@@ -147,5 +147,28 @@ def get_news_api():
     except Exception as e:
         return jsonify({"success": False, "message": str(e)}), 500
     
+# app.py에 추가
+@app.route('/api/wishlist-info', methods=['POST'])
+def get_wishlist_info():
+    data = request.get_json()
+    codes = data.get('codes', [])
+    
+    result = []
+    for code in codes:
+        # STOCK_DATA에서 종목명 찾기
+        name = next((k for k, v in STOCK_DATA.items() if v == code), "알 수 없는 종목")
+        
+        # 실제 현재가를 가져오는 로직(예: 199000)을 여기에 연결하세요
+        now_price = 199000 
+        
+        result.append({
+            "code": code,
+            "name": name,
+            "price": f"{now_price:,}원",
+            "link": url_for('stock_page', code_tag=code)
+        })
+    
+    return jsonify(result)
+    
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)

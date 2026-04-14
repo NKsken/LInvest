@@ -29,14 +29,23 @@
                 <!-- header -->
             </div>
 
-            <div id = 'top-section'>
-                <div class = 'company'>
-                    <div class = 'compValue-wrap'>
-                        <p class = 'compName'>{{code_value}}</p> <p class = 'compCode'>{{code}}</p>
+            <div id="top-section">
+                <div class="company">
+                    <div class="comp-info-left">
+                        <div class="compValue-wrap">
+                            <p class="compName">{{code_value}}</p> 
+                            <p class="compCode">{{code}}</p>
+                        </div>
+                        <div class="compStock-wrap">
+                            <p class="now">199,000원</p>
+                            <p class="past">어제보다 +0.37%</p>
+                        </div>
                     </div>
-                    <div class = 'compStock-wrap'>
-                        <p class = 'now'>199,000원</p>
-                        <p class = 'past'>어제보다 +0.37%</p>
+
+                    <div class="comp-info-right">
+                        <button id="wishlist-btn" onclick="toggleWishlist()" class="wishlist-btn">
+                            <span class="star-icon">☆</span> 관심 등록
+                        </button>
                     </div>
                 </div>
             </div>
@@ -120,7 +129,7 @@
             // 파이썬 딕셔너리를 JS 객체로 변환
             const stockData = {{ stock_names | tojson | safe }};
             let CURRENT_PAGE = parseInt("{{ current_page }}") || 1;
-            const STOCK_CODE = " {{ code }}";
+            const STOCK_CODE = "{{ code }}.trim()";
             const NOW_PRICE = parseInt("{{ now_price }}") || 0; // 현재가 저장
 
             window.addEventListner("DOMContentLoaded", () => {
@@ -130,5 +139,6 @@
         <script src="{{ url_for('static', filename='js/SearchBox.js') }}"></script>
         <script src="{{ url_for('static', filename='js/NewsPage.js') }}"></script>
         <script src="{{ url_for('static', filename='js/Predict.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/Wishlist.js') }}"></script>
     </body>
 </html>
