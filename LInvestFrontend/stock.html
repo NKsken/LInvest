@@ -129,7 +129,7 @@
             // 파이썬 딕셔너리를 JS 객체로 변환
             const stockData = {{ stock_names | tojson | safe }};
             let CURRENT_PAGE = parseInt("{{ current_page }}") || 1;
-            const STOCK_CODE = "{{ code }}.trim()";
+            const STOCK_CODE = "{{ code }}".trim();
             const NOW_PRICE = parseInt("{{ now_price }}") || 0; // 현재가 저장
 
             window.addEventListner("DOMContentLoaded", () => {

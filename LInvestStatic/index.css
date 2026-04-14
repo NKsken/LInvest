@@ -205,3 +205,37 @@ li{
     display: flex;
     gap: 30px;
 }
+
+/* 인덱스 */
+
+/* 관심 종목 */
+.wishlist-section { margin-top: 40px; padding: 20px; }
+.wishlist-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+.wishlist-table th { background: var(--gray-100); padding: 12px; text-align: left; }
+.wishlist-table td { padding: 12px; border-bottom: 1px solid var(--gray-100); }
+.name-cell a { color: var(--dark-navy); text-decoration: none; font-weight: bold; }
+.buy-price-cell {
+    font-weight: bold;
+    color: var(--dark-navy);
+}
+.edit-btn {
+    /* 작성하신 스타일 유지 */
+    background: none;
+    border: 1px solid var(--mint);
+    color: var(--mint);
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.edit-btn:hover{
+    background: var(--mint);
+    color: white;
+}
+
+.delete-btn { 
+    background: none; border: 1px solid var(--danger-red); color: var(--danger-red);
+    padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 12px;
+}
+.delete-btn:hover { background: var(--danger-red); color: white; } 

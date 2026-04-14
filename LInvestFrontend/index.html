@@ -48,13 +48,13 @@
                                 <th>종목명</th>
                                 <th>종목코드</th>
                                 <th>현재가</th>
-                                <th>관리</th>
+                                <th>내가 구매한 가격</th>
+                                <th>수정</th>
+                                <th>삭제</th>
                             </tr>
                         </thead>
                         <tbody id="wishlist-body">
-                            <tr>
-                                <td colspan="4" class="empty-msg">등록된 관심 종목이 없습니다.</td>
-                            </tr>
+                            <tr><td colspan="6" class="empty-msg">데이터를 불러오는 중...</td></tr>
                         </tbody>
                     </table>
                     </div>
@@ -67,6 +67,7 @@
         </script>
         <script src="{{ url_for('static', filename='JS/SearchBox.js') }}"></script>
         <script src="{{ url_for('static', filename='JS/MarketStatus.js') }}"></script>
+        <script src="{{ url_for('static', filename='JS/MainWishList.js') }}"></script>
     </div>
 </body>
 </html>
