@@ -1,0 +1,357 @@
+{
+    "code": "005930",
+    "positive_count": 31,
+    "negative_count": 19,
+    "details": [
+        {
+            "date": "2026-04-14",
+            "title": "[N2 증시 풍향계] SK하이닉스·LS일렉트릭·미래에셋증권 강세…에프알...",
+            "sentiment": "호재",
+            "reason": "삼성전자가 주가 상승세를 보이며 긍정적인 시장 반응을 얻고 있음",
+            "link": "https://www.news2day.co.kr/article/20260414500105"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "[서울데이터랩]개장 직후 인기 검색 종목 20選",
+            "sentiment": "호재",
+            "reason": "삼성전자가 높은 검색 비율을 기록하며 투자자들의 관심을 끌고 있다.",
+            "link": "https://n.news.naver.com/mnews/article/081/0003635044?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "&quot;美·이란 물밑 대화 진행 중&quot;…코스피 2.5% 상승한 5960선[개장시황]",
+            "sentiment": "호재",
+            "reason": "코스피 상승에 따른 삼성전자 주가 상승 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008887656?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "KB Securities Sees KOSPI Moving Toward 7,500",
+            "sentiment": "호재",
+            "reason": "삼성전자가 내년에 글로벌 운영 이익 순위에서 Nvidia를 초과할 것으로 예상됨",
+            "link": "https://www.businesskorea.co.kr/news/articleView.html?idxno=267657"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "미·이란 후속 협상 기대에 코스피 2.46% 급등…6000선 재진입 시도",
+            "sentiment": "호재",
+            "reason": "미·이란 후속 협상 기대에 따른 주식 시장 상승으로 삼성전자 주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/018/0006256804?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "SK하이닉스, 장중 109만원선 터치…후속 협상 기대에 강세[특징주]",
+            "sentiment": "호재",
+            "reason": "삼성전자와 SK하이닉스의 주가 상승은 반도체 산업에 대한 긍정적인 시장 기대감을 반영",
+            "link": "https://n.news.naver.com/mnews/article/018/0006256802?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "美·이란 협상 재개 기대에…삼성전자·SK하이닉스 동반 강세[핫종목]",
+            "sentiment": "호재",
+            "reason": "美·이란 협상 재개 기대에 따른 반도체 주식 상승",
+            "link": "https://n.news.naver.com/mnews/article/421/0008887595?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "&quot;이란이 협상 원한다&quot; 美 발언에 투심 회복…프리마켓 2%대 상승",
+            "sentiment": "호재",
+            "reason": "이란과의 협상 가능성이 투자 심리를 회복시켜 주가 상승에 긍정적인 영향을 미침",
+            "link": "https://n.news.naver.com/mnews/article/421/0008887511?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "“이란 합의 원한다” 트럼프 발언에 프리마켓 2.3% 강세 [마켓시그널]",
+            "sentiment": "호재",
+            "reason": "삼성전자 주가가 2.74% 상승하며 긍정적인 시장 반응을 보이고 있다.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610386?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "“비노조원은 해고 우선 대상” 삼성 노조, 조직적 명단 관리 정황…사...",
+            "sentiment": "악재",
+            "reason": "노조 관련 법적 대응으로 인한 기업 이미지 손상 및 운영 리스크 증가",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610360?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "미, 이란 공습 재개 검토…이란 “홍해도 막겠다” 맞대응",
+            "sentiment": "호재",
+            "reason": "삼성전자가 베트남에 대한 투자를 확대함으로써 생산능력 향상과 글로벌 시장 경쟁력 강화 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610352?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "AI가 성장 이끌어도 청년 일자리 없어…정부, 참여소득 도입 추진",
+            "sentiment": "악재",
+            "reason": "노조의 개인정보 무단 수집 논란으로 인해 기업 이미지와 신뢰도에 부정적인 영향을 미칠 수 있음.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610353?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "中 황산 수출 중단·알루미늄 급등…한국 제조업 공급망 ‘경보’",
+            "sentiment": "호재",
+            "reason": "굵직한 투자 발표가 이어질 것으로 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610349?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "'노조 미가입자 색출' 의혹에…삼성전자, 경찰에 수사 의뢰",
+            "sentiment": "악재",
+            "reason": "노조 미가입자 색출 의혹으로 인해 기업 이미지와 직원 사기 저하 우려",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4409286"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "코스피, 미국·이란 협상 결렬에 주춤",
+            "sentiment": "악재",
+            "reason": "삼성전자가 2.43% 하락하여 시장 신뢰도에 부정적 영향을 미침",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1297692&inflow=N"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "&quot;그래도 협상은 계속된다&quot;…개미, 삼성전자·대우건설 집중 매수",
+            "sentiment": "호재",
+            "reason": "개인 투자자들의 대규모 순매수로 인해 주가 상승 기대감이 높아짐",
+            "link": "https://n.news.naver.com/mnews/article/421/0008887019?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "삼성전자, 에어컨 생산라인 풀가동…여름 수요 대응 속도",
+            "sentiment": "호재",
+            "reason": "에어컨 생산라인 풀가동으로 여름 수요에 효과적으로 대응",
+            "link": "https://www.nspna.com/news/?mode=view&newsid=809506"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "삼전닉스 12조 팔고 방산·에너지 샀다…외국인 '환승 쇼핑'",
+            "sentiment": "호재",
+            "reason": "삼성전자가 순매수로 전환하며 외국인 투자자들의 관심을 끌고 있다.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006256491?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "&quot;중동 이슈 둔감해진 시장&quot;…'20만전자·100만닉스' 지지[핫종목](종합)",
+            "sentiment": "호재",
+            "reason": "외국인 순매수가 이어지며 강세로 마감한 점이 긍정적",
+            "link": "https://n.news.naver.com/mnews/article/421/0008886862?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "삼성家, 아시아 갑부 3위…현대家는 16위 [마켓시그널]",
+            "sentiment": "호재",
+            "reason": "삼성의 AI 및 로봇 분야 추진이 긍정적인 성장 가능성을 시사함",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610178?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "낙폭 줄인 코스피, 5800선 선방…개인 7500억 순매수[시황종합]",
+            "sentiment": "악재",
+            "reason": "삼성전자가 하락세를 보이며 시장에서 부정적인 영향을 미쳤기 때문",
+            "link": "https://n.news.naver.com/mnews/article/421/0008886842?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "&quot;코스피 쌀 때 담자&quot;…개미들 1조 순매수에 5800선 사수",
+            "sentiment": "악재",
+            "reason": "삼성전자가 전장 대비 2.43% 하락하여 투자 심리에 부정적인 영향을 미침",
+            "link": "https://n.news.naver.com/mnews/article/018/0006256433?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "효성중공업, 코스피 사상 세 번째로 300만원 뚫었다…슈퍼사이클 질주",
+            "sentiment": "호재",
+            "reason": "삼성전자의 주가 상승세가 지속되고 있어 투자 심리가 긍정적이다.",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4409251"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "삼성전자 노조 미가입자 블랙리스트 작성 의혹…경찰 수사 의뢰",
+            "sentiment": "악재",
+            "reason": "노조 관련 법적 문제로 인해 기업 이미지와 운영에 부정적 영향 우려",
+            "link": "https://n.news.naver.com/mnews/article/421/0008886437?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "삼성전자 노조 ‘블랙리스트’ 만들었나",
+            "sentiment": "악재",
+            "reason": "노조의 블랙리스트 작성 의혹으로 인해 기업 이미지와 신뢰도가 하락할 가능성이 있음.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610138?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "'개미의 낙관론' 코스피 5800선 방어…외국인·기관 '순매도' [장중시황...",
+            "sentiment": "악재",
+            "reason": "주가 하락세로 인해 투자 심리가 위축될 가능성이 있음",
+            "link": "https://n.news.naver.com/mnews/article/421/0008886358?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "고양 장항지구 불편사항…市·시의원 공조로 해결 '실마리'",
+            "sentiment": "호재",
+            "reason": "지역 주민의 불편 사항 해결이 삼성전자와의 긍정적인 관계를 강화할 가능성이 있음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006256324?sid=102"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "&quot;코스피 쌀 때 사두자&quot; 5700선 등락…SK하닉 상승 '버팀목'",
+            "sentiment": "악재",
+            "reason": "삼성전자의 주가 하락으로 인해 시장에서 부정적인 반응이 나타남.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006256296?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "[서울데이터랩]삼성물산 4.96% 하락하며 시가총액 하락세 지속 삼성전자...",
+            "sentiment": "악재",
+            "reason": "삼성전자의 주가 하락으로 인해 시가총액이 감소하고 있어 투자 심리에 부정적인 영향을 미칠 수 있음.",
+            "link": "https://n.news.naver.com/mnews/article/081/0003634730?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "[서울데이터랩]금일 코스피 거래량 1위 남선알미늄 거래대금 4천억 돌파",
+            "sentiment": "악재",
+            "reason": "거래량 상위 종목 중 삼성전자가 2.67% 하락하여 부정적인 시장 반응을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/081/0003634732?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "삼성, ‘피지컬 AI 인재’ 키운다...SSAFY 16기 모집",
+            "sentiment": "호재",
+            "reason": "AI 인재 양성을 통해 기술 경쟁력 강화 및 미래 성장 가능성 증대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610080?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "SK하이닉스가 남긴 선례…삼성전자 드리우는 '노조 리스크'",
+            "sentiment": "악재",
+            "reason": "노조의 성과급 요구는 기업의 비용 증가로 이어질 수 있음",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4409195"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "“20만전자 깨졌을 때 사자”…초고수, 삼성전자 순매수 1위 [주식 초고...",
+            "sentiment": "호재",
+            "reason": "고수익 투자자들의 순매수 증가로 인해 주가 상승 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610074?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "오늘의 메모[4월 14일]",
+            "sentiment": "호재",
+            "reason": "주식소각으로 인한 주식 가치 상승 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610069?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "中 드론에 놀란 美…AI 군비경쟁, '핵' 등장 때처럼 불붙었다",
+            "sentiment": "호재",
+            "reason": "AI 반도체 수요 증가로 인한 사업 환경 개선 가능성",
+            "link": "https://n.news.naver.com/mnews/article/018/0006256153?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "美·이란 협상 결렬에 코스피 2%대 하락 출발…5700선서 등락",
+            "sentiment": "악재",
+            "reason": "美·이란 협상 결렬로 인한 시장 불안정성",
+            "link": "https://n.news.naver.com/mnews/article/018/0006256070?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "'미·이란 협상 결렬' 코스피 1%대 하락…개미는 '줍줍'[개장시황]",
+            "sentiment": "악재",
+            "reason": "미·이란 협상 결렬로 인한 시장 불안정성으로 주가 하락",
+            "link": "https://n.news.naver.com/mnews/article/421/0008885299?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "20만전자·100만닉스 ‘흔들’…코스피, 중동 협상 불발 2% 약세 [이런국...",
+            "sentiment": "악재",
+            "reason": "미국과 이란 간 협상 불발로 인해 투자 심리가 악화되어 주가 하락",
+            "link": "https://n.news.naver.com/mnews/article/011/0004609989?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "美·이란 협상 결렬에…다시 '20만전자·100만닉스' 하회[핫종목]",
+            "sentiment": "악재",
+            "reason": "美·이란 협상 결렬로 인해 반도체 주가 하락",
+            "link": "https://n.news.naver.com/mnews/article/421/0008885238?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "‘역대급 더위’ 예고에 삼성전자, 에어컨 생산라인 ‘풀가동’",
+            "sentiment": "호재",
+            "reason": "여름철 성수기 수요에 선제적으로 대응하여 매출 증가 기대",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1297580&inflow=N"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "'미·이란 협상 결렬' 프리마켓 2%대 하락…한때 20만전자 붕괴",
+            "sentiment": "악재",
+            "reason": "미·이란 협상 결렬로 인한 시장 불안정성",
+            "link": "https://n.news.naver.com/mnews/article/421/0008885134?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "삼전하닉 3% 빠지고, 프리마켓 2% 하락…미국-이란 협상 불발 ‘호르무...",
+            "sentiment": "악재",
+            "reason": "삼성전자의 주가가 3.11% 하락하여 시장 신뢰도에 부정적인 영향을 미침",
+            "link": "https://n.news.naver.com/mnews/article/011/0004609954?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "외국인, 왜 반도체株만 팔았나…“업황 우려보다 변동성 부담”",
+            "sentiment": "호재",
+            "reason": "삼성전자의 1분기 영업이익이 매우 강해 긍정적인 실적을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/018/0006255922?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "&quot;종전 협상 결렬은 저점 매수 기회&quot;…코스피 PER 7배 초반으로 저렴해져",
+            "sentiment": "호재",
+            "reason": "삼성전자의 1분기 영업이익 가이던스가 컨센서스를 크게 초과하여 긍정적인 실적 기대감이 높아짐.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006255899?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "갤럭시 혁신의 '틀'을 빚다…완성도 결정짓는 금형의 가치[모닝폰]",
+            "sentiment": "호재",
+            "reason": "금형 기술의 혁신이 제품 품질과 생산 효율을 향상시킬 것으로 기대됨",
+            "link": "https://n.news.naver.com/mnews/article/018/0006255884?sid=105"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "‘2030 AI팹’ 속도내는 삼성…‘연산 효율 3배’ 로봇 AI로 박차 가한다...",
+            "sentiment": "호재",
+            "reason": "AI 연산 효율 3배 향상으로 생산성 증가 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004609933?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "고유가 피해지원금 27일 지급 시작…소득 하위 70%, 최대 60만원",
+            "sentiment": "호재",
+            "reason": "삼성전자의 로봇 SW 역량 강화로 AI 상용화 가능성이 높아짐",
+            "link": "https://n.news.naver.com/mnews/article/011/0004609930?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "삼성전자, 갤S26 흥행에 1분기 글로벌 스마트폰 1위 탈환",
+            "sentiment": "호재",
+            "reason": "갤럭시S26의 흥행으로 글로벌 스마트폰 시장 점유율이 증가하여 매출 성장 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004609928?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "삼성, 로봇 AI ‘섈로파이’ 발표…판단 속도 2배·성공률 95%",
+            "sentiment": "호재",
+            "reason": "로봇 AI '섈로파이'의 판단 속도와 성공률 향상으로 경쟁력 강화 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004609927?sid=101"
+        },
+        {
+            "date": "2026-04-14",
+            "title": "삼성, 로봇 AI 연산 3분의 1로 축소…속도 2배 혁신",
+            "sentiment": "호재",
+            "reason": "로봇 AI 연산 속도 혁신으로 생산성 향상 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004609923?sid=105"
+        }
+    ]
+}

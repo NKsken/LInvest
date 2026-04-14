@@ -1,11 +1,14 @@
 import pandas as pd
 import numpy as np
+from datetime import datetime
 from News import NewsManager
 from list import list_request
 from LInvestModule.Printer import Predicter
+from LInvestModule.DataFrameRequest import Request
 from flask import Flask, render_template, redirect, url_for, request, jsonify
 
 news_manager = NewsManager()
+req = Request()
 app = Flask(__name__, template_folder='LInvestFrontend', static_folder='LInvestStatic')
 krx_list = list_request()
 pred = Predicter.Fitter()
@@ -43,12 +46,14 @@ def stock_page(code_tag):
 
     # 첫 로딩 시 보여줄 뉴스 데이터 가져오기
     news_data = news_manager.get_stock_news(stock_name, display_count=display_count, start_index=start_index)
+    now_price = 199000
     
     return render_template('stock.html', 
                             code=code_tag,
                             stock_names=STOCK_DATA,
                             code_value=stock_name,
                             news_list=news_data.get('items', []), # 이 주석을 풀어주세요!
+                            now_price=now_price,
                             current_page=page)
 
 @app.route('/predict', methods=['POST'])
@@ -143,4 +148,4 @@ def get_news_api():
         return jsonify({"success": False, "message": str(e)}), 500
     
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)

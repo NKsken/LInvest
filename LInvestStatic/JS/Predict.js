@@ -41,10 +41,12 @@ async function runPrediction(stockCode) {
 
             statusContainer.innerHTML = `
                 <p style="font-size: 16px; font-weight: bold;">내일은 ${diff}% ${isUp ? '상승' : '하락'}이 예상됩니다.</p>
+                <p class = "predicted-value">어제보다 ${isUp ? '+' : '-'}${diff}%로 예측되었어요</p>
                 <button onclick="runPrediction('${stockCode}')" class="tab-btn active" style="margin-top: 15px;">재시도</button>
             `;
         } else {
             statusContainer.innerHTML = `
+                <p class = "predicted-value">어제보다 +0.00%로 예측되었어요</p>
                 <p class="empty-msg" style="color: var(--gray-400);">${data.text || '예측할 수 없습니다.'}</p>
                 <button onclick="runPrediction('${stockCode}')" class="tab-btn active" style="margin-top: 15px;">재시도</button>
             `;
@@ -52,6 +54,7 @@ async function runPrediction(stockCode) {
     } catch (error) {
         console.error("Prediction error:", error);
         statusContainer.innerHTML = `
+            <p class = "predicted-value">어제보다 +0.00%로 예측되었어요</p>
             <p class="empty-msg" style="font-size: 12px;">오류: ${error.message}</p>
             <button onclick="runPrediction('${stockCode}')" class="tab-btn active" style="margin-top: 15px;">재시도</button>
         `;
@@ -75,20 +78,6 @@ function renderPredictionUI(diff, isUp) {
     gaugeBar.className = 'gauge-bar ' + (isUp ? 'gauge-up' : 'gauge-down');
     gaugeBar.style.left = leftPos;
     gaugeBar.style.width = widthPercentage + '%';
-
-    // 텍스트 업데이트 (사용자 요청 문구 적용)
-    statusContainer.innerHTML = `
-        <div style="margin-top: 10px;">
-            <p style="font-size: 15px; color: var(--dark-navy);">
-                어제보다 <span style="color: ${isUp ? 'var(--danger-red)' : 'var(--primary-blue)'}; font-weight: bold;">
-                ${isUp ? '+' : ''}${diff}%</span>로
-            </p>
-            <p style="font-size: 16px; font-weight: bold; margin-top: 5px;">
-                오늘 종가는 <span style="text-decoration: underline;">${predictedPrice.toLocaleString()}원</span>으로 예측되었어요.
-            </p>
-        </div>
-        <button onclick="runPrediction('${document.querySelector('.compCode').innerText}')" class="tab-btn" style="margin-top: 15px; padding: 5px 15px; font-size: 11px;">다시 예측하기</button>
-    `;
 }
 
 async function runPrediction(stockCode) {
