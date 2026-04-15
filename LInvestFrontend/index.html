@@ -25,6 +25,15 @@
                     <div id="autocomplete-list" class="autocomplete-items"></div>
                 </div>
             </div>
+            <div class="header-right">
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" onclick="toggleTheme()" />
+                        <div class="slider round"></div>
+                    </label>
+                    <span id="theme-icon">모드 표시</span>
+                </div>
+            </div>
         </div>
             <!-- header -->
         <main class = "body">
@@ -68,6 +77,7 @@
         <script src="{{ url_for('static', filename='JS/SearchBox.js') }}"></script>
         <script src="{{ url_for('static', filename='JS/MarketStatus.js') }}"></script>
         <script src="{{ url_for('static', filename='JS/MainWishList.js') }}"></script>
+        <script src="{{ url_for('static', filename='JS/Theme.js') }}"></script>
     </div>
 </body>
 </html>
