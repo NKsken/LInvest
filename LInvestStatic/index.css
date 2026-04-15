@@ -50,6 +50,12 @@ li{
     list-style: none;
 }
 
+body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f7faff;
+    color: var(--dark-navy);
+}
+
 #wrap{
     width: 100%;
     min-height: 100vh;
@@ -68,7 +74,6 @@ li{
 #header .logo{
     height: 50px;
     line-height: 50px;
-    padding: 0 10px;
     display: block;
     text-align: center;
     font-size: 18px;
@@ -89,19 +94,12 @@ li{
     background-color: #d7e5ff;
 }
 
-.body {
-    font-family: 'Pretendard', -apple-system, sans-serif;
-    background-color: var(--white);
-    color: var(--dark-navy);
-}
-
 /* 검색창 전체를 감싸는 컨테이너 */
 .search-container {
     position: relative;
-    width: 200px;
+    width: min(280px, 42vw);
     margin-left: auto;
-    margin-top: 4px;
-    padding-left: 10px;
+    margin-top: 0;
 }
 
 .search-box input {
@@ -209,7 +207,12 @@ li{
 /* 인덱스 */
 
 /* 관심 종목 */
-.wishlist-section { margin-top: 40px; padding: 20px; }
+.wishlist-section {
+    margin-top: 5px;
+    padding: 20px;
+    border: 2px solid var(--teal-soft);
+    border-radius: 12px; 
+}
 .wishlist-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
 .wishlist-table th { background: var(--gray-100); padding: 12px; text-align: left; }
 .wishlist-table td { padding: 12px; border-bottom: 1px solid var(--gray-100); }
@@ -221,8 +224,8 @@ li{
 .edit-btn {
     /* 작성하신 스타일 유지 */
     background: none;
-    border: 1px solid var(--mint);
-    color: var(--mint);
+    border: 1px solid var(--teal);
+    color: var(--teal);
     padding: 4px 8px;
     border-radius: 4px;
     cursor: pointer;
@@ -230,7 +233,7 @@ li{
 }
 
 .edit-btn:hover{
-    background: var(--mint);
+    background: var(--teal);
     color: white;
 }
 
@@ -239,3 +242,27 @@ li{
     padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 12px;
 }
 .delete-btn:hover { background: var(--danger-red); color: white; } 
+
+/* 입력창 스타일 */
+.price-input {
+    width: 100%;
+    max-width: 100px;
+    border: 1px solid var(--gray-300);
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.price-input:focus {
+    border-color: var(--teal);
+    box-shadow: 0 0 3px rgba(0, 255, 200, 0.2);
+}
+
+/* 숫자 입력창의 화살표 제거 (선택 사항) */
+.price-input::-webkit-outer-spin-button,
+.price-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
