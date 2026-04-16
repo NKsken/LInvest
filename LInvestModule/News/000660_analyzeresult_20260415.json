@@ -1,0 +1,357 @@
+{
+    "code": "000660",
+    "positive_count": 48,
+    "negative_count": 1,
+    "details": [
+        {
+            "date": "2026-04-15",
+            "title": "SK하이닉스 신고가 경신…반도체 랠리에 코스피 6140선 출발[코주부]",
+            "sentiment": "호재",
+            "reason": "SK하이닉스의 주가 상승이 전체 증시를 긍정적으로 이끌고 있음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610862?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "전고점 바짝 추격한 코스피…3%대 올라 6150선 회복[개장시황]",
+            "sentiment": "호재",
+            "reason": "코스피 상승에 따른 SK하이닉스 주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/421/0008890226?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "[서울데이터랩]개장 직후 인기 검색 종목 20選",
+            "sentiment": "호재",
+            "reason": "검색 비율 2위와 4.90% 상승세로 투자자 관심 증가",
+            "link": "https://n.news.naver.com/mnews/article/081/0003635469?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "종전 기대에 실적 모멘텀까지…삼성전자·SK하이닉스 동반 강세[특징주...",
+            "sentiment": "호재",
+            "reason": "미국과 이란 간 종전 기대와 뉴욕증시 상승으로 투자심리가 개선됨",
+            "link": "https://n.news.naver.com/mnews/article/018/0006257515?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "코스피, 종전 협상 기대에 '6000피' 안착…SK하이닉스 신고가",
+            "sentiment": "호재",
+            "reason": "SK하이닉스의 주가 상승과 신고가 경신으로 긍정적인 시장 반응이 나타남.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006257512?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "왜 미국 투자자는 삼성전자를 SK하이닉스보다 더 선호할까[갭 월드]",
+            "sentiment": "중립",
+            "reason": "K-반도체에 대한 가치 재평가가 진행 중이며, 의견이 엇갈리고 있어 긍정적 또는 부정적 요소가 혼재됨.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610853?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "SK하이닉스, 이틀 연속 신고가…코스피 6100선 회복[핫종목]",
+            "sentiment": "호재",
+            "reason": "SK하이닉스의 주가 상승이 코스피 회복에 긍정적인 영향을 미침",
+            "link": "https://n.news.naver.com/mnews/article/421/0008890183?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "“반도체 이어 에너지·증권 ‘깜짝 실적’ 전망…주가도 ‘쑥’”",
+            "sentiment": "호재",
+            "reason": "반도체 업종의 깜짝 실적 전망으로 주가 상승 기대",
+            "link": "https://n.news.naver.com/mnews/article/018/0006257465?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "미·이란 2차 협상 기대에 투심↑…프리마켓서 21만전자·116만닉스",
+            "sentiment": "호재",
+            "reason": "미·이란 2차 협상 기대에 따른 투자 심리 개선",
+            "link": "https://n.news.naver.com/mnews/article/421/0008890084?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "메모리 역대급 실적의 이면…조용히 오르는 비용",
+            "sentiment": "악재",
+            "reason": "비용 상승이 영업이익에 부정적 영향을 미칠 가능성",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4409570"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "미국發 훈풍에 삼전 3%·하닉 5%↑...프리장 2%대 강세[마켓시그널]",
+            "sentiment": "호재",
+            "reason": "미국 시장의 긍정적인 영향으로 주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610824?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "IBK證 &quot;SK하이닉스, 1분기 사상 최대 실적 전망…목표가 180만원&quot;",
+            "sentiment": "호재",
+            "reason": "1분기 사상 최대 실적 전망으로 목표주가 상향",
+            "link": "https://n.news.naver.com/mnews/article/421/0008890017?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "[코스피·코스닥,고려아연 KCC건설 진흥기업 엔씨소프트 동원산업 한국...",
+            "sentiment": "호재",
+            "reason": "증권가의 목표가 상향으로 인해 실적 기대감이 높아짐",
+            "link": "https://www.public25.com/news/articleView.html?idxno=44188"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "SK하이닉스, 1분기 영업익 사상 최대…목표가 180만원-IBK",
+            "sentiment": "호재",
+            "reason": "AI 서버 수요 증가로 메모리 가격 상승 및 실적 고성장 예상",
+            "link": "https://n.news.naver.com/mnews/article/018/0006257405?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "미·이란, 이르면 16일 2차 회담…핵 동결 기간 이견 여전",
+            "sentiment": "호재",
+            "reason": "외국인의 대규모 순매수로 인해 주가 상승 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610809?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "삼성전기, 베트남 FC-BGA 공장에 1.8조 추가 투자…누적 3조",
+            "sentiment": "호재",
+            "reason": "HBM4 대량 공급 준비로 인한 생산 효율화 및 외주 확대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610808?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "코스피, 이란 전쟁 후 43일 만에 장중 6000 터치",
+            "sentiment": "호재",
+            "reason": "HBM4 대량 공급을 위한 인력 재배치로 생산능력 향상 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610805?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "반도체 호황 속 '숨은 뇌관' 중동 리스크…장기화에 공급망 경고등",
+            "sentiment": "호재",
+            "reason": "반도체 가격 인상과 공급망 다변화로 안정적인 수익 구조 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008889954?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "코스피·코스닥 전 거래일(14일) 주요공시는?...피플바이오, 10억원 유상...",
+            "sentiment": "호재",
+            "reason": "증권가의 목표가 줄상향으로 인한 실적 기대감",
+            "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=445501"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "[주요공시] 삼성전자, 주성코퍼레이션, 금양, 삼부토건, 엔씨소프트, 압...",
+            "sentiment": "호재",
+            "reason": "SK하이닉스 주가가 6.06% 상승하며 긍정적인 시장 반응을 나타냄",
+            "link": "https://www.kdpress.co.kr/news/articleView.html?idxno=204267"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "종전 기대에 실적 모멘텀까지…코스피, 전쟁 후 첫 6000선 터치",
+            "sentiment": "호재",
+            "reason": "외국인 투자자의 대규모 순매수로 인한 주가 상승 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610668?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "삼성·SK, HBM에 역량 집중…포토마스크 외주 늘렸다",
+            "sentiment": "호재",
+            "reason": "차세대 기술에 대한 집중 투자로 경쟁력 강화 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610658?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "미국·이란 추가 협상 기대감에 코스피 5900선 탈환",
+            "sentiment": "호재",
+            "reason": "SK하이닉스의 주가 급등으로 긍정적인 시장 반응이 나타남",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1297850&inflow=N"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "[서울데이터랩]마감 직후 인기 검색 종목 20選",
+            "sentiment": "호재",
+            "reason": "검색 비율 상승과 함께 주가 상승률이 6.06%로 긍정적인 시장 반응을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/081/0003635247?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "SK하이닉스 1,103,000원 신고가…전쟁중 '육천피' 탈환 견인[핫종목](종...",
+            "sentiment": "호재",
+            "reason": "SK하이닉스가 사상 최고가를 경신하며 긍정적인 시장 반응을 이끌어냈기 때문",
+            "link": "https://n.news.naver.com/mnews/article/421/0008889302?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "코스피 '육천피' 돌파 후 상승폭 축소…5990선 마감[시황종합]",
+            "sentiment": "호재",
+            "reason": "SK하이닉스의 주가 상승률이 6.06%로 긍정적인 시장 반응을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/421/0008889293?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "'외국인 현선물 사자'에 코스피 2.74% 오른 5967 마감...'110만닉스' 달성",
+            "sentiment": "호재",
+            "reason": "실적 발표를 앞두고 주가가 상승하며 투자자 신뢰가 높아짐",
+            "link": "https://n.news.naver.com/mnews/article/018/0006257158?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "美·中 이어 한국 ‘AI 톱3’…주목 모델 5개로 존재감",
+            "sentiment": "호재",
+            "reason": "한국의 AI 및 반도체 경쟁력이 세계적으로 인정받고 있어 성장 가능성이 높음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006257132?sid=105"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "초고수 픽은 ‘삼성그룹株’…삼성전기·삼성전자 나란히 순매수 상위권...",
+            "sentiment": "호재",
+            "reason": "SK하이닉스의 어닝 서프라이즈 전망으로 긍정적인 투자 심리 형성",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610531?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "협상 기대 코스피 3.7% 올라 6020선...&quot;현·선물 사자, 달라진 외국인&quot;",
+            "sentiment": "호재",
+            "reason": "실적 발표를 앞두고 주가가 상승하며 긍정적인 시장 반응을 보임",
+            "link": "https://n.news.naver.com/mnews/article/018/0006257048?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "전쟁 둔감해진 코스피 '6000 돌파'…실적 시즌 믿고 '전쟁 리스크' 극복",
+            "sentiment": "호재",
+            "reason": "반도체 주가 상승이 코스피 지수 상승을 견인하며 긍정적인 투자 심리를 형성",
+            "link": "https://n.news.naver.com/mnews/article/421/0008888601?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "[서울데이터랩]SK스퀘어 9.14% 상승하며 급등세 기록",
+            "sentiment": "호재",
+            "reason": "SK하이닉스의 주가 상승은 긍정적인 시장 반응을 나타내며, 투자자 신뢰를 높일 수 있다.",
+            "link": "https://n.news.naver.com/mnews/article/081/0003635141?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "[ET특징주] 코스피 6000 재돌파… SK하닉·삼전 동반 상승",
+            "sentiment": "호재",
+            "reason": "SK하이닉스 주가가 7.40% 상승하며 긍정적인 시장 반응을 보이고 있음",
+            "link": "https://n.news.naver.com/mnews/article/030/0003417572?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "'전쟁 후 처음' 코스피, 장중 6000선 돌파...외국인 기관 '쌍끌이'",
+            "sentiment": "호재",
+            "reason": "SK하이닉스의 1분기 깜짝 실적 기대와 주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/243/0000096309?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "중동 전쟁도 못 말린 SK하닉 성장세…장중 52주 신고가 경신 [줍줍리포...",
+            "sentiment": "호재",
+            "reason": "중동 지정학적 위기 완화와 실적 기대감으로 매수세 유입",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610488?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "코스피, 한달 반 만에 '육천피' 회복…3%대 상승[장중시황]",
+            "sentiment": "호재",
+            "reason": "SK하이닉스 주가 급등으로 투자 심리가 회복되며 긍정적인 시장 분위기 형성",
+            "link": "https://n.news.naver.com/mnews/article/421/0008888051?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "SK하이닉스, 전쟁 악재도 뚫은 '질주'...깜짝실적 기대에 '사상최고'",
+            "sentiment": "호재",
+            "reason": "깜짝 실적 기대에 따른 주가 급등",
+            "link": "https://n.news.naver.com/mnews/article/243/0000096307?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "코스피, 30거래일만 장중 6000 재돌파...SK하닉 7%대 급등",
+            "sentiment": "호재",
+            "reason": "SK하이닉스 주가가 7.98% 상승하여 긍정적인 시장 반응을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/018/0006256913?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "[N2 증시 풍향계] SK하이닉스·LS일렉트릭·미래에셋증권 강세…에프알...",
+            "sentiment": "호재",
+            "reason": "SK하이닉스의 주가 상승이 긍정적인 시장 반응을 나타내고 있음",
+            "link": "https://www.news2day.co.kr/article/20260414500105"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "[서울데이터랩]개장 직후 인기 검색 종목 20選",
+            "sentiment": "호재",
+            "reason": "검색 비율 2위 기록과 3.75% 상승세로 투자자 관심 증가",
+            "link": "https://n.news.naver.com/mnews/article/081/0003635044?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "SK하이닉스, 7주 만에 신고가…6%대 상승해 110만원 돌파[핫종목]",
+            "sentiment": "호재",
+            "reason": "주가가 신고가를 경신하며 상승세를 보이고 있어 투자 심리가 긍정적이다.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008887677?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "&quot;美·이란 물밑 대화 진행 중&quot;…코스피 2.5% 상승한 5960선[개장시황]",
+            "sentiment": "호재",
+            "reason": "코스피 상승에 따른 SK하이닉스 주가 상승 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008887656?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "KB Securities Sees KOSPI Moving Toward 7,500",
+            "sentiment": "호재",
+            "reason": "메모리 반도체의 수익 개선으로 KOSPI 운영 이익이 증가할 것으로 예상됨",
+            "link": "https://www.businesskorea.co.kr/news/articleView.html?idxno=267657"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "AI로 재현한 창업세대 모습에…최태원 &quot;영상·음성 상당 수준&quot;",
+            "sentiment": "호재",
+            "reason": "SK그룹의 역사적 성공 사례가 긍정적인 기업 이미지와 신뢰를 강화함.",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4409356"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "최종건 '패기' 최종현 '도전정신'…AI로 되살려 공유",
+            "sentiment": "호재",
+            "reason": "SK그룹의 역사적 성공 사례가 긍정적인 기업 이미지와 신뢰를 강화함.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008887615?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "미·이란 후속 협상 기대에 코스피 2.46% 급등…6000선 재진입 시도",
+            "sentiment": "호재",
+            "reason": "코스피 급등으로 인해 SK하이닉스 주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/018/0006256804?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "SK하이닉스, 장중 109만원선 터치…후속 협상 기대에 강세[특징주]",
+            "sentiment": "호재",
+            "reason": "삼성전자와의 협상 기대감으로 주가 상승세",
+            "link": "https://n.news.naver.com/mnews/article/018/0006256802?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "美·이란 협상 재개 기대에…삼성전자·SK하이닉스 동반 강세[핫종목]",
+            "sentiment": "호재",
+            "reason": "美·이란 협상 재개 기대에 따른 반도체 주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/421/0008887595?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "&quot;이란이 협상 원한다&quot; 美 발언에 투심 회복…프리마켓 2%대 상승",
+            "sentiment": "호재",
+            "reason": "이란과의 협상 기대감으로 투자 심리가 회복되며 주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/421/0008887511?sid=101"
+        },
+        {
+            "date": "2026-04-15",
+            "title": "“이란 합의 원한다” 트럼프 발언에 프리마켓 2.3% 강세 [마켓시그널]",
+            "sentiment": "호재",
+            "reason": "SK하이닉스 주가 상승으로 긍정적인 시장 반응",
+            "link": "https://n.news.naver.com/mnews/article/011/0004610386?sid=101"
+        }
+    ]
+}

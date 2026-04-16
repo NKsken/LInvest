@@ -34,6 +34,24 @@
     --teal-soft: #d9f7f7;
     --orange: #ff9f43;
     --orange-soft: #ffe7cc;
+
+    /* 라이트 모드 테마*/
+    --bg-color: #ffffff;
+    --card-bg: #f8f9fa;
+    --text-main: #1a1a1a;
+    --text-sub: #666666;
+    --border-color: #eeeeee;
+    --header-bg: #ffffff;
+}
+
+[data-theme='dark'] {
+    --bg-color: #121212;      /* 깊은 블랙/그레이 */
+    --card-bg: #1e1e1e;      /* 카드형 요소 배경 */
+    --text-main: #e0e0e0;    /* 밝은 그레이 */
+    --text-sub: #a0a0a0;     /* 흐린 그레이 */
+    --border-color: #333333; /* 어두운 경계선 */
+    --header-bg: #1a1a1a;
+    --dark-navy: #ecf0f1;    /* 다크모드에서는 네이비 대신 밝은 톤 */
 }
 
 *{
@@ -50,29 +68,40 @@ li{
     list-style: none;
 }
 
+body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f7faff;
+    color: var(--dark-navy);
+}
+
 #wrap{
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--bg-color);
 }
-#header{
-    width: 100%;
+#header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
     gap: 12px;
-    height: 50px;
-    padding: 0 16px;
-    background-color: #E5EFFF;
+    background-color: var(--card-bg);
 }
+
 #header .logo{
     height: 50px;
     line-height: 50px;
-    padding: 0 10px;
     display: block;
     text-align: center;
     font-size: 18px;
     font-weight: 700;
+    padding-left: 16px;
+}
+
+#logo-text{
+    color: var(--text-main);
 }
 
 .nav > ul{
@@ -86,22 +115,19 @@ li{
 }
 
 .nav > ul > li > a:hover{
-    background-color: #d7e5ff;
+    background-color: var(--text-sub);
 }
 
-.body {
-    font-family: 'Pretendard', -apple-system, sans-serif;
-    background-color: var(--white);
-    color: var(--dark-navy);
+#how-to-use{
+    color: var(--text-main);
 }
 
 /* 검색창 전체를 감싸는 컨테이너 */
 .search-container {
     position: relative;
-    width: 200px;
+    width: min(280px, 42vw);
     margin-left: auto;
-    margin-top: 4px;
-    padding-left: 10px;
+    margin-top: 0;
 }
 
 .search-box input {
@@ -131,6 +157,7 @@ li{
     box-shadow: 0 8px 24px #0062ff5b;
     max-height: 300px;
     overflow-y: auto;
+    color: var(--gray-600);
     display: none; /* 기본적으로는 숨김 */
 }
 
@@ -156,6 +183,72 @@ li{
     font-size: 12px;
     color: #adb5bd;
 }
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto; /* 오른쪽 끝으로 밀기 */
+}
+
+/* 슬라이드 스위치 디자인 */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    width: 44px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 3px;
+    content: "";
+    height: 18px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 18px;
+    border-radius: 50%;
+}
+
+/* 체크되었을 때 (다크모드) 배경색 */
+input:checked + .slider {
+    background-color: var(--mint);
+}
+
+/* 체크되었을 때 원의 이동 */
+input:checked + .slider:before {
+    transform: translateX(19px);
+}
+
+#theme-icon {
+    font-size: 16px;
+    color: var(--gray-600);
+    user-select: none;
+}
+
 /* 헤더 */
 
 /* 바디 */
@@ -201,7 +294,7 @@ li{
     padding: 5px 10px;
     margin-bottom: 5px;
 }
-#index{
+.index{
     display: flex;
     gap: 30px;
 }
@@ -209,9 +302,14 @@ li{
 /* 인덱스 */
 
 /* 관심 종목 */
-.wishlist-section { margin-top: 40px; padding: 20px; }
+.wishlist-section {
+    margin-top: 5px;
+    padding: 20px;
+    border: 2px solid var(--teal-soft);
+    border-radius: 12px; 
+}
 .wishlist-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-.wishlist-table th { background: var(--gray-100); padding: 12px; text-align: left; }
+.wishlist-table th { background: var(--gray-100); padding: 12px; text-align: left; background-color: var(--bg-color); }
 .wishlist-table td { padding: 12px; border-bottom: 1px solid var(--gray-100); }
 .name-cell a { color: var(--dark-navy); text-decoration: none; font-weight: bold; }
 .buy-price-cell {
@@ -221,8 +319,8 @@ li{
 .edit-btn {
     /* 작성하신 스타일 유지 */
     background: none;
-    border: 1px solid var(--mint);
-    color: var(--mint);
+    border: 1px solid var(--teal);
+    color: var(--teal);
     padding: 4px 8px;
     border-radius: 4px;
     cursor: pointer;
@@ -230,7 +328,7 @@ li{
 }
 
 .edit-btn:hover{
-    background: var(--mint);
+    background: var(--teal);
     color: white;
 }
 
@@ -239,3 +337,27 @@ li{
     padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 12px;
 }
 .delete-btn:hover { background: var(--danger-red); color: white; } 
+
+/* 입력창 스타일 */
+.price-input {
+    width: 100%;
+    max-width: 100px;
+    border: 1px solid var(--gray-300);
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.price-input:focus {
+    border-color: var(--teal);
+    box-shadow: 0 0 3px rgba(0, 255, 200, 0.2);
+}
+
+/* 숫자 입력창의 화살표 제거 (선택 사항) */
+.price-input::-webkit-outer-spin-button,
+.price-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

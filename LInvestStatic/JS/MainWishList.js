@@ -1,16 +1,14 @@
 // static/js/MainWishlist.js
 
 async function loadWishlist() {
-    // 1. 데이터 구조 변경 대응 (객체 형태 또는 이전의 문자열 형태 모두 호환되도록 처리)
     let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
     const tableBody = document.getElementById('wishlist-body');
 
     if (wishlist.length === 0) {
-        tableBody.innerHTML = '<tr><td colspan="5" class="empty-msg">등록된 관심 종목이 없습니다.</td></tr>';
+        tableBody.innerHTML = '<tr><td colspan="6" class="empty-msg">등록된 관심 종목이 없습니다.</td></tr>';
         return;
     }
 
-    // 2. 서버 요청을 위해 코드만 추출
     const codes = wishlist.map(item => typeof item === 'object' ? item.code : item);
 
     try {
@@ -21,20 +19,36 @@ async function loadWishlist() {
         });
         const data = await response.json();
 
-        // 3. 테이블 그리기 (구매가 포함)
         tableBody.innerHTML = data.map((item, index) => {
-            // 해당 종목의 구매가 찾기
             const savedItem = wishlist.find(w => (typeof w === 'object' ? w.code : w) === item.code);
-            const buyPrice = (savedItem && savedItem.buyPrice) ? `${parseInt(savedItem.buyPrice).toLocaleString()}원` : "-";
+            const buyPrice = (savedItem && savedItem.buyPrice) ? parseInt(savedItem.buyPrice) : 0;
+            
+            // 현재가 문자열에서 숫자만 추출 (예: "199,000원" -> 199000)
+            const currentPrice = parseInt(item.price.replace(/[^0-9]/g, ""));
+            
+            let profitDisplay = "";
+            if (buyPrice > 0) {
+                // 수익률 계산
+                const profitRate = ((currentPrice - buyPrice) / buyPrice * 100).toFixed(2);
+                const isPlus = profitRate >= 0;
+                const color = isPlus ? 'var(--danger-red)' : 'var(--primary-blue)';
+                profitDisplay = `<span style="color: ${color}; font-size: 12px; margin-left: 5px;">
+                                    (${isPlus ? '+' : ''}${profitRate}%)
+                                 </span>`;
+            }
+
+            const buyPriceText = buyPrice ? `${buyPrice.toLocaleString()}원` : "-";
 
             return `
-            <tr>
+            <tr id="row-${item.code}">
                 <td class="name-cell"><a href="${item.link}">${item.name}</a></td>
                 <td>${item.code}</td>
                 <td class="price-cell">${item.price}</td>
-                <td class="buy-price-cell">${buyPrice}</td>
-                <td>
-                    <button onclick="editBuyPrice('${item.code}')" class="edit-btn">수정</button>
+                <td class="buy-price-cell" id="price-td-${item.code}">
+                    <span id="text-${item.code}">${buyPriceText}</span>
+                    ${profitDisplay} </td>
+                <td id="btn-td-${item.code}">
+                    <button onclick="switchToInput('${item.code}', '${buyPrice || ''}')" class="edit-btn">수정</button>
                 </td>
                 <td>
                     <button onclick="removeWishlistItem('${item.code}')" class="delete-btn">삭제</button>
@@ -42,24 +56,35 @@ async function loadWishlist() {
             </tr>
             `;
         }).join('');
-
-    } catch (e) {
-        console.error("로드 실패:", e);
-    }
+    } catch (e) { console.error(e); }
 }
 
-function editBuyPrice(code) {
-    const newPrice = prompt("구매하신 가격을 숫자로 입력해주세요.");
-    
-    if (newPrice === null) return; // 취소 클릭 시
-    if (isNaN(newPrice)) {
-        alert("숫자만 입력 가능합니다.");
-        return;
-    }
+// 1. 텍스트를 입력창으로 교체하는 함수
+function switchToInput(code, currentPrice) {
+    const priceTd = document.getElementById(`price-td-${code}`);
+    const btnTd = document.getElementById(`btn-td-${code}`);
 
-    let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    // 입력창으로 변경 (디자인을 위해 인라인 스타일이나 클래스 추가)
+    priceTd.innerHTML = `
+        <input type="number" id="input-${code}" value="${currentPrice}" 
+               class="price-input" placeholder="가격 입력"
+               style="width: 80px; padding: 4px; border: 1px solid var(--teal); border-radius: 4px;">
+    `;
+
+    // 버튼을 '저장'으로 변경
+    btnTd.innerHTML = `
+        <button onclick="saveBuyPrice('${code}')" class="edit-btn" style="background: var(--teal); color: white;">저장</button>
+    `;
     
-    // 데이터 구조 표준화 및 가격 업데이트
+    // 바로 포커스
+    document.getElementById(`input-${code}`).focus();
+}
+
+// 2. 입력된 값을 저장하는 함수
+function saveBuyPrice(code) {
+    const newPrice = document.getElementById(`input-${code}`).value;
+    let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
     wishlist = wishlist.map(item => {
         const itemCode = typeof item === 'object' ? item.code : item;
         if (itemCode === code) {
@@ -69,7 +94,7 @@ function editBuyPrice(code) {
     });
 
     localStorage.setItem('wishlist', JSON.stringify(wishlist));
-    loadWishlist(); // 화면 갱신
+    loadWishlist(); // 전체 리스트 다시 불러와서 UI 갱신
 }
 
 // 삭제 기능
