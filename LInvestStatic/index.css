@@ -89,6 +89,7 @@ body {
     gap: 12px;
     background-color: var(--card-bg);
 }
+
 #header .logo{
     height: 50px;
     line-height: 50px;
@@ -97,6 +98,9 @@ body {
     font-size: 18px;
     font-weight: 700;
     padding-left: 16px;
+}
+
+#logo-text{
     color: var(--text-main);
 }
 
@@ -111,7 +115,11 @@ body {
 }
 
 .nav > ul > li > a:hover{
-    background-color: #d7e5ff;
+    background-color: var(--text-sub);
+}
+
+#how-to-use{
+    color: var(--text-main);
 }
 
 /* 검색창 전체를 감싸는 컨테이너 */
@@ -149,6 +157,7 @@ body {
     box-shadow: 0 8px 24px #0062ff5b;
     max-height: 300px;
     overflow-y: auto;
+    color: var(--gray-600);
     display: none; /* 기본적으로는 숨김 */
 }
 
@@ -285,7 +294,7 @@ input:checked + .slider:before {
     padding: 5px 10px;
     margin-bottom: 5px;
 }
-#index{
+.index{
     display: flex;
     gap: 30px;
 }

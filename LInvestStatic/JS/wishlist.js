@@ -11,13 +11,13 @@ function toggleWishlist() {
         wishlist = wishlist.filter(code => code !== stockCode);
         btn.classList.remove('active');
         star.innerText = '☆';
-        btn.innerHTML = '<span class="star-icon">☆</span> 관심 등록';
+        btn.innerHTML = '<span class="star-icon">☆ 관심 등록</span>';
     } else {
         // 없다면 추가
         wishlist.push(stockCode);
         btn.classList.add('active');
         star.innerText = '★';
-        btn.innerHTML = '<span class="star-icon">★</span> 관심 종목';
+        btn.innerHTML = '<span class="star-icon">★ 관심 종목</span>';
     }
 
     // 2. localStorage에 저장

@@ -3,7 +3,6 @@
     --sub-blue: #2b80ff;
     --sky-blue: #8ecbff;
     --deep-blue: #003d99;
-    --light-blue: #F0F6FF;        /* 부드러운 배경색 */
     --soft-blue: #dbeafe;
     --blue-50: #f5f9ff;
     --dark-navy: #1A1F2B;         /* 텍스트 및 헤더 강조색 */
@@ -34,19 +33,37 @@
     --teal-soft: #d9f7f7;
     --orange: #ff9f43;
     --orange-soft: #ffe7cc;
-    --wishlist-yellow: #ffee00;
+    --wishlist-yellow: #fffb00;
+
+    /* 라이트 모드 테마*/
+    --bg-color: #ffffff;
+    --card-bg: #f8f9fa;
+    --text-main: #1a1a1a;
+    --text-sub: #666666;
+    --border-color: #eeeeee;
+    --header-bg: #ffffff;
+    --section-lightblue: #eef4ff;
+    --light-blue: #F0F6FF;        /* 부드러운 배경색 */
 }
 
-*{
+[data-theme='dark'] {
+    --bg-color: #121212;      /* 깊은 블랙/그레이 */
+    --card-bg: #1e1e1e;      /* 카드형 요소 배경 */
+    --text-main: #e0e0e0;    /* 밝은 그레이 */
+    --text-sub: #a0a0a0;     /* 흐린 그레이 */
+    --border-color: #333333; /* 어두운 경계선 */
+    --header-bg: #1a1a1a;
+    --dark-navy: #ecf0f1;    /* 다크모드에서는 네이비 대신 밝은 톤 */
+    --section-lightblue: #1a1e27;
+    --light-blue: #1E2A3A
+}
+
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: #f7faff;
-    color: var(--dark-navy);
 }
 
 a{
@@ -58,28 +75,40 @@ li{
     list-style: none;
 }
 
+body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f7faff;
+    color: var(--dark-navy);
+}
+
 #wrap{
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--bg-color);
 }
-#header{
-    width: 100%;
+#header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
     gap: 12px;
-    height: 50px;
-    background-color: #E5EFFF;
+    background-color: var(--card-bg);
 }
+
 #header .logo{
     height: 50px;
     line-height: 50px;
-    padding: 0 10px;
     display: block;
     text-align: center;
     font-size: 18px;
     font-weight: 700;
+    padding-left: 16px;
+}
+
+#logo-text{
+    color: var(--text-main);
 }
 
 .nav > ul{
@@ -93,7 +122,11 @@ li{
 }
 
 .nav > ul > li > a:hover{
-    background-color: #d7e5ff;
+    background-color: var(--text-sub);
+}
+
+#how-to-use{
+    color: var(--text-main);
 }
 
 /* 검색창 전체를 감싸는 컨테이너 */
@@ -131,6 +164,7 @@ li{
     box-shadow: 0 8px 24px #0062ff5b;
     max-height: 300px;
     overflow-y: auto;
+    color: var(--gray-600);
     display: none; /* 기본적으로는 숨김 */
 }
 
@@ -157,6 +191,73 @@ li{
     color: #adb5bd;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto; /* 오른쪽 끝으로 밀기 */
+}
+
+/* 슬라이드 스위치 디자인 */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    width: 44px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 3px;
+    content: "";
+    height: 18px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 18px;
+    border-radius: 50%;
+}
+
+/* 체크되었을 때 (다크모드) 배경색 */
+input:checked + .slider {
+    background-color: var(--mint);
+}
+
+/* 체크되었을 때 원의 이동 */
+input:checked + .slider:before {
+    transform: translateX(19px);
+}
+
+#theme-icon {
+    font-size: 16px;
+    color: var(--gray-600);
+    user-select: none;
+}
+
+/* 헤더 */
+
 /* 종목 정보 */
 
 #top-section{
@@ -170,6 +271,7 @@ li{
     border-radius: 15px;
     background: var(--white);
     box-sizing: border-box;   /* 패딩이 높이에 영향을 주지 않음 */
+    background-color: var(--bg-color);
 }
 
 .company {
@@ -217,7 +319,7 @@ li{
 }
 
 .wishlist-btn:hover {
-    background-color: var(--gray-100);
+    background-color: var(--bg-color);
     border-color: var(--wishlist-yellow);
     color: var(--wishlist-yellow);
 }
@@ -225,7 +327,7 @@ li{
 /* 관심 등록된 상태의 스타일 (나중에 JS로 클래스 추가) */
 .wishlist-btn.active {
     background-color: var(--wishlist-yellow);
-    color: white;
+    color: var(--bg-color);
     border-color: var(--wishlist-yellow);
 }
 
@@ -236,7 +338,6 @@ li{
 
 #section-wrap{
     display: flex;
-    width: 100%;
     gap: 10px;
     /* min-height를 설정하여 푸터가 생겨도 줄어들지 않게 함 */
     min-height: calc(100vh - 50px - 60px); /* 화면 높이에서 헤더와 톱섹션을 뺀 최소 높이 확보 */
@@ -246,13 +347,14 @@ li{
 /* 종목 정보 */
 
 #left-section{
-    width: 50%;
+    flex: 1 1 0;
+    min-width: 0;
     /* 내부 콘텐츠(차트 등)에 맞춰 높이가 유지되도록 설정 */
     min-height: 600px; /* 원하는 최소 높이 수치 입력 */
     border: 2px solid var(--sub-blue);
     border-radius: 15px;
     margin-right: 0;
-    background: var(--white);
+    background: var(--bg-color);
 }
 
 #left-section .chart{
@@ -262,7 +364,8 @@ li{
 }
 
 #right-section{
-    width: 50%;
+    flex: 1 1 0;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -276,7 +379,7 @@ li{
 }
 /* 뉴스 컨테이너 내부 스타일 */
 .news .news-container {
-    background: var(--white);
+    background: var(--bg-color);
     border-radius: 12px;
     overflow: hidden;
 }
@@ -341,7 +444,7 @@ li{
     gap: 10px;        /* 버튼 사이 간격 */
     padding: 5px;
     margin: 3px;
-    background-color: var(--white);
+    background-color: var(--bg-color);
     border-radius: 10px;
 }
 
@@ -349,7 +452,7 @@ li{
 .tab-btn {
     padding: 8px 20px;
     border: 1.5px solid var(--gray-100); /* 기본은 연한 회색 */
-    background-color: var(--white);
+    background-color: var(--header-bg);
     color: var(--gray-400);
     border-radius: 20px; /* 이전/다음 버튼과 동일한 곡률 */
     font-size: 13px;
@@ -442,8 +545,7 @@ li{
 
 /* 예측 탭*/
 #right-section .predict{
-    width: 100%;
-    background-color: #eef4ff;
+    background-color: var(--section-lightblue);
     border: 2px solid #d9e8ff;
     border-radius: 12px;
     min-height: 70px;
