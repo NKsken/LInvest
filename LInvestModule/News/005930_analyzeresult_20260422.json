@@ -1,0 +1,357 @@
+{
+    "code": "005930",
+    "positive_count": 38,
+    "negative_count": 9,
+    "details": [
+        {
+            "date": "2026-04-22",
+            "title": "[기업실적]삼성 하만 실적 ‘상승’…매출 15조7833억원 역대 최대",
+            "sentiment": "호재",
+            "reason": "하만의 매출과 영업이익이 역대 최대치를 기록하여 삼성전자의 성장 가능성을 높임.",
+            "link": "https://www.nspna.com/news/?mode=view&newsid=810587"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "[가보니]월드IT쇼 개막…삼성·LG·SKT 부스 북적, AI 전시 열기",
+            "sentiment": "호재",
+            "reason": "삼성전자가 차세대 디스플레이와 모바일 기술을 선보이며 시장 관심을 끌고 있다.",
+            "link": "https://www.nspna.com/news/?mode=view&newsid=810600"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "[주요공시] HD현대중공업, 삼천당제약, OCI, 유진로봇, 셀트리온, CJ 외",
+            "sentiment": "악재",
+            "reason": "반도체 대형주 차익실현으로 약세 마감",
+            "link": "https://www.kdpress.co.kr/news/articleView.html?idxno=204568"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "&quot;대륙도 K-증시 주목&quot;…中증권사, 삼성전자 목표가 35.6만 첫 제시",
+            "sentiment": "호재",
+            "reason": "중국 증권사의 목표가 제시는 삼성전자에 대한 긍정적인 시장 신뢰를 반영함.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008905977?sid=104"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "반도체 ETF, 극과극 성적표…삼성전기가 갈랐다 [코주부]",
+            "sentiment": "호재",
+            "reason": "삼성전자의 주가 상승세가 반도체 ETF에 긍정적인 영향을 미치고 있음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004613574?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "조선·방산·전력기기 날자…코스피, 6400도 뚫었다",
+            "sentiment": "중립",
+            "reason": "삼성전자가 숨을 고르는 사이 다른 산업이 강세를 보였으나, 주가는 소폭 하락하여 긍정적 또는 부정적 요소가 뚜렷하지 않음.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004613570?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "P5는 160조 투입해 쌍둥이 팹으로…HBM ‘더 많이 더 빨리’ 공급 [삼성...",
+            "sentiment": "호재",
+            "reason": "삼성전자가 대규모 투자를 통해 생산 능력을 확대하고 AI 반도체 시장에서 경쟁력을 강화하고 있음.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004613566?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "온양캠퍼스 추가 투자…후공정도 키운다[삼성 생산확대 속도전]",
+            "sentiment": "호재",
+            "reason": "온양캠퍼스에 대한 추가 투자는 반도체 생산능력 확대를 의미하며, 이는 매출 증가에 기여할 것으로 예상됨.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004613565?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "메모리 쉬어도 AI 수혜주 '풀가동'…반도체 부품·발전용 선박엔진 '날개...",
+            "sentiment": "호재",
+            "reason": "AI 인프라 확산으로 반도체 산업 전반에 긍정적인 영향을 미침",
+            "link": "https://n.news.naver.com/mnews/article/421/0008905929?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "삼성 P4 속도전…양산 반년 앞당긴다",
+            "sentiment": "호재",
+            "reason": "AI 메모리 시장 확대를 위한 P4 공장 조기 가동은 매출 증가에 기여할 것으로 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/011/0004613548?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "중동 변수에도 '실적 베팅' 통했다…코스피, 사상 첫 6400선 마감",
+            "sentiment": "호재",
+            "reason": "삼성전자의 1분기 어닝 서프라이즈로 실적 기대감이 확대되었음.",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1298786&inflow=N"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "&quot;AI 보러 왔어요&quot;…KT 박윤영, WIS서 '경쟁사 부스' 열공",
+            "sentiment": "중립",
+            "reason": "기술 동향 공유와 경쟁사 부스 방문은 시장의 경쟁력을 높일 수 있지만, 직접적인 호재나 악재 요소는 없음.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008905882?sid=105"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "&quot;2배 수익&quot; 삼전·닉스 ETF 허용…서학개미, 다시 국장으로 '유턴' 할까...",
+            "sentiment": "호재",
+            "reason": "삼성전자와 SK하이닉스의 수익률을 2배로 추종하는 ETF 출시로 투자자들의 관심이 증가할 것으로 예상됨.",
+            "link": "https://www.thepublic.kr/news/articleView.html?idxno=302110"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "“대한민국에 손실 입혀”...삼성전자 반도체 기술 中에 유출한 前연구...",
+            "sentiment": "악재",
+            "reason": "핵심 반도체 기술 유출로 인한 경쟁력 저하 우려",
+            "link": "https://n.news.naver.com/mnews/article/011/0004613507?sid=102"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "삼성 노조 집회 D-1…노조 행보에 우려 목소리 커져",
+            "sentiment": "악재",
+            "reason": "노조의 대규모 집회와 성과급 요구가 주주 가치를 훼손할 우려가 있음.",
+            "link": "http://www.newsprime.co.kr/news/article.html?no=731152"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "코스피 6417 또 최고가…외인 '팔자' 개미 1.2조 '사자' 방어 [시황종합...",
+            "sentiment": "호재",
+            "reason": "개인이 삼성전자 주식을 대량으로 매수하여 긍정적인 수요 신호를 보임",
+            "link": "https://n.news.naver.com/mnews/article/421/0008905751?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "집회 3.8만 참석 예고에 휴가 속출…삼성전자 반도체 가동 '비상'",
+            "sentiment": "악재",
+            "reason": "대규모 집회로 인한 반도체 가동 차질 우려",
+            "link": "https://n.news.naver.com/mnews/article/421/0008905722?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "코스피, 종가 기준 첫 6400선 돌파…이틀째 최고치 경신",
+            "sentiment": "호재",
+            "reason": "코스피가 종가 기준으로 6400선을 돌파하며 시장 전반의 긍정적인 분위기가 형성됨.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006263579?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "AI 전면에…통신3사, '월드IT쇼' 주도권 경쟁",
+            "sentiment": "호재",
+            "reason": "AI 관련 서비스 전시로 기술 혁신과 시장 경쟁력 강화 기대",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1298721&inflow=N"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "2026 월드IT쇼 개막…&quot;피지컬 AI와 첨단 기술들의 융합을 체험&quot;",
+            "sentiment": "호재",
+            "reason": "월드IT쇼에서 삼성전자의 첨단 기술과 피지컬 AI의 융합을 통해 시장의 관심과 투자 유치 가능성이 높아짐.",
+            "link": "http://www.newsfc.co.kr/news/articleView.html?idxno=78244"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "[현장] &quot;피지컬 AI&quot;…AI 혁신 기술 총망라 '월드IT쇼'",
+            "sentiment": "호재",
+            "reason": "삼성전자가 AI 혁신 기술을 선보이며 시장 경쟁력을 강화할 가능성이 높음",
+            "link": "http://www.newsprime.co.kr/news/article.html?no=731126"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "삼성전자, 李 대통령 방문 하노이에 ‘환영’ 옥외광고",
+            "sentiment": "호재",
+            "reason": "이재명 대통령의 국빈 방문을 환영하는 광고는 삼성전자의 브랜드 이미지와 대외 관계를 강화할 수 있다.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004613462?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "코스피 6400 터치했지만 숨고르기…반도체 차익매물 출회 [장중시황]",
+            "sentiment": "악재",
+            "reason": "반도체 주식 전반의 하락세로 인해 투자 심리가 위축됨.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008905154?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "코스피, 6400선 돌파 후 숨고르기…개인 1.6조 '사자'로 지수 방어",
+            "sentiment": "악재",
+            "reason": "삼성전자의 주가가 전 거래일 대비 하락하여 투자 심리에 부정적인 영향을 미침",
+            "link": "https://n.news.naver.com/mnews/article/018/0006263431?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "삼성·LG전자, WIS 열린 강남 코엑스서 'AI 대격돌'",
+            "sentiment": "호재",
+            "reason": "AI 제품 선보임으로 시장 경쟁력 강화",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4410996"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "이재용의 결단 빛났다…하만 인수 10년만에 영업익 27배",
+            "sentiment": "호재",
+            "reason": "하만의 영업이익이 27배 증가하여 삼성전자의 성장 가능성을 높임",
+            "link": "https://n.news.naver.com/mnews/article/011/0004613413?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "Samsung Boosts DRAM Supply to Tesla as AI-Driven Memory Demand Surges",
+            "sentiment": "호재",
+            "reason": "전기차 및 AI 메모리 수요 증가로 삼성의 DRAM 공급 확대가 긍정적인 영향을 미침",
+            "link": "https://www.econotimes.com/Samsung-Boosts-DRAM-Supply-to-Tesla-as-AI-Driven-Memory-Demand-Surges-1739652"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "주춤할 때 삼전·하닉 담는 초고수…시총 10위 오른 삼성전기는 ‘팔자...",
+            "sentiment": "호재",
+            "reason": "고수익 투자자들이 삼성전자를 순매수하여 긍정적인 투자 신호로 해석됨",
+            "link": "https://n.news.naver.com/mnews/article/011/0004613393?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "“노조의 무도한 요구에 맞서자” 500만 삼전 주주 ‘맞불 집회’ 예고",
+            "sentiment": "악재",
+            "reason": "노조의 성과급 요구가 주주 가치를 훼손할 우려가 있음.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004613381?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "삼성·LG, ‘월드IT쇼’ 참가…혁신 제품부터 AI 기술까지 망라",
+            "sentiment": "호재",
+            "reason": "삼성전자가 혁신적인 AI 기술과 제품을 선보이며 브랜드 이미지와 시장 경쟁력을 강화할 것으로 기대됨",
+            "link": "https://www.inthenews.co.kr/news/article.html?no=85900"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "삼전·SK하닉 임원들 '잭팟'…10억 이상 주식부자 반년새 5배",
+            "sentiment": "호재",
+            "reason": "임원들의 자사 주식 보유 증가가 기업에 대한 신뢰와 긍정적인 전망을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/421/0008904338?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "삼성전자, 인피니트 라인 후드 일체형 인덕션 출시",
+            "sentiment": "호재",
+            "reason": "프리미엄 가전 제품 출시로 매출 증가 기대",
+            "link": "https://www.inthenews.co.kr/news/article.html?no=85895"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "코스피, 장중 6400선 최고치 찍고 숨고르기…차익실현에 약보합",
+            "sentiment": "호재",
+            "reason": "삼성전자가 전 거래일 대비 상승하여 긍정적인 시장 반응을 보임",
+            "link": "https://n.news.naver.com/mnews/article/018/0006263231?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "코스피, 사상 최고가 찍고 하락 전환…외인·기관 '팔자'[개장시황]",
+            "sentiment": "호재",
+            "reason": "삼성전자가 상승세를 보이며 긍정적인 시장 반응을 얻었다.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008904216?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "[서울데이터랩]개장 직후 인기 검색 종목 20選",
+            "sentiment": "호재",
+            "reason": "삼성전자가 인기 검색 종목 1위로 주목받고 있어 투자자 관심이 높아짐.",
+            "link": "https://n.news.naver.com/mnews/article/081/0003637518?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "[서울데이터랩]코스피, 장 초반 6388.47서 밀려 6366.92…외국인·기관 순...",
+            "sentiment": "호재",
+            "reason": "삼성전자의 주가 상승이 긍정적인 시장 반응을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/081/0003637517?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "삼성전자, 연기·냄새 제거 인피니트 라인 후드 일체형 인덕션 출시",
+            "sentiment": "호재",
+            "reason": "신제품 출시로 인한 매출 증가 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008904070?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "&quot;코스피 전고점 돌파에도 ‘주도주는 반도체’…비반도체는 선별 접근”...",
+            "sentiment": "호재",
+            "reason": "기관의 순매수가 주가 방어에 긍정적인 영향을 미침",
+            "link": "https://www.news2day.co.kr/article/20260422500032"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "반도체 쉬고 2차전지 뛴다…프리마켓서 LG엔솔 4.39%↑",
+            "sentiment": "악재",
+            "reason": "삼성전자가 약세를 보이며 시장에서 부정적인 반응을 나타냄.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008904009?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "“분배 기능 후퇴” vs “동결도 부담”…최저임금 심의 첫날부터 평행...",
+            "sentiment": "악재",
+            "reason": "노조의 총파업 예고로 인해 생산 차질 및 경영 불확실성이 증가할 가능성이 있음.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004613265?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "HD현대-안두릴 무인함정 시제함 건조 착수…10월 시험 운항 목표",
+            "sentiment": "호재",
+            "reason": "HBM 공급 체계 구축으로 시장 점유율 경쟁에서 우위를 확보할 가능성",
+            "link": "https://n.news.naver.com/mnews/article/011/0004613263?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "채용업계 정보보호 투자 확대…사람인 IT 예산 45% 보안에 배정",
+            "sentiment": "호재",
+            "reason": "AI 메모리 공급망 강화로 시장 점유율 경쟁에서 유리한 위치 확보",
+            "link": "https://n.news.naver.com/mnews/article/011/0004613262?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "퀄컴 CEO, 삼성·SK·LG 연쇄 회동...‘AI 반도체’ 전방위 논의",
+            "sentiment": "호재",
+            "reason": "퀄컴과의 연쇄 회동을 통해 AI 반도체 분야에서 협력 가능성이 높아짐.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004613247?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "'전기 1로 열 4' 생산 유럽 히트펌프 열풍, 韓서 보일러 대체하나",
+            "sentiment": "호재",
+            "reason": "고효율 히트펌프 보일러의 기술력으로 시장 점유율 확대 가능성",
+            "link": "https://n.news.naver.com/mnews/article/421/0008903921?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "&quot;원자 한층도 자석 된다&quot;···韓, 70년 물리학계 난제 깼다",
+            "sentiment": "호재",
+            "reason": "한국의 자성 반데르발스 연구 성과가 삼성전자에 긍정적인 기술적 발전 가능성을 제공함.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006262998?sid=105"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "[주요공시] 삼성전자, 삼천당제약, 대덕전자, 셀루메드, 비츠로시스, 광...",
+            "sentiment": "호재",
+            "reason": "삼성전자가 코스피 사상 최고치 경신을 주도하며 주가 상승세를 보이고 있음.",
+            "link": "https://www.kdpress.co.kr/news/articleView.html?idxno=204502"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "내년부터 삼성 갤럭시폰에 日 교통카드 '스이카' 탑재한다",
+            "sentiment": "호재",
+            "reason": "삼성월렛에 스이카 탑재로 일본 시장에서의 결제 서비스 확대 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008903565?sid=105"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "&quot;삼성 우리가 지킨다&quot; 뿔난 주주들, 노조 총궐기 맞은편서 '맞불 집회'",
+            "sentiment": "중립",
+            "reason": "주주들의 집회가 노조와의 갈등을 나타내지만, 직접적인 경제적 영향은 미미할 것으로 보임",
+            "link": "https://n.news.naver.com/mnews/article/421/0008903542?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "이케아도 합류…삼성, 스마트싱스 생태계 넓힌다",
+            "sentiment": "호재",
+            "reason": "삼성전자가 이케아와 협력하여 스마트홈 생태계를 확장함으로써 시장 점유율 증가가 기대됨.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004613097?sid=101"
+        },
+        {
+            "date": "2026-04-22",
+            "title": "'코스피 새 역사'…반도체 끌고 이차전지·건설주 밀고",
+            "sentiment": "호재",
+            "reason": "삼성전자가 사상 최대 잠정 영업이익을 발표하며 주가가 상승세를 보였다.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008903485?sid=101"
+        }
+    ]
+}
