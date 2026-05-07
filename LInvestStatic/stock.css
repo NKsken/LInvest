@@ -304,6 +304,10 @@ input:checked + .slider:before {
     align-items: baseline;
 }
 
+.comp-info-right{
+    display: flex;
+}
+
 .wishlist-btn {
     background-color: transparent;
     border: 1px solid var(--gray-300);
@@ -334,6 +338,27 @@ input:checked + .slider:before {
 .wishlist-btn .star-icon {
     font-size: 18px;
     line-height: 1;
+}
+
+.newscollect-btn {
+    background-color: transparent;
+    border: 1px solid var(--gray-300);
+    color: var(--dark-navy);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 10px;
+}
+
+.newscollect-btn:hover{
+    background-color: var(--purple-accent);
+    color: var(--bg-color);
+    border-color: var(--purple-accent);
 }
 
 #section-wrap{

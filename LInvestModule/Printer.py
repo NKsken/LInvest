@@ -21,7 +21,7 @@ class Print:
         result = self.Pred.pred(code=code)
         return result
 
-    def Predict(self, code, window_size = 5):
+    def Predict(self, code, window_size = 1):
         """
         code : 종목코드
         """
@@ -34,7 +34,7 @@ class Print:
             model = keras.models.load_model(file_name)
         except FileNotFoundError as e:
             self.ModelFitter(code)
-            return e
+            return "파일이 없습니다"
         
         # 파일의 마지막 수정시간 가져오기
         file_date = datetime.datetime.fromtimestamp(os.path.getmtime(file_name)).date()
@@ -43,11 +43,12 @@ class Print:
         today = datetime.date.today()
         
         # 호재/악재 분석
-        self.News.auto_analyze_stock(code=code)
+        # self.News.auto_analyze_stock(code=code)
 
         if file_date == today:
             model.summary()
-            with open(os.path.join('News', f"{code}_analyzeresult_{datetime.datetime.now().strftime('%Y%m%d')}.json", encoding = 'utf-8')) as f:
+            file_path = os.path.join('LInvestModule', 'News', f"{code}_analyzeresult_{datetime.datetime.now().strftime('%Y%m%d')}.json")
+            with open(file_path, 'r', encoding = 'utf-8') as f:
                 data = json.load(f)
                 Pos = data['positive_count']
                 Neg = data['negative_count']
