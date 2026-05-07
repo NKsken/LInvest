@@ -1,0 +1,357 @@
+{
+    "code": "000660",
+    "positive_count": 46,
+    "negative_count": 4,
+    "details": [
+        {
+            "date": "2026-05-07",
+            "title": "AI·반도체 랠리에…KB운용, ETF 3위 탈환",
+            "sentiment": "호재",
+            "reason": "반도체주 급등으로 ETF 순자산 총액 증가",
+            "link": "https://n.news.naver.com/mnews/article/011/0004618457?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "반도체 강세에 종전까지…코스피, 더 날아오른다",
+            "sentiment": "호재",
+            "reason": "1분기 영업이익 급증으로 긍정적인 실적 기대",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1300200&inflow=N"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "삼전·하이닉스 5조원어치 판 외국인…그래도 코스피는 최고치",
+            "sentiment": "악재",
+            "reason": "외국인 대규모 순매도로 주가 하락 우려",
+            "link": "https://n.news.naver.com/mnews/article/018/0006275208?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "코스피 또 최고가 썼다…외인 매도에도 7490선 마감",
+            "sentiment": "호재",
+            "reason": "SK하이닉스가 장중 사상 최고가를 기록하며 긍정적인 시장 반응을 이끌어냈다.",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1300212&inflow=N"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "같은 코스피 ETF인데 수익률이 왜…삼전닉스 쏠림에 ‘희비’",
+            "sentiment": "호재",
+            "reason": "SK하이닉스의 높은 시가총액 비중이 긍정적인 투자 심리를 유도할 가능성이 있음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006275196?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "외인 사상 최대 7.1조 '매도 폭탄'에도 증권가 \"코스피 9000 간다\"",
+            "sentiment": "악재",
+            "reason": "외국인의 대규모 매도로 인한 차익 실현 우려",
+            "link": "https://n.news.naver.com/mnews/article/421/0008932076?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "‘7000피’ 코스피 1.43% 상승 마감…사흘째 종가 최고치 행진",
+            "sentiment": "호재",
+            "reason": "SK하이닉스 주가가 신고가를 경신하며 상승세를 보였다.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006275159?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "의외의 곳에서 1300억 잭팟 터졌다…'삼전·하닉' 수혜주 정체는",
+            "sentiment": "호재",
+            "reason": "삼성전자와 SK하이닉스의 주가 상승으로 금융자산 재평가 기대감 증가",
+            "link": "https://n.news.naver.com/mnews/article/018/0006275158?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "외인 7조 '매도 폭탄' 개미가 막았다…코스피 사상 첫 7400선 마감 [시황...",
+            "sentiment": "호재",
+            "reason": "외국인 매도에도 불구하고 주가 상승세 유지",
+            "link": "https://n.news.naver.com/mnews/article/421/0008931976?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "숨 고르던 삼전닉스, 개미 폭풍매수에 강세 마감[핫종목](종합)",
+            "sentiment": "호재",
+            "reason": "개인 매수세가 붙어 강세로 마감",
+            "link": "https://n.news.naver.com/mnews/article/421/0008931940?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "[마감시황] 코스피, 7490.05로 마감…장중 7531.88까지 오르며 52주 최고...",
+            "sentiment": "호재",
+            "reason": "SK하이닉스 주가가 3.31% 상승하며 긍정적인 시장 반응을 보임",
+            "link": "https://n.news.naver.com/mnews/article/081/0003641820?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "[서울데이터랩]마감 직후 인기 검색 종목 20選",
+            "sentiment": "호재",
+            "reason": "반도체 대형주에 대한 투자자 관심이 집중됨",
+            "link": "https://n.news.naver.com/mnews/article/081/0003641822?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "반도체 이어 건설·원전 상승세…종전 기대에 방산은 약세",
+            "sentiment": "호재",
+            "reason": "반도체 종목의 상승세가 긍정적인 신호로 작용",
+            "link": "https://n.news.naver.com/mnews/article/053/0000058111?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "반도체 숨고르는 사이 건설·원전 '질주'…종전 기대에 방산 '하락세'",
+            "sentiment": "호재",
+            "reason": "반도체 업종의 상승세가 나타나고 있어 긍정적인 투자 심리를 유도하고 있음",
+            "link": "https://n.news.naver.com/mnews/article/421/0008931735?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "6000조 넘은 코스피…韓 증시, 영국 이어 캐나다 넘고 세계 7위",
+            "sentiment": "호재",
+            "reason": "AI 인프라 확산에 따른 메모리 슈퍼 사이클로 주가 폭등",
+            "link": "https://n.news.naver.com/mnews/article/421/0008931641?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "50만전자·300만닉스 목표가 나왔다…\"재평가 이제 시작\"",
+            "sentiment": "호재",
+            "reason": "글로벌 경기 둔화 우려 완화로 목표주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/421/0008931579?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "[반도체 랠리, 어디까지] \"엔비디아 없이도 AI는 돌아간다\"…추론 국면...",
+            "sentiment": "호재",
+            "reason": "메모리 수요 급증으로 주가 상승 기대",
+            "link": "https://www.newspim.com/news/view/20260507000835"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "코스피, 개인·외인 수급 공방에 보합권 등락…코스닥은 약세",
+            "sentiment": "호재",
+            "reason": "52주 신고가 경신으로 투자자 신뢰 증가",
+            "link": "https://n.news.naver.com/mnews/article/018/0006274876?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "외국인 4.8조 '삼전닉스' 차익실현…코스피 하락 전환 [장중시황]",
+            "sentiment": "호재",
+            "reason": "SK하이닉스가 소폭 상승세를 보이며 긍정적인 시장 반응을 얻고 있다.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008931001?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "美·이란 협상 진전에 환율·유가 '안정'…AI발 팔천피 랠리 '순풍' 기대...",
+            "sentiment": "호재",
+            "reason": "AI 중심의 실적 장세로 주도주가 급등하고 있어 긍정적인 투자 심리 형성",
+            "link": "https://n.news.naver.com/mnews/article/421/0008930963?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "한국 증시 시총, 캐나다 제치고 세계 7위…AI 반도체 랠리",
+            "sentiment": "호재",
+            "reason": "AI 칩 시장 지배력으로 주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/018/0006274800?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "SK, 스타트업 육성 '임팩트부스터' 출범…기업당 최대 7천만원 지원",
+            "sentiment": "호재",
+            "reason": "스타트업 육성을 통한 사업 협력 기회 확대",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4413550"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "SK, 소셜벤처 성장엔진에 ‘부스터’ 꽂는다‥육성 프로그램 출범",
+            "sentiment": "호재",
+            "reason": "SK하이닉스가 소셜벤처 육성 프로그램에 참여하여 사업 지원금을 받을 수 있음.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004618262?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "GPU 그늘 벗어난 CPU…AMD·ARM, 깜짝 실적에 전망 상향",
+            "sentiment": "호재",
+            "reason": "AMD와 ARM의 실적 개선이 메모리 기업에 긍정적 영향을 미칠 수 있음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006274707?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "국민 10명 중 7명 “삼성·SK하이닉스 성과급 과도”…절반은 “사회적...",
+            "sentiment": "악재",
+            "reason": "성과급 과도 평가로 인한 사회적 반발 우려",
+            "link": "https://n.news.naver.com/mnews/article/018/0006274659?sid=105"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "하나증권, SKT '에이닷'과 협업...AI 투자정보 서비스 강화",
+            "sentiment": "호재",
+            "reason": "AI 투자정보 서비스 강화로 인한 고객 유치 기대",
+            "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065573638027271"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "외인 2.2조 차익실현에 코스피 하락 전환…\"삼전 집중 매도\"[개장시황]",
+            "sentiment": "악재",
+            "reason": "외국인의 대규모 차익실현으로 주가 하락세",
+            "link": "https://n.news.naver.com/mnews/article/421/0008930276?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "코스피, 7500선 돌파 후 하락 전환…한때 7200선까지 밀려",
+            "sentiment": "호재",
+            "reason": "52주 신고가 경신으로 투자자 신뢰 증가",
+            "link": "https://n.news.naver.com/mnews/article/018/0006274587?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "“삼전·닉스 단일 종목 레버리지 ETF 이달말 상장…최대 5.3조 유입 기대...",
+            "sentiment": "호재",
+            "reason": "레버리지 ETF 상장으로 인한 자금 유입 기대",
+            "link": "https://www.news2day.co.kr/article/20260507500047"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "[서울데이터랩]코스피, 장 초반 7499.00으로 상승…반도체·자동차 강세",
+            "sentiment": "호재",
+            "reason": "반도체 주가 상승으로 인한 긍정적 시장 반응",
+            "link": "https://n.news.naver.com/mnews/article/081/0003641654?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "하나증권, SKT ‘에이닷’ 손잡고 AI 투자정보 서비스 강화",
+            "sentiment": "호재",
+            "reason": "AI 투자정보 서비스 강화로 인한 주식 관심 증가",
+            "link": "https://n.news.naver.com/mnews/article/018/0006274565?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "삼전·하닉 이틀 연속 신고가…코스피도 7500선 돌파[핫종목]",
+            "sentiment": "호재",
+            "reason": "SK하이닉스가 사상 최고가를 기록하며 긍정적인 시장 분위기를 반영",
+            "link": "https://n.news.naver.com/mnews/article/421/0008930190?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "코스피, 종전 기대감에 장중 7500선 돌파…최고가 행진",
+            "sentiment": "호재",
+            "reason": "52주 신고가 경신으로 투자자 신뢰 증가",
+            "link": "https://n.news.naver.com/mnews/article/018/0006274558?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "28만전자·170만닉스, 프리마켓서 연일 반도체 폭등 장세",
+            "sentiment": "호재",
+            "reason": "반도체 주가 상승으로 인한 긍정적 시장 반응",
+            "link": "https://n.news.naver.com/mnews/article/421/0008930069?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "\"아직도 싸다\" 삼성전자 50만원·하이닉스 300만원 간다…\"지금이 가장 ...",
+            "sentiment": "호재",
+            "reason": "SK하이닉스의 목표주가가 대폭 상향 조정되어 저평가 구간이라는 분석이 나왔다.",
+            "link": "http://www.newsprime.co.kr/news/article.html?no=732576"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "\"코스피, 사상 최고치 행진에도 코로나 쇼크 저점보다 싸다\"",
+            "sentiment": "호재",
+            "reason": "SK하이닉스 주가 급등으로 지수 강세를 주도",
+            "link": "https://n.news.naver.com/mnews/article/018/0006274439?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "'슈퍼乙' K반도체, 선급금+최소 매출 보장 LTA 확대…수주산업 변신",
+            "sentiment": "호재",
+            "reason": "장기공급계약 확대가 안정적인 매출을 보장할 것으로 기대됨",
+            "link": "https://n.news.naver.com/mnews/article/421/0008929987?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "‘삼성·SK 천하’ 전체 시총 3분의 2 장악…현대차·LG 압도[코주부]",
+            "sentiment": "호재",
+            "reason": "반도체 쏠림 현상으로 시가총액 증가 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004618132?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "'칠천피' 6兆 순매수한 외인 믿을까…펀더멘털 연속성 '변수 주목'",
+            "sentiment": "호재",
+            "reason": "외국인 대규모 순매수세로 인한 긍정적 투자 심리",
+            "link": "https://n.news.naver.com/mnews/article/421/0008929952?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "'꿈의 칠천피'라지만 시총 절반 반도체…종목별 차별화 '대응 필요'",
+            "sentiment": "호재",
+            "reason": "반도체 산업의 시가총액 증가로 인한 긍정적인 시장 분위기",
+            "link": "https://n.news.naver.com/mnews/article/421/0008929937?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "트럼프, ‘프로젝트 프리덤’ 개시 하루 만에 중단…“이란과 합의 진전...",
+            "sentiment": "호재",
+            "reason": "코스피200 정보기술지수 급등으로 SK하이닉스 주가 상승 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004618105?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "AMD, AI 에이전트 수요 폭발에 주가 18% 급등…신고가 경신",
+            "sentiment": "호재",
+            "reason": "AMD의 AI 에이전트 수요 증가가 한국 메모리 반도체 기업에 긍정적 영향을 미칠 가능성",
+            "link": "https://n.news.naver.com/mnews/article/018/0006274401?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "\"알테오젠·삼천당이 찬물\"…7천피 축제에 코스닥은 외롭다 [7000피 시대...",
+            "sentiment": "호재",
+            "reason": "삼성전자와 SK하이닉스의 이익 증가가 코스피 상승에 기여",
+            "link": "https://n.news.naver.com/mnews/article/018/0006274331?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "삼전, 월마트 넘어 글로벌 시총 11위…하닉은 16위로",
+            "sentiment": "호재",
+            "reason": "글로벌 시총 순위 상승으로 투자자 신뢰 증가",
+            "link": "https://n.news.naver.com/mnews/article/011/0004618015?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "삼전·하닉 급등…코스피, 7000시대 개막",
+            "sentiment": "호재",
+            "reason": "삼성전자와 SK하이닉스의 급등으로 코스피가 상승세를 보임.",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1300043&inflow=N"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "“삼전닉스 2배 ETF 투자할래”…일주일 만에 1.2만명 몰렸다",
+            "sentiment": "호재",
+            "reason": "삼성전자와 SK하이닉스를 기초자산으로 한 ETF에 대한 투자자 관심 증가",
+            "link": "https://n.news.naver.com/mnews/article/421/0008929618?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "7300 돌파 코스피, 美대표지수도 넘었다…올해만 75% 상승 글로벌 '1등'[...",
+            "sentiment": "호재",
+            "reason": "외국인의 대규모 순매수로 주가 급등",
+            "link": "https://n.news.naver.com/mnews/article/018/0006274272?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "\"꿈의 칠천피 시대\"…반도체 훈풍에 7300선 뚫고 사상 최고치",
+            "sentiment": "호재",
+            "reason": "SK하이닉스가 역대 최고가를 경신하며 반도체 시장의 긍정적인 흐름을 반영",
+            "link": "http://www.newsfc.co.kr/news/articleView.html?idxno=78513"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "외인, 삼전만 3조 샀다…코스피 7384p, 시총 6000조 돌파 [시황종합]",
+            "sentiment": "호재",
+            "reason": "외국인 투자자들이 SK하이닉스를 포함한 주요 종목에 대규모 매수를 진행하여 긍정적인 시장 분위기를 조성함.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008929562?sid=101"
+        },
+        {
+            "date": "2026-05-07",
+            "title": "[코스피 7000] 천에서 삼천까지 32년 걸렸는데… '1만피' 35% 남았다",
+            "sentiment": "호재",
+            "reason": "코스피 1만 달성 가능성이 높아져 투자 심리가 개선될 것으로 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/421/0008929496?sid=101"
+        }
+    ]
+}
