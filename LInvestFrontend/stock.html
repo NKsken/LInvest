@@ -53,6 +53,8 @@
                     </div>
 
                     <div class="comp-info-right">
+                        <button id="newscollect-btn" class = "newscollect-btn" onclick="runNewsAnalyze()">뉴스 수집</button>
+                        
                         <button id="wishlist-btn" onclick="toggleWishlist()" class="wishlist-btn">
                             <span class="star-icon">☆</span> 관심 등록
                         </button>
@@ -151,5 +153,6 @@
         <script src="{{ url_for('static', filename='js/Predict.js') }}"></script>
         <script src="{{ url_for('static', filename='js/Wishlist.js') }}"></script>
         <script src="{{ url_for('static', filename='js/Theme.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/NewsAnalyze.js') }}"></script>
     </body>
 </html>

@@ -3,15 +3,17 @@ import numpy as np
 from datetime import datetime
 from News import NewsManager
 from list import list_request
-from LInvestModule.Printer import Predicter
+from LInvestModule.Printer import Print
 from LInvestModule.DataFrameRequest import Request
+from LInvestModule.News_Collecter import NewsCollector
 from flask import Flask, render_template, redirect, url_for, request, jsonify
 
 news_manager = NewsManager()
 req = Request()
 app = Flask(__name__, template_folder='LInvestFrontend', static_folder='LInvestStatic')
 krx_list = list_request()
-pred = Predicter.Fitter()
+pred = Print()
+news_collecter = NewsCollector()
 
 # 주식 데이터
 STOCK_DATA = krx_list.load()
@@ -56,6 +58,30 @@ def stock_page(code_tag):
                             now_price=now_price,
                             current_page=page)
 
+# 뉴스 수집 버튼
+@app.route('/code/api/analyze-news', methods=['POST'])
+def news_collect():
+    data = request.get_json()
+    stock_code = data.get('code')
+
+    if not stock_code:
+        return jsonify({
+            "status":"error",
+            "message":"종목 코드가 없습니다."
+        }), 400
+    # 종목 코드가 없으면 오류 메세지와 함께 400 에러 Return
+    try:
+        news_collecter.auto_analyze_stock(code = stock_code)
+        return jsonify({
+            "status":"success",
+            "message":"뉴스 분석이 완료되었습니다."
+        })
+    except Exception as e:
+        return jsonify({
+            "status":"error",
+            "message":f"오류 발생! {str(e)}"
+        })
+
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json(silent=True) or {}
@@ -68,22 +94,7 @@ def predict():
             "diff": 0
         }), 400
 
-    diff = pred.pred(code=stock_code)
-
-    if isinstance(diff, type) and diff == FileNotFoundError:
-        return jsonify({
-            "status": "noNews",
-            "text": "수집된 뉴스가 없습니다.",
-            "diff": 0
-        })
-
-    if isinstance(diff, pd.Series):
-        return jsonify({
-            "status": "noNews",
-            "text": "일부 날짜 뉴스 분석 데이터가 없어 예측할 수 없습니다.",
-            "diff": 0,
-            "missing": diff.to_dict()
-        })
+    diff = pred.Predict(code=stock_code)
 
     if isinstance(diff, np.ndarray):
         if diff.size == 0:
@@ -109,7 +120,7 @@ def predict():
         except (TypeError, ValueError):
             return jsonify({
                 "status": "error",
-                "text": f"JSON 변환 불가한 예측 결과입니다: {type(diff).__name__}",
+                "text": f"JSON 변환 불가한 예측 결과입니다: {diff}",
                 "diff": 0
             }), 500
 
