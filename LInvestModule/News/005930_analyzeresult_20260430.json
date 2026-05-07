@@ -1,0 +1,357 @@
+{
+    "code": "005930",
+    "positive_count": 36,
+    "negative_count": 12,
+    "details": [
+        {
+            "date": "2026-04-30",
+            "title": "“범용 D램도 내년까지 공급 부족”…연간 영업익 320조 넘어선다",
+            "sentiment": "호재",
+            "reason": "반도체 공급 부족으로 인한 지속적인 높은 영업이익 예상",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616544?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "파업 터지면 가동률 추락…HBM4마저 골든타임 놓칠 판",
+            "sentiment": "악재",
+            "reason": "노조 파업으로 인한 공장 가동률 저하 우려",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616521?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "반도체로 54조 번 삼성…가전은 0.2조",
+            "sentiment": "호재",
+            "reason": "반도체 부문에서 사상 최대 영업이익을 기록하며 긍정적인 실적을 보임",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616495?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "기업 공시 [4월 30일]",
+            "sentiment": "호재",
+            "reason": "삼성전자가 1주당 372원의 현금배당을 결정하여 주주 가치를 높임.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616477?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자, 반도체 53.7조 벌었는데…23만 찍고 2%↓[핫종목](종합)",
+            "sentiment": "호재",
+            "reason": "삼성전자가 53조 원 이상의 반도체 영업이익을 기록하여 긍정적인 실적을 발표함.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008921904?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "외인들 &quot;팔자&quot;...코스피 6750 최고치 찍고 6600선 깨졌다[시황종합]",
+            "sentiment": "악재",
+            "reason": "외국인 투자자들의 매도세가 지속되고 있어 주가 하락 압력이 존재함.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008921897?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "사상 최고치 찍은 코스피, FOMC·유가 부담에 6600선 내줬다[마켓시그널...",
+            "sentiment": "악재",
+            "reason": "삼성전자의 주가 하락이 투자심리에 부정적인 영향을 미칠 수 있음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616455?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "코스피, 6600선도 깨졌다…사상 최고치 찍고 급락",
+            "sentiment": "호재",
+            "reason": "1분기 역대 최대 분기 실적 발표로 주가 상승 가능성",
+            "link": "https://n.news.naver.com/mnews/article/018/0006270169?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "[증시-마감] 코스피, 국제유가 급등에 하락 마감…외인 1.4조 매도 우위",
+            "sentiment": "악재",
+            "reason": "국제 유가 급등으로 인한 시장 하방 압력",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4412714"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자, 휴머노이드 로봇 본격화…'반도체 신화' 잇는다(종합)",
+            "sentiment": "호재",
+            "reason": "휴머노이드 로봇 사업 진출로 새로운 성장 동력 확보",
+            "link": "https://n.news.naver.com/mnews/article/421/0008921810?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자, 1분기 영업익 57조원… 반도체가 94% 책임",
+            "sentiment": "호재",
+            "reason": "1분기 영업이익이 지난해 동기 대비 756.1% 증가하여 긍정적인 실적을 기록함.",
+            "link": "https://www.kyeongin.com/article/1762844"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자 노조, 산업부 장관에 &quot;노동자 악마화 엄중 경고&quot; 항의",
+            "sentiment": "악재",
+            "reason": "노조의 반발로 인해 기업의 이미지와 운영에 부정적인 영향을 미칠 가능성이 있음",
+            "link": "https://n.news.naver.com/mnews/article/421/0008921665?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "&quot;성과급 45조&quot; 삼성전자 노조에…국민 70% &quot;부적절하다&quot;",
+            "sentiment": "악재",
+            "reason": "노조의 대규모 성과급 요구가 기업의 재무 부담을 증가시킬 수 있음.",
+            "link": "https://n.news.naver.com/mnews/article/243/0000097302?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "美 '군사 옵션' 언급에 WTI 109달러 급등…코스피 낙폭 1%대로 확대[장중...",
+            "sentiment": "악재",
+            "reason": "코스피 하락에 따른 삼성전자 주가 하락",
+            "link": "https://n.news.naver.com/mnews/article/421/0008921473?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "李대통령, 삼전 노조 겨냥 &quot;일부 노동자 과도한 요구로 다른 노동자도 ...",
+            "sentiment": "악재",
+            "reason": "노조의 과도한 성과급 요구로 인해 경영 부담이 증가할 가능성이 있음.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008921452?sid=100"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성 노조, 김정관 산업부 장관에 &quot;노조 악마화&quot;",
+            "sentiment": "중립",
+            "reason": "노조의 발언은 삼성전자의 산업 내 위상을 강조하지만, 특별한 긍정적 또는 부정적 영향을 미치지 않음.",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4412674"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "코스피 6600선 아슬아슬…삼성전자, 역대급 실적에도 2%↓",
+            "sentiment": "호재",
+            "reason": "삼성전자가 역대 최대 분기 실적을 발표하여 긍정적인 투자 심리를 유도함.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006270005?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "칩플레이션에 발목 잡힌 갤럭시…삼성 &quot;비용 효율화로 방어&quot;",
+            "sentiment": "악재",
+            "reason": "칩플레이션으로 인한 모바일 사업 부진",
+            "link": "https://n.news.naver.com/mnews/article/421/0008921226?sid=105"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "[IR]삼성전자, 2Q '7세대' HBM4E 공급…설비 투자로 쇼티지 대응",
+            "sentiment": "호재",
+            "reason": "7세대 HBM4E 공급으로 시장 선점 및 공급 부족 해소 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008921180?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자, HBM4 올해 물량 완판…장기공급계약 추진 중(종합2보)",
+            "sentiment": "호재",
+            "reason": "삼성전자가 HBM4 물량을 완판하며 장기 공급 계약을 추진 중이기 때문에 안정적인 수익 기반이 마련됨.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008921175?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자, 1분기 영업익 57조로 역대 최대…'메모리가 다했다'(종합2보)",
+            "sentiment": "호재",
+            "reason": "1분기 영업익과 매출이 역대 최대를 기록하며 긍정적인 실적을 보임.",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4412652"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "반도체 50배 키운 삼성…파운드리 부활, AI글래스 신사업으로 성장 잇는...",
+            "sentiment": "호재",
+            "reason": "반도체 사업의 급성장과 신규 사업 진출로 실적 개선 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616369?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자 &quot;HBM4 캐파 솔드아웃…메모리 장기 계약 일부 완료&quot;(종합)",
+            "sentiment": "호재",
+            "reason": "HBM4의 판매 증가와 장기 계약 체결로 사업 안정성과 가시성이 향상됨",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4412646"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "‘23만 전자’ 넘보자 초고수 다시 담았다…삼성전자 순매수 1위[주식초...",
+            "sentiment": "호재",
+            "reason": "고수익 투자자들의 순매수 증가로 인해 주가 상승 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616363?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성MX, ‘S26’ 흥행에 매출 4%↑…부품가 폭등에 수익성 '우려'(종합)",
+            "sentiment": "호재",
+            "reason": "갤럭시 S26 시리즈의 견조한 판매로 매출이 증가함.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006269934?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "에릭슨 ‘6년 연속 1위’ 발표…화웨이·노키아와 3강, 삼성·ZTE 공동 4...",
+            "sentiment": "악재",
+            "reason": "삼성전자가 5G 네트워크 인프라 시장에서 4위로 공동 위치에 있어 경쟁 압박이 심화될 가능성이 있음.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006269926?sid=105"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "[기업실적]삼성전자, 실적 ‘상승’…영업이익 전년比 756%↑",
+            "sentiment": "호재",
+            "reason": "삼성전자가 역대 최대 분기 실적을 기록하여 매출과 영업이익이 크게 증가함.",
+            "link": "https://www.nspna.com/news/?mode=view&newsid=811559"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자, ‘테일러 제2 팹’ 구축 초기 검토 들어갔다...2나노 수주 호...",
+            "sentiment": "호재",
+            "reason": "2나노미터 기술 수주로 파운드리 사업 성장 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616356?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자 &quot;HBM4 캐파 솔드아웃…메모리 장기 계약 일부 완료&quot;",
+            "sentiment": "호재",
+            "reason": "HBM4의 판매 증가와 장기 계약 완료로 사업 안정성과 가시성이 향상됨",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4412626"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자, 2분기에도 '신기록' 예고…노조 파업 '최대 복병'",
+            "sentiment": "호재",
+            "reason": "반도체 슈퍼사이클에 힘입어 역대 최고 실적이 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/421/0008920914?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "[IR]삼성전자 &quot;올해 HBM 생산물량 완판…HBM4E 2분기 샘플 출하&quot;",
+            "sentiment": "호재",
+            "reason": "HBM 생산물량이 완판되어 수익 증가가 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/421/0008920893?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "[IR]삼성전자 &quot;프라이버시 디스플레이 적용 제품군 확대할 것&quot;",
+            "sentiment": "호재",
+            "reason": "프라이버시 디스플레이 기술 확대는 제품 경쟁력을 강화하고 매출 증가에 기여할 것으로 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/421/0008920877?sid=105"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자 “대형 고객사 2나노 수주 임박…조만간 가시적 성과” [컨콜...",
+            "sentiment": "호재",
+            "reason": "2나노미터 파운드리 수주로 인한 매출 증가 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616344?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "[IR] 삼성전자 &quot;제조용 로봇 우선 개발 후 홈·리테일 분야로 영역 확장...",
+            "sentiment": "호재",
+            "reason": "제조용 로봇 개발로 기술 축적 및 새로운 시장 진출 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008920846?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자 “HBM·범용D램 수익 격차 축소…균형 공급 필요” [컨콜]",
+            "sentiment": "호재",
+            "reason": "HBM과 D램의 균형 공급으로 수익성 증가 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616340?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "[IR] 삼성전자 &quot;메모리 공급 충족률 역대 최저 수준…2027년 수요 先접수...",
+            "sentiment": "악재",
+            "reason": "메모리 반도체 공급 충족률이 역대 최저 수준으로, 공급 부족이 지속될 것으로 예상됨.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008920828?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "“올해 HBM4 완판…3분기부터 HBM 매출 절반 넘겨” [컨콜]",
+            "sentiment": "호재",
+            "reason": "HBM4의 완판으로 인한 매출 증가 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616336?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자 “올 하반기 광통신모듈 대형업체와 협업” [컨콜]",
+            "sentiment": "호재",
+            "reason": "광통신모듈 대형업체와의 협업으로 신기술 경쟁력 강화",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616333?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자 “로봇 부품 내재화…가정·매장용 진출” [컨콜]",
+            "sentiment": "호재",
+            "reason": "로봇 부품 내재화로 제조 효율성과 경쟁력 강화 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616332?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "[IR] 삼성전자 &quot;중동 전쟁 반도체 생산 리스크 낮아…운송비 부담 최소...",
+            "sentiment": "호재",
+            "reason": "반도체 생산 리스크가 낮아져 안정적인 공급이 가능할 것으로 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/421/0008920774?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자 “일부 고객과 메모리 장기계약 완료”…1분기 상여 충당금은...",
+            "sentiment": "호재",
+            "reason": "AI 반도체 수요 증가에 따른 장기 공급 계약 체결로 실적 가시성 확보",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616329?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자 “고객사로부터 내년 메모리 주문 미리 접수…공급부족 심화...",
+            "sentiment": "호재",
+            "reason": "메모리 제품에 대한 고객사의 사전 주문 증가로 공급 부족이 지속될 것으로 예상됨.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616327?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자 “중동전쟁에 해상 운임 리스크 확대” [컨콜]",
+            "sentiment": "악재",
+            "reason": "중동 전쟁으로 인한 유가 상승이 해상 운송비 상승을 초래하여 비용 증가 우려",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616324?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "K반도체 투톱 실적 비교해 보니…이익 규모 삼성전자, 이익률 SK하닉",
+            "sentiment": "호재",
+            "reason": "삼성전자가 압도적인 생산능력을 바탕으로 이익 규모에서 우위를 점하고 있어 긍정적인 전망을 제시함.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008920723?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "2나노 수주 확대로 삼성 파운드리 부활…“2분기 두 자릿수 성장 전망”...",
+            "sentiment": "호재",
+            "reason": "2나노 수주 확대에 따른 파운드리 부문 매출 성장 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616317?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "[IR] 삼성전자 &quot;노조 파업에도 생산 차질 발생 않도록 최대 대응&quot;",
+            "sentiment": "호재",
+            "reason": "삼성전자가 파업에도 불구하고 생산 차질을 방지하기 위한 계획을 세웠기 때문에 안정적인 생산 유지가 기대됨.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008920722?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "코스피, 사상최고치 찍고 '오르락내리락'…연휴 앞두고 '줄다리기'",
+            "sentiment": "중립",
+            "reason": "주가가 장중 상승 후 하락하며 보합권에서 등락 중이므로 긍정적 또는 부정적 요소가 혼재됨.",
+            "link": "https://n.news.naver.com/mnews/article/243/0000097277?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "삼성전자 “1분기 판매 D램 10%·낸드 20% 늘어…가격 90% 상승” [컨콜...",
+            "sentiment": "호재",
+            "reason": "D램과 낸드 플래시 판매 증가 및 가격 상승으로 매출 성장 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004616315?sid=101"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "[IR]삼성폰 &quot;메모리 가격 상승에도 한 자릿수 수익성 확보&quot;",
+            "sentiment": "호재",
+            "reason": "메모리 가격 상승에도 불구하고 안정적인 수익성을 확보함",
+            "link": "https://n.news.naver.com/mnews/article/421/0008920706?sid=105"
+        },
+        {
+            "date": "2026-04-30",
+            "title": "[IR] 삼성전자 &quot;일부 고객사와 메모리 공급 다년 계약 완료&quot;",
+            "sentiment": "호재",
+            "reason": "다년간의 메모리 공급 계약 체결로 안정적인 매출 확보 가능",
+            "link": "https://n.news.naver.com/mnews/article/421/0008920693?sid=101"
+        }
+    ]
+}
