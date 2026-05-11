@@ -80,7 +80,7 @@
                                 </div>
                                 <div class="gauge-background">
                                     <div class="center-line"></div>
-                                    <div id="gauge-bar" class="gauge-bar"></div>
+                                    <div id="gauge-bar" class="gauge-bar"></div> 
                                 </div>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
             const STOCK_CODE = "{{ code }}".trim();
             const NOW_PRICE = parseInt("{{ now_price }}") || 0; // 현재가 저장
 
-            window.addEventListner("DOMContentLoaded", () => {
+            window.addEventListener("DOMContentLoaded", () => {
                 const savedData = sessionStorage.getItem(`pred_${STOCK_CODE}`);
             })
         </script>

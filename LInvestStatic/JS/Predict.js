@@ -1,14 +1,61 @@
+function renderPredictionUI(stockCode, diff, isUp) {
+    const statusContainer = document.getElementById('predict-status');
+    const gaugeBar = document.getElementById('gauge-bar');
+    
+    // HTML에서 선언된 현재가(NOW_PRICE) 가져오기 (없으면 0으로 처리)
+    const nowPrice = typeof NOW_PRICE !== 'undefined' ? NOW_PRICE : 0;
+    
+    // 변동 금액 계산: 현재가 * (예측퍼센트 / 100)
+    const wonDiff = Math.abs(Math.round(nowPrice * (diff / 100)));
+    const wonDiffFormatted = wonDiff.toLocaleString(); // 세자리 콤마 추가
+    
+    if (!statusContainer || !gaugeBar) return;
+
+    // 1. 게이지 수치 계산 및 최소 너비 보정
+    const limitedDiff = Math.max(-30, Math.min(30, diff));
+    let widthPercentage = (Math.abs(limitedDiff) / 30) * 50;
+    if (widthPercentage > 0 && widthPercentage < 2) widthPercentage = 2;
+    
+    const leftPos = isUp ? '50%' : (50 - widthPercentage) + '%';
+    const targetColor = isUp ? '#f44336' : '#2196f3'; 
+    const actionText = isUp ? '오를' : '내릴'; // 상승/하락 문구 선택
+
+    // 2. 애니메이션 초기화 및 실행
+    gaugeBar.style.transition = 'none';
+    gaugeBar.style.width = '0%';
+    gaugeBar.style.left = '50%';
+    gaugeBar.style.backgroundColor = '#adb5bd';
+    
+    setTimeout(() => {
+        gaugeBar.style.transition = 'all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1)';
+        gaugeBar.style.width = widthPercentage + '%';
+        gaugeBar.style.left = leftPos;
+        gaugeBar.style.backgroundColor = targetColor;
+    }, 50);
+
+    // 3. 결과 텍스트 업데이트 (요청하신 문구로 변경)
+    statusContainer.innerHTML = `
+        <div style="animation: fadeIn 0.5s ease-out;">
+            <p class="predicted-value-enabled">
+                어제보다 <span style="font-weight:bold; color:${targetColor}">${isUp ? '+' : ''}${diff.toFixed(2)}%</span>로 예측되어<br>
+                <span style="font-weight:bold; color:${targetColor}">${wonDiffFormatted}원</span> ${actionText}것 같아요
+            </p>
+            <button onclick="runPrediction('${stockCode}')" class="tab-btn active" style="margin-top: 15px;">재분석 하기</button>
+        </div>
+    `;
+}
+
 async function runPrediction(stockCode) {
     const statusContainer = document.getElementById('predict-status');
     const gaugeBar = document.getElementById('gauge-bar');
     
     if (!statusContainer || !gaugeBar) return;
 
-    // 1. 상태 초기화
-    statusContainer.innerHTML = `<p>분석 중...</p><div class="loader"></div>`;
+    // 초기 상태: 로딩 표시
+    statusContainer.innerHTML = `<p style="padding-top:100px;">분석 중...</p><div class="loader"></div>`;
     gaugeBar.style.width = '0%';
     gaugeBar.style.left = '50%';
-    gaugeBar.className = 'gauge-bar'; 
+    gaugeBar.className = 'gauge-bar';
 
     try {
         const response = await fetch('/predict', {
@@ -17,100 +64,34 @@ async function runPrediction(stockCode) {
             body: JSON.stringify({ code: stockCode })
         });
 
-        // 응답 자체가 JSON이 아닌 경우(에러 페이지 등)를 대비
-        const contentType = response.headers.get("content-type");
-        if (!contentType || !contentType.includes("application/json")) {
-            throw new Error("서버에서 올바른 응답을 받지 못했습니다. (JSON 형식 아님)");
-        }
+        if (!response.ok) throw new Error("서버 응답 오류");
 
         const data = await response.json();
 
         if (data.status === "success") {
             const diff = parseFloat(data.diff);
             const isUp = diff >= 0;
-            
-            const limitedDiff = Math.max(-30, Math.min(30, diff));
-            const widthPercentage = (Math.abs(limitedDiff) / 30) * 50;
-            const leftPos = isUp ? '50%' : (50 - widthPercentage) + '%';
-            
-            gaugeBar.classList.add(isUp ? 'gauge-up' : 'gauge-down');
-            setTimeout(() => {
-                gaugeBar.style.left = leftPos;
-                gaugeBar.style.width = widthPercentage + '%';
-            }, 50);
 
-            statusContainer.innerHTML = `
-                <p class = "predicted-value-enabled">어제보다 ${isUp ? '+' : '-'}${diff}%로 예측되었어요</p>
-                <button onclick="runPrediction('${stockCode}')" class="tab-btn active" style="margin-top: 15px;">재시도</button>
-            `;
+            // 세션 저장소에 저장 (새로고침 유지용)
+            const predData = { diff, isUp, timestamp: new Date().getTime() };
+            sessionStorage.setItem(`pred_${stockCode}`, JSON.stringify(predData));
+
+            // UI 그리기 호출
+            renderPredictionUI(stockCode, diff, isUp);
         } else {
+            // 서버에서 실패 응답을 보낸 경우 (데이터 부족 등)
             statusContainer.innerHTML = `
-                <p class = "predicted-value-disabled">어제보다 +0.00%로 예측되었어요</p>
-                <p class="empty-msg" style="color: var(--gray-400);">${data.text || '예측할 수 없습니다.'}</p>
+                <p class="predicted-value-disabled">어제보다 +0.00%로 예측되었어요</p>
+                <p class="empty-msg" style="color: #888;">${data.text || '데이터가 부족하여 예측할 수 없습니다.'}</p>
                 <button onclick="runPrediction('${stockCode}')" class="tab-btn active" style="margin-top: 15px;">재시도</button>
             `;
         }
     } catch (error) {
         console.error("Prediction error:", error);
         statusContainer.innerHTML = `
-            <p class = "predicted-value-disabled">어제보다 +0.00%로 예측되었어요</p>
-            <p class="empty-msg" style="font-size: 12px;">오류: ${error.message}</p>
+            <p class="predicted-value-disabled">분석에 실패했습니다</p>
+            <p class="empty-msg" style="font-size: 12px;">원인: ${error.message}</p>
             <button onclick="runPrediction('${stockCode}')" class="tab-btn active" style="margin-top: 15px;">재시도</button>
-        `;
-    }
-}
-// 예측 결과를 화면에 그리는 전용 함수
-function renderPredictionUI(diff, isUp) {
-    const statusContainer = document.getElementById('predict-status');
-    const gaugeBar = document.getElementById('gauge-bar');
-    
-    // 현재 종가(가정) - 실제 데이터가 있다면 서버에서 받아와야 합니다.
-    // 여기서는 예시로 '199,000'원을 기준으로 계산하는 로직을 넣거나 문구만 처리합니다.
-    const mockPrice = 199000; 
-    const predictedPrice = Math.round(mockPrice * (1 + diff / 100));
-
-    // 게이지 업데이트
-    const limitedDiff = Math.max(-30, Math.min(30, diff));
-    const widthPercentage = (Math.abs(limitedDiff) / 30) * 50;
-    const leftPos = isUp ? '50%' : (50 - widthPercentage) + '%';
-    
-    gaugeBar.className = 'gauge-bar ' + (isUp ? 'gauge-up' : 'gauge-down');
-    gaugeBar.style.left = leftPos;
-    gaugeBar.style.width = widthPercentage + '%';
-}
-
-async function runPrediction(stockCode) {
-    const statusContainer = document.getElementById('predict-status');
-    statusContainer.innerHTML = `<p style="padding:100px;">분석 중...</p><div class="loader"></div>`;
-
-    try {
-        const response = await fetch('/predict', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ code: stockCode })
-        });
-        const data = await response.json();
-
-        if (data.status === "success") {
-            const diff = parseFloat(data.diff);
-            const isUp = diff >= 0;
-
-            // 1. 세션 저장소에 저장 (새로고침해도 유지되도록)
-            const predData = { diff, isUp, timestamp: new Date().getTime() };
-            sessionStorage.setItem(`pred_${stockCode}`, JSON.stringify(predData));
-
-            // 2. UI 그리기
-            renderPredictionUI(diff, isUp);
-        } else {
-            statusContainer.innerHTML = `
-            <p class = "predicted-value-disabled">어제보다 +0.00%로 예측되었어요</p>
-            <p class="empty-msg">${data.text}</p>
-            <button onclick="runPrediction('${stockCode}')" class="tab-btn active" style="margin-top: 15px;">재시도</button>
-            `
-        }
-    } catch (error) {
-        statusContainer.innerHTML = `<p class="empty-msg">서버 연결 실패</p>
-        <button onclick="runPrediction('${stockCode}')" class="tab-btn active" style="margin-top: 15px;">재시도</button>
         `;
     }
 }

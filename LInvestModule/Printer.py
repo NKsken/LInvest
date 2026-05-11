@@ -58,6 +58,7 @@ class Print:
             pred_input = prediction_shape.reshape(sample_number, window_size, dataframe_number)
             prediction = model.predict(pred_input)
 
+            print(prediction)
             return prediction
         elif file_date != today:
             self.ModelFitter(code)

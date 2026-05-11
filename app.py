@@ -94,41 +94,50 @@ def predict():
             "diff": 0
         }), 400
 
-    diff = pred.Predict(code=stock_code)
+    try:
+        # AI 예측 실행
+        diff = pred.Predict(code=stock_code)
 
-    if isinstance(diff, np.ndarray):
-        if diff.size == 0:
-            return jsonify({
-                "status": "error",
-                "text": "예측 결과가 비어 있습니다.",
-                "diff": 0
-            }), 500
-        diff_value = float(np.asarray(diff).reshape(-1)[0])
-    else:
-        try:
-            if pd.isna(diff):
+        # 1. 넘파이 배열인 경우 처리
+        if isinstance(diff, np.ndarray):
+            if diff.size == 0:
                 return jsonify({
-                    "status": "outOfDate",
-                    "text": "학습 모델을 최신 날짜로 변경했습니다. 다시 시도해주십시오.",
+                    "status": "error",
+                    "text": "예측 결과 데이터가 없습니다.",
                     "diff": 0
-                })
-        except TypeError:
-            pass
+                }), 500
+            # 넘파이 배열을 파이썬 float으로 변환
+            diff_value = float(diff.flatten()[0])
 
-        try:
-            diff_value = float(diff)
-        except (TypeError, ValueError):
+        # 2. 결과가 NaN(학습 부족 등)인 경우 처리
+        elif pd.isna(diff):
             return jsonify({
-                "status": "error",
-                "text": f"JSON 변환 불가한 예측 결과입니다: {diff}",
+                "status": "outOfDate",
+                "text": "학습 모델이 최신이 아니거나 데이터가 부족합니다.",
                 "diff": 0
-            }), 500
+            })
 
-    return jsonify({
-        "status": "success",
-        "text": "",
-        "diff": diff_value
-    })
+        # 3. 그 외 일반 수치형인 경우
+        else:
+            diff_value = float(diff)
+
+        print(diff_value)
+
+        # 최종 성공 응답 (반드시 변환된 diff_value를 보낼 것)
+        return jsonify({
+            "status": "success",
+            "text": "분석 완료",
+            "diff": diff_value  # [중요] 넘파이 객체가 아닌 일반 숫자를 전달
+        })
+
+    except Exception as e:
+        # 서버 내부에서 에러가 나면 "분석 중" 텍스트를 에러 메시지로 교체해줌
+        print(f"Predict Error: {str(e)}")
+        return jsonify({
+            "status": "error",
+            "text": f"예측 중 오류 발생: {str(e)}",
+            "diff": 0
+        }), 500
 
 @app.route('/api/news')
 def get_news_api():

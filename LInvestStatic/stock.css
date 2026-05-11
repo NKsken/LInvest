@@ -629,15 +629,22 @@ input:checked + .slider:before {
     position: absolute;
     top: 0;
     height: 100%;
-    width: 0%; /* 기본값 0 */
-    left: 50%; /* 시작점 중앙 */
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    width: 0%; /* 초기값 */
+    left: 50%; /* 시작점 */
+    /* JS에서 제어하는 width와 left에 애니메이션 부여 */
+    transition: width 0.8s ease-out, left 0.8s ease-out, background-color 0.3s; 
     z-index: 1;
+    background-color: #adb5bd; /* 기본 색상 */
 }
 
-/* 성공 시 입혀질 색상 클래스 */
-.gauge-up { background-color: #ff8484 !important; }   /* 빨간색 */
-.gauge-down { background-color: #0062FF !important; } /* 파란색 */
+/* 색상 클래스 강제 적용 */
+.gauge-bar.gauge-up { 
+    background-color: #f44336 !important; 
+}
+
+.gauge-bar.gauge-down { 
+    background-color: #2196f3 !important; 
+}
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(5px); }
     to { opacity: 1; transform: translateY(0); }
