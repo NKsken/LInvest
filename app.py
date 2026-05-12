@@ -48,13 +48,14 @@ def stock_page(code_tag):
 
     # 첫 로딩 시 보여줄 뉴스 데이터 가져오기
     news_data = news_manager.get_stock_news(stock_name, display_count=display_count, start_index=start_index)
+    # yesterday_price = req.Requester(compinfo = code_tag, Date = 1)['Close']
     now_price = 199000
     
     return render_template('stock.html', 
                             code=code_tag,
                             stock_names=STOCK_DATA,
                             code_value=stock_name,
-                            news_list=news_data.get('items', []), # 이 주석을 풀어주세요!
+                            news_list=news_data.get('items', []),
                             now_price=now_price,
                             current_page=page)
 
@@ -113,7 +114,7 @@ def predict():
         elif pd.isna(diff):
             return jsonify({
                 "status": "outOfDate",
-                "text": "학습 모델이 최신이 아니거나 데이터가 부족합니다.",
+                "text": "학습 모델이 최신이 아닙니다.",
                 "diff": 0
             })
 
