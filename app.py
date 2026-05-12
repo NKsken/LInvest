@@ -1,12 +1,16 @@
 import pandas as pd
 import numpy as np
+import threading
+import time
 from datetime import datetime
 from News import NewsManager
+from KIS_API import KISApi
 from list import list_request
 from LInvestModule.Printer import Print
 from LInvestModule.DataFrameRequest import Request
 from LInvestModule.News_Collecter import NewsCollector
 from flask import Flask, render_template, redirect, url_for, request, jsonify
+from flask_socketio import SocketIO, emit, join_room, leave_room
 
 news_manager = NewsManager()
 req = Request()
@@ -14,6 +18,10 @@ app = Flask(__name__, template_folder='LInvestFrontend', static_folder='LInvestS
 krx_list = list_request()
 pred = Print()
 news_collecter = NewsCollector()
+kis = KISApi()
+socketio = SocketIO(app, cors_allowed_origins = "*")
+
+active_threads = {}
 
 # 주식 데이터
 STOCK_DATA = krx_list.load()
@@ -48,8 +56,7 @@ def stock_page(code_tag):
 
     # 첫 로딩 시 보여줄 뉴스 데이터 가져오기
     news_data = news_manager.get_stock_news(stock_name, display_count=display_count, start_index=start_index)
-    # yesterday_price = req.Requester(compinfo = code_tag, Date = 1)['Close']
-    now_price = 199000
+    now_price = kis.get_current_price(code_tag)['current_price']
     
     return render_template('stock.html', 
                             code=code_tag,
@@ -58,6 +65,45 @@ def stock_page(code_tag):
                             news_list=news_data.get('items', []),
                             now_price=now_price,
                             current_page=page)
+
+def background_price_update(stock_code):
+    while stock_code in active_threads:
+        # KIS API를 통해 실시간 주가 가져오기
+        try:
+            price_data = KISApi.get_current_price(stock_code)
+            
+            if price_data and 'current_price' in price_data:
+                socketio.emit('price_update', {
+                              'current':format(int(price_data['current_price']), ','),
+                              'rate': price_data['change_rate'],
+                              'diff': price_data['change']
+                }, room=stock_code)
+                
+                time.sleep(2) # 2초 대기
+        except Exception as e:
+            print(f"주가 전송 오류 {e}")
+            break
+
+@socketio.on('join')
+def handle_join(data):
+    code = data.get('code')
+    if not code: return
+
+    join_room(code)
+
+    if code not in active_threads:
+        active_threads[code] = True
+        thread = threading.Thread(target = background_price_update, args = (code,))
+        thread.daemon = True
+        thread.start()
+
+@socketio.on('leave')
+def handle_leave(data):
+    code = data.get('code')
+    if code:
+        leave_room(code)
+        if code in active_threads:
+            active_threads.pop(code)
 
 # 뉴스 수집 버튼
 @app.route('/code/api/analyze-news', methods=['POST'])
@@ -168,7 +214,7 @@ def get_news_api():
     except Exception as e:
         return jsonify({"success": False, "message": str(e)}), 500
     
-# app.py에 추가
+# 관심종목
 @app.route('/api/wishlist-info', methods=['POST'])
 def get_wishlist_info():
     data = request.get_json()
