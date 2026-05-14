@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import threading
 import time
+import asyncio
 from datetime import datetime
 from News import NewsManager
 from KIS_API import KISApi
@@ -56,7 +57,21 @@ def stock_page(code_tag):
 
     # 첫 로딩 시 보여줄 뉴스 데이터 가져오기
     news_data = news_manager.get_stock_news(stock_name, display_count=display_count, start_index=start_index)
-    now_price = kis.get_current_price(code_tag)['current_price']
+    
+    # 주가 불러오기
+    now_price = "0"
+    prdy_ctrt = "0.00"
+    
+    try:
+        # 처음 접속 시점에만 REST API로 현재가 정보를 가져옴
+        price_info = kis.get_current_price(code_tag) 
+        
+        if price_info:
+            now_price = format(int(price_info['current_price']), ',')
+            prdy_ctrt = price_info['change_rate']
+            # 필요하다면 대비(diff)값도 추가
+    except Exception as e:
+        print(f"초기 로딩 실패: {e}")
     
     return render_template('stock.html', 
                             code=code_tag,
@@ -64,25 +79,35 @@ def stock_page(code_tag):
                             code_value=stock_name,
                             news_list=news_data.get('items', []),
                             now_price=now_price,
+                            prdy_ctrt=prdy_ctrt,
                             current_page=page)
 
 def background_price_update(stock_code):
-    while stock_code in active_threads:
-        # KIS API를 통해 실시간 주가 가져오기
-        try:
-            price_data = KISApi.get_current_price(stock_code)
-            
-            if price_data and 'current_price' in price_data:
-                socketio.emit('price_update', {
-                              'current':format(int(price_data['current_price']), ','),
-                              'rate': price_data['change_rate'],
-                              'diff': price_data['change']
-                }, room=stock_code)
-                
-                time.sleep(2) # 2초 대기
-        except Exception as e:
-            print(f"주가 전송 오류 {e}")
-            break
+    # 웹소켓에서 데이터를 받을 때마다 실행될 내부 콜백 함수
+    def handle_ws_data(code, price, diff, rate):
+        # 1. 콤마 포맷팅
+        formatted_price = format(int(price), ',')
+        
+        # 2. Socket.IO를 통해 프론트엔드로 실시간 전송
+        # 'price_update'라는 이벤트 이름으로 데이터를 보냄
+        socketio.emit('price_update', {
+            'current': formatted_price,
+            'diff': diff,
+            'rate':rate
+        }, room=code)
+
+    # 비동기 루프 실행
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    
+    try:
+        # KISApi 클래스에 완성한 웹소켓 함수 호출
+        # (주의: KISApi 내부에서 callback_func(code, price, diff, rate)를 호출해야 함)
+        loop.run_until_complete(kis.connect_stock_socket(stock_code, handle_ws_data))
+    except Exception as e:
+        print(f"웹소켓 연동 오류: {e}")
+    finally:
+        loop.close()
 
 @socketio.on('join')
 def handle_join(data):
@@ -238,4 +263,4 @@ def get_wishlist_info():
     return jsonify(result)
     
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=False)
