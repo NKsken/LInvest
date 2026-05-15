@@ -285,6 +285,18 @@ input:checked + .slider:before {
     display: flex;
 }
 
+#realtime-price{
+    font-size: 20px;
+}
+
+.pastPrice-wrap{
+    display: flex;
+}
+
+.pastPrice-wrap > p{
+    margin-left: 5px;
+}
+
 .compName{
     font-size: 18px;
     font-weight: 700;

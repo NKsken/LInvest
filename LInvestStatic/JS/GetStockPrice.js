@@ -6,26 +6,28 @@ socket.emit('join', { code: STOCK_CODE });
 
 // 2. 서버로부터 'price_update' 이벤트를 받았을 때의 처리
 socket.on('price_update', function(data) {
-    // data 형태: { current: "75,000", diff: "500", rate: "0.67" }
+    // data: { current: "75,000", diff: "500", rate: "0.67" }
     
-    // 현재가 업데이트
     const priceElement = document.getElementById('realtime-price');
-    if (priceElement) {
-        priceElement.innerText = data.current + "원";
-    }
-
-    // 대비율 및 등락 업데이트
     const rateElement = document.getElementById('realtime-rate');
-    if (rateElement) {
-        // 등락 기호 설정 (+, -)
-        const sign = parseFloat(data.rate) > 0 ? "+" : "";
-        rateElement.innerText = `어제보다 ${sign}${data.rate}%`;
 
-        // 색상 변경 로직 (상승: 빨강, 하락: 파랑)
-        if (parseFloat(data.rate) > 0) {
-            rateElement.style.color = "#ff4d4f"; // 상승 색상
-        } else if (parseFloat(data.rate) < 0) {
-            rateElement.style.color = "#4096ff"; // 하락 색상
+    if (priceElement) priceElement.innerText = data.current + "원";
+
+    if (rateElement) {
+        const rateNum = parseFloat(data.rate);
+        const sign = rateNum > 0 ? "+" : ""; // 양수일 때만 + 기호 추가
+        
+        // 새로운 형식으로 업데이트
+        rateElement.innerHTML = `${sign}${data.diff}원(${sign}${data.rate}%)`;
+
+        // 색상 변경
+        if (rateNum > 0) {
+            rateElement.style.color = "#ff4d4f";
+        } else if (rateNum < 0) {
+            rateElement.style.color = "#4096ff";
+        } else {
+            rateElement.style.color = "#888";
+            priceElement.style.color = "inherit";
         }
     }
 });

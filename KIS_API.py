@@ -56,7 +56,7 @@ class KISApi:
     
     def get_current_price(self, code):
         """페이지 초기 로딩 시 현재가를 한 번 가져오는 함수"""
-        token = self.token() # 호출할 때마다 받거나, __init__에서 저장 후 사용 가능
+        token = self.token # 호출할 때마다 받거나, __init__에서 저장 후 사용 가능
         if not token: return None
 
         URL_BASE = "https://openapi.koreainvestment.com:9443"
@@ -80,8 +80,10 @@ class KISApi:
         
         if data.get('rt_cd') == '0':
             return {
-                'current_price': data['output']['stck_prpr'], # 현재가
-                'change_rate': data['output']['prdy_ctrt']    # 전일 대비율
+                'current_price': data['output']['stck_prpr'],
+                'change_rate': data['output']['prdy_ctrt'],
+                'prdy_vrss': data['output']['prdy_vrss'],
+                'past_price': data['output']['stck_sdpr']
             }
         return None
     

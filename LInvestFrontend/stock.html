@@ -48,7 +48,10 @@
                         </div>
                         <div class="compStock-wrap">
                             <p id = "realtime-price" class="now">{{now_price}}원</p>
-                            <p id = "realtime-rate" class="past">어제보다 {{prdy_ctrt}}</p>
+                            <div class = "pastPrice-wrap">
+                                <p>어제보다</p>
+                                <p id = "realtime-rate" class="past">{{prdy_ctrt}}</p>
+                            </div>
                         </div>
                     </div>
 
@@ -142,7 +145,12 @@
             const stockData = {{ stock_names | tojson | safe }};
             let CURRENT_PAGE = parseInt("{{ current_page }}") || 1;
             const STOCK_CODE = "{{ code }}".trim();
-            const NOW_PRICE = parseInt("{{ now_price }}") || 0; // 현재가 저장
+            
+            // 현재가 (콤마 제거)
+            const NOW_PRICE = parseInt("{{ now_price }}".replace(/,/g, '')) || 0; 
+            
+            // [추가된 부분] 전일 종가 (콤마 제거 후 숫자로 변환)
+            const PAST_PRICE = parseInt("{{ past_price }}".replace(/,/g, '')) || 0; 
 
             window.addEventListener("DOMContentLoaded", () => {
                 const savedData = sessionStorage.getItem(`pred_${STOCK_CODE}`);

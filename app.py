@@ -60,16 +60,20 @@ def stock_page(code_tag):
     
     # 주가 불러오기
     now_price = "0"
+    prdy_vrss = "0"
     prdy_ctrt = "0.00"
+    past_price = "0"
     
     try:
         # 처음 접속 시점에만 REST API로 현재가 정보를 가져옴
         price_info = kis.get_current_price(code_tag) 
         
         if price_info:
-            now_price = format(int(price_info['current_price']), ',')
-            prdy_ctrt = price_info['change_rate']
-            # 필요하다면 대비(diff)값도 추가
+            if price_info:
+                now_price = format(int(price_info['current_price']), ',')
+                prdy_ctrt = price_info['change_rate']
+                prdy_vrss = format(int(price_info['prdy_vrss']), ',')
+                past_price = format(int(price_info['past_price']), ',')
     except Exception as e:
         print(f"초기 로딩 실패: {e}")
     
@@ -80,6 +84,8 @@ def stock_page(code_tag):
                             news_list=news_data.get('items', []),
                             now_price=now_price,
                             prdy_ctrt=prdy_ctrt,
+                            prdy_vrss=prdy_vrss,
+                            past_price=past_price,
                             current_page=page)
 
 def background_price_update(stock_code):
@@ -91,6 +97,7 @@ def background_price_update(stock_code):
         # 2. Socket.IO를 통해 프론트엔드로 실시간 전송
         # 'price_update'라는 이벤트 이름으로 데이터를 보냄
         socketio.emit('price_update', {
+            'code': code,
             'current': formatted_price,
             'diff': diff,
             'rate':rate
@@ -104,23 +111,27 @@ def background_price_update(stock_code):
         # KISApi 클래스에 완성한 웹소켓 함수 호출
         # (주의: KISApi 내부에서 callback_func(code, price, diff, rate)를 호출해야 함)
         loop.run_until_complete(kis.connect_stock_socket(stock_code, handle_ws_data))
+        asyncio.run(kis.connect_stock_socket())
     except Exception as e:
         print(f"웹소켓 연동 오류: {e}")
     finally:
         loop.close()
 
 @socketio.on('join')
-def handle_join(data):
-    code = data.get('code')
-    if not code: return
-
+def on_join(data):
+    code = data['code']
     join_room(code)
+    
+    # 해당 종목에 대한 스레드가 이미 실행 중인지 확인
+    if code in active_threads and active_threads[code].is_alive():
+        print(f"[{code}] 이미 데이터 수집 스레드가 실행 중입니다.")
+        return 
 
-    if code not in active_threads:
-        active_threads[code] = True
-        thread = threading.Thread(target = background_price_update, args = (code,))
-        thread.daemon = True
-        thread.start()
+    # 실행 중이 아닐 때만 새 스레드 생성
+    thread = threading.Thread(target=background_price_update, args=(code,))
+    thread.daemon = True
+    active_threads[code] = thread
+    thread.start()
 
 @socketio.on('leave')
 def handle_leave(data):
@@ -247,19 +258,22 @@ def get_wishlist_info():
     
     result = []
     for code in codes:
-        # STOCK_DATA에서 종목명 찾기
-        name = next((k for k, v in STOCK_DATA.items() if v == code), "알 수 없는 종목")
-        
-        # 실제 현재가를 가져오는 로직(예: 199000)을 여기에 연결하세요
-        now_price = 199000 
-        
-        result.append({
-            "code": code,
-            "name": name,
-            "price": f"{now_price:,}원",
-            "link": url_for('stock_page', code_tag=code)
+            name = next((k for k, v in STOCK_DATA.items() if v == code), code)
+            price_info = kis.get_current_price(code)
+            if price_info:
+                # format(..., ',') 만 사용해서 숫자와 콤마만 남깁니다. ("원" 제거)
+                price = format(int(price_info['current_price']), ',')
+                change_rate = price_info['change_rate']
+            else:
+                price = "0"
+                change_rate = "0.00"
+            
+            result.append({
+                'code': code,
+                'name': name,
+                'price': price,        # "199,000" 형태로 들어감
+                'change_rate': change_rate
         })
-    
     return jsonify(result)
     
 if __name__ == '__main__':

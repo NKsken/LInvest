@@ -30,7 +30,7 @@ class Fitter():
             y.append(y_data[i + window_size])               # window_size번째 날의 주가를 정답으로 설정
         return np.array(x), np.array(y)
     
-    def pred(self, code, length = 30, epochs = 100, verbose = 1, window_size = 5):
+    def pred(self, code, length = 30, epochs = 1000, verbose = 1, window_size = 5):
             """
             code : 종목코드
             length : 오늘 - length영업일 (기본값 30)

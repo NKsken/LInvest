@@ -2,11 +2,11 @@ function renderPredictionUI(stockCode, diff, isUp) {
     const statusContainer = document.getElementById('predict-status');
     const gaugeBar = document.getElementById('gauge-bar');
     
-    // HTML에서 선언된 현재가(NOW_PRICE) 가져오기 (없으면 0으로 처리)
-    const nowPrice = typeof NOW_PRICE !== 'undefined' ? NOW_PRICE : 0;
+    // [수정된 부분] 계산의 기준이 되는 가격을 전일 종가로 설정합니다.
+    const basePrice = typeof PAST_PRICE !== 'undefined' ? PAST_PRICE : 0;
     
-    // 변동 금액 계산: 현재가 * (예측퍼센트 / 100)
-    const wonDiff = Math.abs(Math.round(nowPrice * (diff / 100)));
+    // 변동 금액 계산: 전일 종가 * (예측퍼센트 / 100)
+    const wonDiff = Math.abs(Math.round(basePrice * (diff / 100)));
     const wonDiffFormatted = wonDiff.toLocaleString(); // 세자리 콤마 추가
     
     if (!statusContainer || !gaugeBar) return;
@@ -33,14 +33,14 @@ function renderPredictionUI(stockCode, diff, isUp) {
         gaugeBar.style.backgroundColor = targetColor;
     }, 50);
 
-    // 3. 결과 텍스트 업데이트 (요청하신 문구로 변경)
+    // 3. 결과 텍스트 업데이트
     statusContainer.innerHTML = `
         <div style="animation: fadeIn 0.5s ease-out;">
             <p class="predicted-value-enabled">
-                어제보다 <span style="font-weight:bold; color:${targetColor}">${isUp ? '+' : ''}${diff.toFixed(2)}%</span>로 예측되어<br>
+                어제 종가보다 <span style="font-weight:bold; color:${targetColor}">${isUp ? '+' : ''}${diff.toFixed(2)}%</span>로 예측되어<br>
                 <span style="font-weight:bold; color:${targetColor}">${wonDiffFormatted}원</span> ${actionText}것 같아요
             </p>
-            <button onclick="runPrediction('${stockCode}')" class="tab-btn active" style="margin-top: 15px;">재분석 하기</button>
+            <button onclick="runPrediction('${stockCode}')" class="tab-btn active" style="margin-top: 15px;">재분석</button>
         </div>
     `;
 }

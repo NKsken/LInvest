@@ -57,7 +57,8 @@
                                 <th>종목명</th>
                                 <th>종목코드</th>
                                 <th>현재가</th>
-                                <th>내가 구매한 가격</th>
+                                <th>매수가</th>
+                                <th>수익률</th>
                                 <th>수정</th>
                                 <th>삭제</th>
                             </tr>
@@ -74,6 +75,8 @@
             // 파이썬 딕셔너리를 JS 객체로 변환
             const stockData = {{ stock_names | tojson | safe }};
         </script>
+        <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+        <script src="{{ url_for('static', filename='JS/MainWishList.js') }}"></script>
         <script src="{{ url_for('static', filename='JS/SearchBox.js') }}"></script>
         <script src="{{ url_for('static', filename='JS/MarketStatus.js') }}"></script>
         <script src="{{ url_for('static', filename='JS/MainWishList.js') }}"></script>
