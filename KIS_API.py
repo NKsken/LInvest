@@ -112,18 +112,23 @@ class KISApi:
             print(f"{code} 종목 데이터 가져오는중")
 
             while True:
-                data = await websocket.recv()
+                try:
+                    data = await asyncio.wait_for(websocket.recv(), timeout=60)
 
-                if data[0] == '0' or data[0] == '1': # 실시간 데이터인 경우
-                    parts = data.split('|')
-                    raw_data = parts[-1].split('^')
-                    
-                    price = raw_data[2]
-                    change = raw_data[4]
-                    rate = raw_data[5]
-                    callback_func(code, price, change, rate)
-                else:
-                    # 초기 접속 응답 출력
-                    print(f"Response: {data}")
+                    if data[0] == '0' or data[0] == '1': # 실시간 데이터인 경우
+                        parts = data.split('|')
+                        raw_data = parts[-1].split('^')
+                        
+                        price = raw_data[2]
+                        change = raw_data[4]
+                        rate = raw_data[5]
+                        callback_func(code, price, change, rate)
+                    else:
+                        # 초기 접속 응답 출력
+                        print(f"Response: {data}")
+                except asyncio.TimeoutError:
+                    continue
+                except websockets.exceptions.ConnectionClosed:
+                    break
 
 

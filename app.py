@@ -88,32 +88,26 @@ def stock_page(code_tag):
                             past_price=past_price,
                             current_page=page)
 
-def background_price_update(stock_code):
-    # 웹소켓에서 데이터를 받을 때마다 실행될 내부 콜백 함수
-    def handle_ws_data(code, price, diff, rate):
-        # 1. 콤마 포맷팅
-        formatted_price = format(int(price), ',')
-        
-        # 2. Socket.IO를 통해 프론트엔드로 실시간 전송
-        # 'price_update'라는 이벤트 이름으로 데이터를 보냄
+def background_price_update(code):
+    # 클라이언트에 데이터를 전송할 콜백 함수 정의
+    def handle_ws_data(c, price, change, rate):
         socketio.emit('price_update', {
-            'code': code,
-            'current': formatted_price,
-            'diff': diff,
-            'rate':rate
-        }, room=code)
+            'code': c,
+            'current': price,
+            'diff': change,
+            'rate': rate
+        }, room=c)
 
-    # 비동기 루프 실행
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
-    
     try:
-        # KISApi 클래스에 완성한 웹소켓 함수 호출
-        # (주의: KISApi 내부에서 callback_func(code, price, diff, rate)를 호출해야 함)
-        loop.run_until_complete(kis.connect_stock_socket(stock_code, handle_ws_data))
-        asyncio.run(kis.connect_stock_socket())
+        # [중요] 새로운 이벤트 루프 생성 및 설정
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        
+        # kis 인스턴스의 메서드를 호출 (code와 handle_ws_data 두 인자를 전달)
+        # 만약 여기서 에러가 난다면 kis = KISApi()가 함수 밖에 잘 선언되었는지 확인하세요.
+        loop.run_until_complete(kis.connect_stock_socket(code, handle_ws_data))
     except Exception as e:
-        print(f"웹소켓 연동 오류: {e}")
+        print(f"[{code}] 웹소켓 연동 오류 상세: {e}")
     finally:
         loop.close()
 
