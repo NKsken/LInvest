@@ -68,6 +68,9 @@
             <div id = 'section-wrap'>
                 <div id = 'left-section'>
                     <div class = 'chart'>
+                        <div class="chart-container" style="position: relative; height:40vh; width:100%; margin-top: 20px;">
+                            <canvas id="stockChart"></canvas>
+                        </div>
                     </div>
                 </div>
 
@@ -157,7 +160,9 @@
             })
         </script>
         <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="{{ url_for('static', filename='js/SearchBox.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/Chart.js') }}"></script>
         <script src="{{ url_for('static', filename='js/NewsPage.js') }}"></script>
         <script src="{{ url_for('static', filename='js/Predict.js') }}"></script>
         <script src="{{ url_for('static', filename='js/Wishlist.js') }}"></script>

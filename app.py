@@ -88,23 +88,36 @@ def stock_page(code_tag):
                             past_price=past_price,
                             current_page=page)
 
+# 종목 차트
+@app.route('/api/chart/<code>')
+def get_chart_data(code):
+    try:
+        chart_data = kis.get_daily_chart_data(code)
+        return jsonify({"success": True, "data": chart_data})
+    except Exception as e:
+        return jsonify({"success": False, "message": str(e)}), 500
+
 def background_price_update(code):
     # 클라이언트에 데이터를 전송할 콜백 함수 정의
     def handle_ws_data(c, price, change, rate):
+        # [수정] 가격과 대비 금액에 천 단위 콤마(,) 추가
+        try:
+            formatted_price = format(int(price), ',')
+            formatted_change = format(int(change), ',')
+        except (ValueError, TypeError):
+            formatted_price = price
+            formatted_change = change
+
         socketio.emit('price_update', {
             'code': c,
-            'current': price,
-            'diff': change,
+            'current': formatted_price, # 콤마가 포함된 가격
+            'diff': formatted_change,   # 콤마가 포함된 대비 금액
             'rate': rate
         }, room=c)
 
     try:
-        # [중요] 새로운 이벤트 루프 생성 및 설정
         loop = asyncio.new_event_loop()
         asyncio.set_event_loop(loop)
-        
-        # kis 인스턴스의 메서드를 호출 (code와 handle_ws_data 두 인자를 전달)
-        # 만약 여기서 에러가 난다면 kis = KISApi()가 함수 밖에 잘 선언되었는지 확인하세요.
         loop.run_until_complete(kis.connect_stock_socket(code, handle_ws_data))
     except Exception as e:
         print(f"[{code}] 웹소켓 연동 오류 상세: {e}")
@@ -114,7 +127,9 @@ def background_price_update(code):
 @socketio.on('join')
 def on_join(data):
     code = data['code']
-    join_room(code)
+
+    if not code: return
+    join_room(code)    
     
     # 해당 종목에 대한 스레드가 이미 실행 중인지 확인
     if code in active_threads and active_threads[code].is_alive():
@@ -126,6 +141,54 @@ def on_join(data):
     thread.daemon = True
     active_threads[code] = thread
     thread.start()
+    
+@socketio.on('join_all')
+def on_join_all(data):
+    codes = data.get('codes', [])
+    if not codes: return
+    
+    # 소켓 룸에는 각각 입장시킵니다. (데이터를 따로 뿌려주기 위함)
+    for code in codes:
+        join_room(code)
+        
+    thread_name = "multi_stock_thread"
+    
+    # 이미 다중 종목 스레드가 실행 중이면 새로 만들지 않음
+    if thread_name in active_threads and active_threads[thread_name].is_alive():
+        print("이미 다중 종목 실시간 스레드가 실행 중입니다.")
+        return
+
+    # 다중 종목을 처리할 새로운 스레드 시작
+    thread = threading.Thread(target=background_multi_price_update, args=(codes,))
+    thread.daemon = True
+    active_threads[thread_name] = thread
+    thread.start()
+    print(f"다중 실시간 수집 시작: {codes}")
+
+def background_multi_price_update(codes):
+    # KIS_API에서 데이터를 받으면 해당 종목(c)의 룸으로 전송
+    def handle_ws_data(c, price, change, rate):
+        # [수정] 가격과 대비 금액에 천 단위 콤마(,) 추가
+        try:
+            formatted_price = format(int(price), ',')
+            formatted_change = format(int(change), ',')
+        except (ValueError, TypeError):
+            formatted_price = price
+            formatted_change = change
+
+        socketio.emit('price_update', {
+            'code': c,
+            'current': formatted_price, # 콤마가 포함된 가격
+            'diff': formatted_change,   # 콤마가 포함된 대비 금액
+            'rate': rate
+        }, room=c)
+
+    try:
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        loop.run_until_complete(kis.connect_multiple_stock_socket(codes, handle_ws_data))
+    except Exception as e:
+        print(f"다중 웹소켓 연동 오류: {e}")
 
 @socketio.on('leave')
 def handle_leave(data):
