@@ -232,10 +232,15 @@ class KISApi:
                     chart_list = []
                     # 최신 날짜가 앞에 오므로 역순([ Rhine-ordered ])으로 뒤집어 과거->현재 순으로 정렬
                     for day in reversed(output2[:30]): # 최근 30영업일만 추출
-                        chart_list.append({
-                            'date': f"{day['stck_bsop_date'][4:6]}/{day['stck_bsop_date'][6:8]}", # MM/DD 형식
-                            'close': int(day['stck_clpr']) # 종가
-                        })
+                        try:
+                            price = int(day.get('stck_clpr', 0))
+                            chart_list.append({
+                                'date': f"{day['stck_bsop_date'][4:6]}/{day['stck_bsop_date'][6:8]}", # MM/DD 형식
+                                'close': int(day['stck_clpr']) # 종가
+                            })
+                        except (ValueError, KeyError, TypeError):
+                            continue
                     return chart_list
+                return [] # 실패 시 빈 리스트 반환
             print(f"차트 데이터 로드 실패: {res.text}")
             return []

@@ -68,8 +68,8 @@
             <div id = 'section-wrap'>
                 <div id = 'left-section'>
                     <div class = 'chart'>
-                        <div class="chart-container" style="position: relative; height:40vh; width:100%; margin-top: 20px;">
-                            <canvas id="stockChart"></canvas>
+                        <div class="chart-container" style="position: relative; width: 100%; height: 100%;">
+                            <div id="stockChart" style="position: absolute; width: 100%; height: 100%;"></div>
                         </div>
                     </div>
                 </div>
@@ -158,16 +158,18 @@
             window.addEventListener("DOMContentLoaded", () => {
                 const savedData = sessionStorage.getItem(`pred_${STOCK_CODE}`);
             })
+
+            const flaskStockCode = "{{ code }}"
         </script>
         <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="{{ url_for('static', filename='js/SearchBox.js') }}"></script>
-        <script src="{{ url_for('static', filename='js/Chart.js') }}"></script>
-        <script src="{{ url_for('static', filename='js/NewsPage.js') }}"></script>
-        <script src="{{ url_for('static', filename='js/Predict.js') }}"></script>
-        <script src="{{ url_for('static', filename='js/Wishlist.js') }}"></script>
-        <script src="{{ url_for('static', filename='js/Theme.js') }}"></script>
-        <script src="{{ url_for('static', filename='js/NewsAnalyze.js') }}"></script>
-        <script src="{{ url_for('static', filename='js/GetStockPrice.js') }}"></script>
+        <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+        <script src="{{ url_for('static', filename='JS/SearchBox.js') }}"></script>
+        <script src="{{ url_for('static', filename='JS/DrawChart.js') }}"></script>
+        <script src="{{ url_for('static', filename='JS/NewsPage.js') }}"></script>
+        <script src="{{ url_for('static', filename='JS/Predict.js') }}"></script>
+        <script src="{{ url_for('static', filename='JS/wishlist.js') }}"></script>
+        <script src="{{ url_for('static', filename='JS/Theme.js') }}"></script>
+        <script src="{{ url_for('static', filename='JS/NewsAnalyze.js') }}"></script>
+        <script src="{{ url_for('static', filename='JS/GetStockPrice.js') }}"></script>
     </body>
 </html>

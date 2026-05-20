@@ -95,6 +95,8 @@ def get_chart_data(code):
         chart_data = kis.get_daily_chart_data(code)
         return jsonify({"success": True, "data": chart_data})
     except Exception as e:
+        import traceback
+        print(traceback.format_exc())
         return jsonify({"success": False, "message": str(e)}), 500
 
 def background_price_update(code):
