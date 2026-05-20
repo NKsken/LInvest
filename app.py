@@ -88,15 +88,14 @@ def stock_page(code_tag):
                             past_price=past_price,
                             current_page=page)
 
-# 종목 차트
+# 차트
 @app.route('/api/chart/<code>')
 def get_chart_data(code):
     try:
         chart_data = kis.get_daily_chart_data(code)
         return jsonify({"success": True, "data": chart_data})
     except Exception as e:
-        import traceback
-        print(traceback.format_exc())
+        print(f"에러 발생: {e}")
         return jsonify({"success": False, "message": str(e)}), 500
 
 def background_price_update(code):

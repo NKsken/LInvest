@@ -196,51 +196,48 @@ class KISApi:
         except Exception as e:
             print(f"다중 웹소켓 에러: {e}")
 
-        def get_daily_chart_data(self, code):
-            """최근 일자별 주가 차트 데이터 가져오기 (최근 약 30~100영업일)"""
-            url = "https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quoting/inquire-daily-itemchartprice"
-            
-            # 오늘 날짜와 계산을 위한 datetime 활용
-            from datetime import datetime, timedelta
-            today_str = datetime.today().strftime('%Y%m%d')
-            start_str = (datetime.today() - timedelta(days=120)).strftime('%Y%m%d') # 여유 있게 120일 전부터 수집
+    def get_daily_chart_data(self, code):
+        url = "https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quoting/inquire-daily-itemchartprice"
+        
+        # 1. 먼저 날짜 계산
+        from datetime import datetime, timedelta
+        today_str = datetime.today().strftime('%Y%m%d')
+        start_str = (datetime.today() - timedelta(days=120)).strftime('%Y%m%d')
 
-            headers = {
-                "Content-Type": "application/json; charset=utf-8",
-                "authorization": f"Bearer {self.token}",
-                "appkey": self.key,
-                "appsecret": self.secret,
-                "tr_id": "FHKST03010100",
-                "custtype": "P"
-            }
-            
-            params = {
-                "FID_COND_MRKT_DIV_CODE": "J",
-                "FID_INPUT_ISCD": code,
-                "FID_INPUT_DATE_1": start_str,
-                "FID_INPUT_DATE_2": today_str,
-                "FID_PERIOD_DIV_CODE": "D", # D: 일별, W: 주별, M: 월별
-                "FID_ORG_ADPR": "0"          # 0: 수정주가 반영
-            }
-            
-            res = requests.get(url, headers=headers, params=params)
-            if res.status_code == 200:
-                data = res.json()
-                if data.get('rt_cd') == '0':
-                    output2 = data.get('output2', [])
-                    
-                    chart_list = []
-                    # 최신 날짜가 앞에 오므로 역순([ Rhine-ordered ])으로 뒤집어 과거->현재 순으로 정렬
-                    for day in reversed(output2[:30]): # 최근 30영업일만 추출
-                        try:
-                            price = int(day.get('stck_clpr', 0))
-                            chart_list.append({
-                                'date': f"{day['stck_bsop_date'][4:6]}/{day['stck_bsop_date'][6:8]}", # MM/DD 형식
-                                'close': int(day['stck_clpr']) # 종가
-                            })
-                        except (ValueError, KeyError, TypeError):
-                            continue
-                    return chart_list
-                return [] # 실패 시 빈 리스트 반환
-            print(f"차트 데이터 로드 실패: {res.text}")
-            return []
+        # 2. headers 정의
+        headers = {
+            "Content-Type": "application/json; charset=utf-8",
+            "authorization": f"Bearer {self.token}",
+            "appkey": self.key,
+            "appsecret": self.secret,
+            "tr_id": "FHKST03010100",
+            "custtype": "P"
+        }
+        
+        # 3. params 정의 (여기서 먼저 정의되어야 함!)
+        params = {
+            "FID_COND_MRKT_DIV_CODE": "J",
+            "FID_INPUT_ISCD": code,
+            "FID_INPUT_DATE_1": start_str,
+            "FID_INPUT_DATE_2": today_str,
+            "FID_PERIOD_DIV_CODE": "D",
+            "FID_ORG_ADPR": "0"
+        }
+        
+        # 4. 이제 requests.get 실행
+        res = requests.get(url, headers=headers, params=params)
+        
+        # [디버깅용] 주소가 맞는지 확인하기 위해 url도 출력해 보세요
+        print(f"DEBUG: Request URL: {url}")
+        print(f"DEBUG: Status Code: {res.status_code}")
+
+        if res.status_code == 200:
+            data = res.json()
+            if data.get('rt_cd') == '0':
+                chart_list = []
+                for day in reversed(data.get('output2', [])[:30]):
+                    chart_list.append({
+                        'date': f"{day['stck_bsop_date'][4:6]}/{day['stck_bsop_date'][6:8]}",
+                        'close': int(day['stck_clpr'])
+                    })
+                return chart_list
