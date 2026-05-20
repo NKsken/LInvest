@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 const socket = (typeof window.socket !== 'undefined') ? window.socket : (typeof io !== 'undefined' ? io() : null);
+=======
+let socket = typeof io !== 'undefined' ? io() : null;
+>>>>>>> f5769a6544e5ae0ca087ed3899aef820f3b4b3b3
 
 async function loadWishlist() {
     let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
@@ -56,6 +60,7 @@ async function loadWishlist() {
         // [핵심 수정 포인트] forEach로 따로 보내지 않고, join_all로 한 번에 보냅니다.
         if (socket && codes.length > 0) {
             socket.emit('join_all', { codes: codes });
+            setupPriceUpdate();
         }
 
     } catch (error) {
@@ -63,7 +68,9 @@ async function loadWishlist() {
     }
 }
 
-if (socket) {
+function setupPriceUpdate() {
+    if (!socket) return;
+
     socket.on('price_update', function(data) {
         const priceTag = document.getElementById(`price-${data.code}`);
         const profitTag = document.getElementById(`profit-${data.code}`);
