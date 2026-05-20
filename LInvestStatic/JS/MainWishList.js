@@ -1,4 +1,4 @@
-const socket = typeof io !== 'undefined' ? io() : null;
+const socket = (typeof window.socket !== 'undefined') ? window.socket : (typeof io !== 'undefined' ? io() : null);
 
 async function loadWishlist() {
     let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
