@@ -1,0 +1,357 @@
+{
+    "code": "000660",
+    "positive_count": 33,
+    "negative_count": 17,
+    "details": [
+        {
+            "date": "2026-05-18",
+            "title": "키옥시아 ‘폭풍질주’에 일학개미 웃는다",
+            "sentiment": "호재",
+            "reason": "SK하이닉스가 키옥시아 지분으로 100조 원 이상의 평가차익을 예상",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622085?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "삼전 파업 우려 덜자 코스피 반등…전쟁 리스크는 여전",
+            "sentiment": "호재",
+            "reason": "반도체주 상승으로 지수 반등에 기여",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1301270&inflow=N"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "\"내 종목 빌빌 기다 폭락, 왜?\"…'반도체 패밀리'만 高高, 서러운 증시",
+            "sentiment": "호재",
+            "reason": "반도체 대형주가 지수 상승을 이끌고 있어 긍정적인 시장 분위기",
+            "link": "https://n.news.naver.com/mnews/article/421/0008951959?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "코스피 1만380까지 열렸다…하나證 “PER 재평가 없어도 가능”[줍줍리...",
+            "sentiment": "호재",
+            "reason": "삼성전자와 SK하이닉스의 시가총액 비중 증가로 긍정적인 시장 반응 예상",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622036?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "매도 사이드카 딛고 ‘삼전·닉스’ 반등…코스피 7500선 마감[마켓시그...",
+            "sentiment": "호재",
+            "reason": "삼성전자와 SK하이닉스의 상승 전환이 지수를 끌어올림",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622009?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "코스피 매도사이드카→상승 마감…삼전 '파업 동력' 약화에 급반등 [시...",
+            "sentiment": "호재",
+            "reason": "코스피 상승과 함께 SK하이닉스 주가가 상승 마감",
+            "link": "https://n.news.naver.com/mnews/article/421/0008951847?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "[서울데이터랩]마감 직후 인기 검색 종목 20選",
+            "sentiment": "호재",
+            "reason": "검색 비율 상승과 주가 상승이 긍정적인 신호",
+            "link": "https://n.news.naver.com/mnews/article/081/0003644745?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "[마감시황] 코스피 7516.04로 0.31% 상승 마감…반도체 강세에도 종목별...",
+            "sentiment": "호재",
+            "reason": "반도체 강세로 주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/081/0003644744?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "‘검은 월요일’ 피했다…코스피, 저가매수에 강보합 마감",
+            "sentiment": "호재",
+            "reason": "저가매수로 주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/018/0006284527?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "[서울데이터랩]삼성전자·SK하이닉스 동반 강세…코스피 거래상위 종목...",
+            "sentiment": "호재",
+            "reason": "SK하이닉스 주가 상승 및 거래량 증가",
+            "link": "https://n.news.naver.com/mnews/article/081/0003644659?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "[서울데이터랩]반도체 강세에 삼성전자 3%대 상승…자동차·2차전지주는...",
+            "sentiment": "호재",
+            "reason": "반도체 강세로 인해 주가 상승세가 나타남",
+            "link": "https://n.news.naver.com/mnews/article/081/0003644657?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "삼전 팔고 ‘하이닉스’ 담은 초고수…“320만 원 간다” 전망에 베팅[...",
+            "sentiment": "호재",
+            "reason": "고수익 투자자들의 순매수 증가로 주가 상승 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621922?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "개미 1.8조 ‘사자’에 코스피 상승 전환…삼성전자 4%대↑",
+            "sentiment": "호재",
+            "reason": "개미 투자자들의 대규모 매수로 주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/018/0006284279?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "코스피, 8천 돌파 이틀 만에 7200선 급락… 외국인 매도·금리 쇼크",
+            "sentiment": "악재",
+            "reason": "SK하이닉스 주가 하락세",
+            "link": "https://www.jnilbo.com/news/articleView.html?idxno=90000035763"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "대통령 메시지에 삼성전자 상승 전환…코스피 7520선 회복[장중시황]",
+            "sentiment": "호재",
+            "reason": "대통령 메시지로 인해 삼성전자 및 SK하이닉스 주가 상승",
+            "link": "https://n.news.naver.com/mnews/article/421/0008950703?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "[속보] 코스피, 장중 7500선 회복…삼성전자 5%대 강세 전환",
+            "sentiment": "호재",
+            "reason": "JP모건의 목표주가 상향과 AI 서버 투자 확대에 따른 메모리 수요 증가",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621904?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "[서울데이터랩]개장 직후 인기 검색 종목 20選",
+            "sentiment": "악재",
+            "reason": "검색 비율은 높지만 주가가 하락세를 보임",
+            "link": "https://n.news.naver.com/mnews/article/081/0003644592?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "[서울데이터랩]코스피, 장 초반 7237.51로 급락…외국인 순매도에 반도...",
+            "sentiment": "악재",
+            "reason": "SK하이닉스 주가가 3.79% 하락하여 투자 심리가 위축됨.",
+            "link": "https://n.news.naver.com/mnews/article/081/0003644589?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "코스피, 이틀 연속 급락…장중 4%대 급락 7140선 터치[개장시황]",
+            "sentiment": "악재",
+            "reason": "코스피 급락으로 인해 SK하이닉스 주가가 3.13% 하락",
+            "link": "https://n.news.naver.com/mnews/article/421/0008950385?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "코스피 2거래일 연속 매도 사이드카…5% 밀려 7100선",
+            "sentiment": "악재",
+            "reason": "SK하이닉스 주가가 3.13% 하락하며 시장에서 부정적인 반응을 보임",
+            "link": "https://n.news.naver.com/mnews/article/018/0006284159?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "美 금리·유가 충격에 7300선 내준 코스피…외국인 8거래일 ‘팔자’[마...",
+            "sentiment": "호재",
+            "reason": "JP모건의 목표주가 상향 조정으로 긍정적인 투자 전망",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621840?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "하나證 \"1만피의 시대…버블 붕괴는 SK하닉이 삼전을 추월할 때\"",
+            "sentiment": "호재",
+            "reason": "SK하이닉스가 삼성전자와 함께 코스피 상승을 이끌고 있어 긍정적인 시장 분위기",
+            "link": "https://n.news.naver.com/mnews/article/421/0008950323?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "삼전닉스 하락 언제까지?…투자심리 위축시킨 이유는",
+            "sentiment": "악재",
+            "reason": "SK하이닉스 주가 하락으로 투자심리 위축",
+            "link": "https://n.news.naver.com/mnews/article/018/0006284135?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "[서울데이터랩]코스피, 장 초반 급락…외국인 순매도에 반도체·자동차...",
+            "sentiment": "악재",
+            "reason": "외국인 순매도로 인해 주가가 하락하고 있음",
+            "link": "https://n.news.naver.com/mnews/article/081/0003644565?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "SK하이닉스 장 초반 4% 급락…삼성전자 2% 약세[핫종목]",
+            "sentiment": "악재",
+            "reason": "SK하이닉스 주가가 4% 급락하여 투자 심리가 위축됨",
+            "link": "https://n.news.naver.com/mnews/article/421/0008950287?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "미래에셋證 \"SK하이닉스, 낸드 가격 강세에 320만닉스 간다\"",
+            "sentiment": "호재",
+            "reason": "미래에셋증권이 목표주가를 18.5% 상향 조정",
+            "link": "https://n.news.naver.com/mnews/article/421/0008950226?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "프리마켓 1%대 하락 중…삼성전자 강보합·SK하이닉스 약세 출발",
+            "sentiment": "악재",
+            "reason": "SK하이닉스 주가가 하락세를 보이고 있어 투자 심리에 부정적 영향을 미침",
+            "link": "https://n.news.naver.com/mnews/article/421/0008950187?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "“하반기 코스피 9500 간다…반도체 이익 상향 지속”",
+            "sentiment": "호재",
+            "reason": "반도체 이익 전망치 상향으로 긍정적인 실적 기대",
+            "link": "https://n.news.naver.com/mnews/article/018/0006284023?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "JP모건, ‘삼전 48만·하이닉스 300만’ 목표가↑…“메모리株 구조적 성...",
+            "sentiment": "호재",
+            "reason": "JP모건의 목표주가 상향으로 메모리 수요 증가 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621796?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "[AI의 종목 이야기] 메모리 ETF 'DRAM', 6주 만 100억달러…비트코인 추월",
+            "sentiment": "호재",
+            "reason": "메모리 ETF에 대한 투자 증가로 주가 상승 기대",
+            "link": "https://www.newspim.com/news/view/20260518000029"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "코스피 폭등했지만…대출금리도 뛰었다",
+            "sentiment": "호재",
+            "reason": "SK하이닉스의 순이익 비중 증가 전망",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621774?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "이재용 회장 귀국 사과·정부 긴급조정권 경고…21일 총파업 분수령",
+            "sentiment": "호재",
+            "reason": "하나증권의 긍정적인 순이익 전망",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621771?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "7000피 돌파 뒤 곱버스에 34조 몰렸다",
+            "sentiment": "호재",
+            "reason": "삼성전자와 SK하이닉스의 순이익 비중 증가 예상",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621770?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "삼성 초기업노조 한 달 새 4000명 탈퇴…과반 지위 위협",
+            "sentiment": "악재",
+            "reason": "노사 갈등으로 인한 파업 리스크가 경제적 피해를 초래할 가능성이 높음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621767?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "외국인도 '포모' 주식 계좌 3배 급증…거품론 속 '1만피' 기대 여전",
+            "sentiment": "호재",
+            "reason": "반도체 슈퍼사이클로 인한 영업이익률 상승 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008950000?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "미중 정상회담 '상징은 풍부, 실질은 빈약'…\"中이 더 많이 가져갔다\"",
+            "sentiment": "악재",
+            "reason": "엔비디아 칩의 중국 공급이 SK하이닉스에 부담을 줄 것으로 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/018/0006283815?sid=104"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "초기업노조서 한달간 4000명 탈퇴…과반 지위 위태",
+            "sentiment": "호재",
+            "reason": "경쟁사 인력 유출로 인한 인재 확보",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621644?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "최창원 ‘리밸런싱’ 빛났다…SK 1분기 영업익 3.7조",
+            "sentiment": "호재",
+            "reason": "SK하이닉스의 반도체 사업 성장과 리밸런싱 효과로 영업익 증가",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621596?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "삼성 최대노조 한달새 4000명 줄탈퇴…과반 지위 ‘풍전등화’",
+            "sentiment": "악재",
+            "reason": "핵심 인력 이직으로 인한 경쟁력 저하 우려",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621563?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "'팔천피' 앞둔 증시 향방은…인플레 우려 속 FOMC회의록 '주목'",
+            "sentiment": "호재",
+            "reason": "반도체 주가 급등으로 인한 긍정적 시장 분위기",
+            "link": "https://n.news.naver.com/mnews/article/421/0008948728?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "미래에셋증권, 5월 셋째주 NC 등 28종목 매수 추천",
+            "sentiment": "호재",
+            "reason": "AI 데이터센터 수주 급증으로 수익성 증가 예상",
+            "link": "https://www.bigtanews.co.kr/article/view/big202605160003"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "KB증권, 5월 셋째주 삼성전기 등 34종목 매수 추천",
+            "sentiment": "호재",
+            "reason": "2분기 영업이익 어닝 서프라이즈 기대",
+            "link": "https://www.bigtanews.co.kr/article/view/big202605160002"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "삼성 파업 불씨, 협력사까지 번지나…반도체협회 이례적 공개 경고",
+            "sentiment": "악재",
+            "reason": "삼성전자와 SK하이닉스의 급락으로 인한 시장 불안",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621428?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "외국인 5조 던졌다…8000 돌파 직후 대폭락",
+            "sentiment": "호재",
+            "reason": "단일종목 레버리지 ETF 출시로 투자자 관심 증가",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621427?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "8000피 찍고 급락...환율은 한달만에 1500원 대로",
+            "sentiment": "악재",
+            "reason": "환율 상승으로 인한 수익성 악화 우려",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621421?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "'삼전닉스'에 노후 건다…\"하이닉스 11억 투자해 은퇴자금 180억\"",
+            "sentiment": "호재",
+            "reason": "AI 시대의 핵심으로 메모리 반도체 수요 증가 전망",
+            "link": "https://n.news.naver.com/mnews/article/421/0008948039?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "[주요공시] 삼성전자, 알테오젠, 이수화학, 다우데이타, 삼천당제약, 대...",
+            "sentiment": "호재",
+            "reason": "신규 대형 수주 공시로 인해 주가 상승 기대",
+            "link": "https://www.kdpress.co.kr/news/articleView.html?idxno=205317"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "반도체·피지컬AI 타고 8000 터치…차익 실현·외국인 팔자에 발목",
+            "sentiment": "악재",
+            "reason": "외국인 순매도가 급증하며 주가 하락 압박이 우려됨",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621357?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "8000피 찍고 급락…환율은 한달만에 1500원대로 [마켓시그널]",
+            "sentiment": "악재",
+            "reason": "글로벌 위험 회피 심리로 주가 급락",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621316?sid=101"
+        },
+        {
+            "date": "2026-05-18",
+            "title": "8000선 찍고 와르르…증권가 “너무 빨리 오른 대가”",
+            "sentiment": "악재",
+            "reason": "외국인 매도가 집중되어 주가 하락 압력이 커짐",
+            "link": "https://n.news.naver.com/mnews/article/018/0006282667?sid=101"
+        }
+    ]
+}

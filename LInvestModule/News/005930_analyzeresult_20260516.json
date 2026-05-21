@@ -1,0 +1,357 @@
+{
+    "code": "005930",
+    "positive_count": 27,
+    "negative_count": 23,
+    "details": [
+        {
+            "date": "2026-05-16",
+            "title": "미래에셋증권, 5월 셋째주 NC 등 28종목 매수 추천",
+            "sentiment": "호재",
+            "reason": "중장기 사업 가시성 확보와 AI 관련 수익성 증가",
+            "link": "https://www.bigtanews.co.kr/article/view/big202605160003"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "KB증권, 5월 셋째주 삼성전기 등 34종목 매수 추천",
+            "sentiment": "호재",
+            "reason": "2분기 영업이익이 전년대비 18배 급증할 것으로 예상됨",
+            "link": "https://www.bigtanews.co.kr/article/view/big202605160002"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "삼성전자 노사, 18일 중노위서 교섭 재개…대표교섭위원 교체",
+            "sentiment": "호재",
+            "reason": "노사 간 대화 재개로 총파업 우려 해소 가능성",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4415245"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "'총파업 D-5' 고개 숙인 이재용…삼성 노사, 18일 교섭 재개(종합2보)",
+            "sentiment": "호재",
+            "reason": "이재용 회장의 대화 의지가 긍정적인 노사 관계를 암시함",
+            "link": "https://n.news.naver.com/mnews/article/421/0008948502?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "삼성전자 노사 18일 중노위서 교섭 재개…오늘 사전 미팅(종합)",
+            "sentiment": "호재",
+            "reason": "노사 재협상으로 화합 분위기가 조성되어 긍정적인 기업 이미지 향상 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008948472?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "삼성전자 노조, 사측과 18일 교섭 재개…오늘 사전 미팅 진행",
+            "sentiment": "호재",
+            "reason": "노사 교섭 재개로 안정적인 경영 환경 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008948468?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "삼성전자 노조, 교섭 재개 수용 16일 오후 면담",
+            "sentiment": "호재",
+            "reason": "노조와의 교섭 재개가 긍정적인 대화의 시작을 의미함",
+            "link": "https://n.news.naver.com/mnews/article/421/0008948466?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "[속보]삼성 노조 “이재용 회장 사과 확인, 신뢰회복 노력” 교섭 재개",
+            "sentiment": "호재",
+            "reason": "노조와의 교섭 재개로 신뢰 회복 가능성 증가",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621477?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "이재용 회장 “머리 숙여 사죄” 노조 총파업 관련 대국민사과",
+            "sentiment": "호재",
+            "reason": "이재용 회장의 대국민 사과로 기업 이미지 개선 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621470?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "이재용, '총파업' 앞둔 노조에 \"한 방향으로 나아가야 할 때\"",
+            "sentiment": "호재",
+            "reason": "이재용 회장의 단결 강조로 노조 갈등 완화 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008948399?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "[속보]이재용 회장 “내부 문제로 심려, 국민께 사죄” 노조 관련 대국...",
+            "sentiment": "호재",
+            "reason": "이재용 회장의 대국민 사과로 기업 이미지 개선 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621468?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "삼성전자 노조, 고용장관 면담서 \"사측 교섭대표 교체해야\"",
+            "sentiment": "악재",
+            "reason": "총파업 위기가 고조되어 경영 불확실성이 증가함",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4415233"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "외국인 5조 던졌다…8000 돌파 직후 대폭락",
+            "sentiment": "호재",
+            "reason": "단일종목 레버리지 ETF 출시로 투자자 관심 증가",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621427?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "삼성 파업 불씨, 협력사까지 번지나…반도체협회 이례적 공개 경고",
+            "sentiment": "악재",
+            "reason": "삼성전자 총파업이 반도체 생태계에 부정적 영향을 미칠 우려가 있음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621428?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "국민성장펀드 22일부터 판매…1인당 연 1억 원 한도·선착순",
+            "sentiment": "악재",
+            "reason": "노사 갈등으로 인한 총파업 예고가 기업 운영에 부정적 영향을 미칠 가능성",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621425?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "8000피 찍고 급락...환율은 한달만에 1500원 대로",
+            "sentiment": "악재",
+            "reason": "총파업 리스크로 인해 공급망에 부정적 영향 우려",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621421?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "정부 그린북 “경기 회복 흐름 지속”…4월 물가 2.6% 상승 부담",
+            "sentiment": "악재",
+            "reason": "삼성 총파업이 현실화될 경우 반도체 공급망에 심각한 위기가 발생할 수 있음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621423?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "삼성전자 총파업 D-5 노조원 4000명 노조 탈퇴…'파업 동력' 시들",
+            "sentiment": "호재",
+            "reason": "노조원 탈퇴로 총파업 동력이 약화되고 있음",
+            "link": "https://n.news.naver.com/mnews/article/421/0008948079?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "'삼전닉스'에 노후 건다…\"하이닉스 11억 투자해 은퇴자금 180억\"",
+            "sentiment": "호재",
+            "reason": "AI 시대의 메모리 반도체 수요 증가 전망",
+            "link": "https://n.news.naver.com/mnews/article/421/0008948039?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "[주요공시] 삼성전자, 알테오젠, 이수화학, 다우데이타, 삼천당제약, 대...",
+            "sentiment": "호재",
+            "reason": "삼성전자가 신규 대형 수주를 발표하여 반도체 수급에 긍정적인 영향을 미침",
+            "link": "https://www.kdpress.co.kr/news/articleView.html?idxno=205317"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "사장단·장관까지 나섰지만…삼성 노조는 “총파업 강행”",
+            "sentiment": "악재",
+            "reason": "노조의 총파업 강행 예고로 인해 생산 차질 우려",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621359?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "반도체·피지컬AI 타고 8000 터치…차익 실현·외국인 팔자에 발목",
+            "sentiment": "악재",
+            "reason": "외국인 순매도가 증가하여 주가에 부정적인 영향을 미칠 가능성이 있음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621357?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "“파업은 안돼” 평택 달려간 노동장관",
+            "sentiment": "호재",
+            "reason": "노동부 장관의 직접 방문으로 파업 가능성이 낮아질 것으로 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621345?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "삼성전자 사장단, 노조 회동…\"대화하자\" vs \"제도화\" 입장차 여전",
+            "sentiment": "악재",
+            "reason": "노사 간 의견 차이가 좁혀지지 않아 파업 우려가 지속됨",
+            "link": "http://www.newsprime.co.kr/news/article.html?no=733671"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "8000피 찍고 급락…환율은 한달만에 1500원대로 [마켓시그널]",
+            "sentiment": "악재",
+            "reason": "글로벌 위험 회피 심리로 인해 주가 급락",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621316?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "반도체업계 \"삼성 파업 땐 소부장까지 타격 우려…협상 타결 촉구\"",
+            "sentiment": "호재",
+            "reason": "삼성전자 노사 협상 타결 촉구로 파업 우려 해소 가능성",
+            "link": "https://n.news.naver.com/mnews/article/421/0008947753?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "삼성 총파업 파장, 소부장 기업까지 번진다…반도체협회, ‘공급망 도미...",
+            "sentiment": "악재",
+            "reason": "삼성전자 총파업 가능성이 반도체 공급망에 부정적 영향을 미칠 우려가 있음.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621305?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "8000선 찍고 와르르…증권가 “너무 빨리 오른 대가”",
+            "sentiment": "악재",
+            "reason": "외국인 매도가 집중되어 주가 하락 압력이 커짐",
+            "link": "https://n.news.naver.com/mnews/article/018/0006282667?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "(주간증시전망)AI랠리 시험대…엔비디아 실적·삼전파업·FOMC 주목",
+            "sentiment": "악재",
+            "reason": "삼성전자 노조의 총파업 예고로 인해 생산 차질 우려",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1301073&inflow=N"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "코스피, 장중 사상 첫 8000 찍었다",
+            "sentiment": "호재",
+            "reason": "AI 산업 확장으로 메모리 수요 증가 및 실적 기대 상승",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1301094&inflow=N"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "삼성전자 DS 사장단, 평택 찾아 노조 설득 나섰지만 '빈손'",
+            "sentiment": "악재",
+            "reason": "노조와의 대화가 결렬되어 경영 불확실성이 증가함.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008947644?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "삼성전자 반도체 수장단, 노조 사무실 방문…“조속히 대화 나서달라”",
+            "sentiment": "호재",
+            "reason": "노사 간 대화 촉구로 안정적인 경영 환경 조성 기대",
+            "link": "https://www.inthenews.co.kr/news/article.html?no=86911"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "김영훈 노동장관, 삼성 노조 긴급 면담 …\"분초 쪼개 조율\"",
+            "sentiment": "호재",
+            "reason": "정부의 중재로 노사 갈등이 완화될 가능성이 높아짐",
+            "link": "https://n.news.naver.com/mnews/article/421/0008947560?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "팔천피 '고지전' 치열…외인 5조 순매도에 7400선까지 밀려[시황종합]",
+            "sentiment": "악재",
+            "reason": "삼성전자가 8.61% 하락하며 외인 순매도가 발생했다.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008947529?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "하루 새 멀어진 30만전자·200만닉스…외국인 5조 투매[핫종목](종합)",
+            "sentiment": "악재",
+            "reason": "외국인 자금 유출과 시장 금리 상승으로 주가 하락",
+            "link": "https://n.news.naver.com/mnews/article/421/0008947527?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "8천피 환호는 찰나, 7400선까지 주르륵…역대급 '롤러코스피'",
+            "sentiment": "악재",
+            "reason": "반도체 대장주 삼성전자가 8.61% 급락하며 시장 불안감을 초래함.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006282496?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "삼성전자 총파업 초읽기…'긴급조정권' 둘러싼 勞-使 전면전으로 불붙나",
+            "sentiment": "악재",
+            "reason": "총파업 가능성이 커져 반도체 생산 차질 우려",
+            "link": "https://n.news.naver.com/mnews/article/421/0008947489?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "파업 걱정에 “교섭 이어가자” 삼성전자 사장단, 노조 사무실 방문... ...",
+            "sentiment": "호재",
+            "reason": "노조와의 재교섭으로 파업 우려가 완화될 가능성",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621248?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "삼성전자 사장단, 대국민 사과 후 노조 만나러 평택行(종합)",
+            "sentiment": "호재",
+            "reason": "노조와의 대화 제안으로 갈등 해소 가능성 증가",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4415117"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "삼성전자 사장단, 최승호 노조위원장 면담 위해 평택행",
+            "sentiment": "호재",
+            "reason": "노조와의 면담을 통해 소통을 강화하고 갈등을 해소할 가능성이 높아짐",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621222?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "삼성전자 사장단, 노조와 면담 추진…최승호 위원장 만나러 평택行",
+            "sentiment": "호재",
+            "reason": "노조와의 면담을 통해 성과급 갈등 해결 가능성 증가",
+            "link": "https://n.news.naver.com/mnews/article/421/0008947158?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "'팔천피' 찍고 7500선까지 급락…코스피 매도 사이드카 발동[장중시황]",
+            "sentiment": "악재",
+            "reason": "삼성전자가 6.93% 하락하며 시장에서 큰 낙폭을 기록함.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008947147?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "\"노조는 파업 강행, 주주는 손배소\"…삼성전자 성과급 갈등 일파만파",
+            "sentiment": "악재",
+            "reason": "노조의 총파업 결정으로 인해 생산 차질과 경영 불확실성이 증가할 가능성이 높음",
+            "link": "https://n.news.naver.com/mnews/article/421/0008947092?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "'총파업 D-6' 삼성 노사, 추가 대화 불발…노조 \"파업 이후 합의\"",
+            "sentiment": "악재",
+            "reason": "총파업이 임박하여 생산 차질 우려가 커짐",
+            "link": "http://www.newsprime.co.kr/news/article.html?no=733628"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "삼성전자 노조 파업 예고…피치 “갈등 지속 정도 주시해야”",
+            "sentiment": "악재",
+            "reason": "노조 파업 예고로 인한 생산 차질 우려",
+            "link": "https://n.news.naver.com/mnews/article/018/0006282284?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "코스피, 8000 돌파 후 급락…매도 사이드카 발동",
+            "sentiment": "악재",
+            "reason": "삼성전자가 7.09% 급락하여 투자 심리가 위축됨.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006282274?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "삼성전자 사장단 \"노사 문제로 국민과 정부에 큰 심려…사과드린다\"",
+            "sentiment": "호재",
+            "reason": "노사 문제 해결을 위한 대화 촉구로 기업 이미지 개선 기대",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4415088"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "오락가락 코스피, 8000→7600 급락…外人 4조 매도 [이런국장 저런주식]",
+            "sentiment": "악재",
+            "reason": "외국인 투자자의 대규모 매도로 주가 하락",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621201?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "“파업하면 조합원 전원 고소”...삼성전자 개미들, 노조에 법적 절차 ...",
+            "sentiment": "호재",
+            "reason": "소액주주 단체의 법적 대응으로 파업 리스크가 감소할 가능성",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621197?sid=101"
+        },
+        {
+            "date": "2026-05-16",
+            "title": "“결코 파업 있어서 안돼”...삼성전자 사장단, 노조에 “조속히 대화 ...",
+            "sentiment": "호재",
+            "reason": "사장단의 공개 사과로 노조와의 갈등 해소 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004621196?sid=101"
+        }
+    ]
+}

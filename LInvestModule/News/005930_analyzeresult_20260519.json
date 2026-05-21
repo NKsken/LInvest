@@ -1,0 +1,357 @@
+{
+    "code": "005930",
+    "positive_count": 24,
+    "negative_count": 26,
+    "details": [
+        {
+            "date": "2026-05-19",
+            "title": "삼성 노사 ‘벼랑 끝 담판’…성과급 재원 배분 비율·영업익 연동 제도...",
+            "sentiment": "호재",
+            "reason": "총파업 회피 기대감으로 안정적인 경영 환경 조성",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622508?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "[사진속이야기] “삼성전자 노조 파업 예고”…대기업 공장 정문 앞에 ...",
+            "sentiment": "악재",
+            "reason": "삼성전자 노조 파업 예고로 인한 생산 차질 우려",
+            "link": "https://www.nspna.com/news/?mode=view&newsid=813735"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼성전자 초기업노조 지도부, 조합원 협박·막말 논란",
+            "sentiment": "악재",
+            "reason": "노조 내부 갈등이 기업 이미지와 운영에 부정적 영향을 미칠 수 있음",
+            "link": "http://www.newsprime.co.kr/news/article.html?no=734027"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "김정관, 삼성전자 파업 예고에 \"절박하고 아쉬운 마음\" 거듭 우려",
+            "sentiment": "악재",
+            "reason": "삼성전자 노동조합의 파업 예고로 인한 생산 차질 우려",
+            "link": "http://www.newsfc.co.kr/news/articleView.html?idxno=78783"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "수익률 2배에 몰리는 개미들…삼전닉스 레버리지 예비투자자 7.4만명",
+            "sentiment": "호재",
+            "reason": "레버리지 ETF에 대한 투자자 관심 증가로 주가 상승 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622473?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "자사주 처분 앞지른 소각…코스피 리레이팅 기대 고조",
+            "sentiment": "호재",
+            "reason": "자사주 소각으로 주가 상승 기대감 증가",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622464?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼성, 파국 피하나…“합의 가능성 있다”",
+            "sentiment": "호재",
+            "reason": "노사 간 합의 가능성이 높아져 파업 리스크가 감소할 것으로 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622453?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼성전자 초기업노조 조합원들 \"집행부가 절차 무시\"…노동부 진정",
+            "sentiment": "악재",
+            "reason": "노조의 절차 무시로 인한 내부 갈등 우려",
+            "link": "https://n.news.naver.com/mnews/article/421/0008954367?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "제이티, 삼성전자와 78억원 규모 핸들러 공급 계약",
+            "sentiment": "호재",
+            "reason": "제이티와의 핸들러 공급 계약 체결로 매출 증가 기대",
+            "link": "https://n.news.naver.com/mnews/article/018/0006285383?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "코스피 약세 속 방어주 피신…보험·은행주 선방[핫종목]",
+            "sentiment": "악재",
+            "reason": "반도체주와 대형주들이 일제히 하락하여 시장 전반에 부정적인 영향을 미침",
+            "link": "https://n.news.naver.com/mnews/article/421/0008954352?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "겹악재에 삼성전자·SK하이닉스 '털썩'…반등 베팅한 개미 '줍줍'",
+            "sentiment": "악재",
+            "reason": "매크로 불확실성과 미국 반도체주 약세로 주가 하락",
+            "link": "https://n.news.naver.com/mnews/article/421/0008954294?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼성 임직원들 1000여명, 노동부 진정...“초기업노조 절차 정당성 없어...",
+            "sentiment": "악재",
+            "reason": "노동부에 진정 제기, 단체교섭 절차 문제로 내부 갈등 우려",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622436?sid=102"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼전 노사 협상 \"조정안 아직, 이견 좁히는 중\"…오후 1차 조정 끝",
+            "sentiment": "호재",
+            "reason": "노사 협상에서 타결 가능성이 커지고 있음",
+            "link": "https://n.news.naver.com/mnews/article/421/0008954230?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼성전자 협상 기대에 낙폭 줄였지만…코스피 결국 7300선 붕괴",
+            "sentiment": "호재",
+            "reason": "노사 협상 기대감으로 삼성전자가 상승 전환을 시도함",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1301415&inflow=N"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "외국인 6.2조원 투매에 코스피 3.25% 하락…7271.66 마감[시황종합]",
+            "sentiment": "악재",
+            "reason": "외국인 투매로 인해 삼성전자가 하락세를 보임",
+            "link": "https://n.news.naver.com/mnews/article/421/0008954173?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "[마감시황] 코스피 7,271.66 마감…외국인 매도에 3.25% 급락",
+            "sentiment": "악재",
+            "reason": "외국인 매도로 인해 주가가 1.96% 하락",
+            "link": "https://n.news.naver.com/mnews/article/081/0003645122?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼성전자 총파업 전운…민주 \"원만 합의\" 국힘 \"與 입꾹닫\"",
+            "sentiment": "호재",
+            "reason": "노사 합의 촉구로 인해 긍정적인 분위기 조성",
+            "link": "https://n.news.naver.com/mnews/article/421/0008954116?sid=100"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼성전자, 노조에 \"총파업 때 필수 인력 하루 7087명 필요\" 요청",
+            "sentiment": "호재",
+            "reason": "총파업에도 필수 인력 확보로 운영 안정성 유지",
+            "link": "https://n.news.naver.com/mnews/article/421/0008954057?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼성전자 총파업 D-2···사측 “반도체 보안·안전 위해 하루 7087명 근...",
+            "sentiment": "악재",
+            "reason": "노동조합의 총파업 예고로 인한 생산 차질 우려",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622406?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼성 ‘갤럭시 S26’ 흥행 청신호…전작 대비 판매량 13%↑",
+            "sentiment": "호재",
+            "reason": "갤럭시 S26의 초기 판매량이 전작 대비 13% 증가하여 긍정적인 시장 반응을 보임",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622394?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼전·하닉이 벌어준 1분기…2분기도 반도체 '원맨쇼' 예상",
+            "sentiment": "호재",
+            "reason": "반도체 슈퍼사이클로 인한 이익 성장 기대",
+            "link": "https://n.news.naver.com/mnews/article/018/0006285254?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "7300선 안착 시도하는 코스피, 삼성전자는 ‘양전 마감’ 도전 [이런국장...",
+            "sentiment": "호재",
+            "reason": "삼성전자의 노사 협상 타결 기대감이 주가에 긍정적인 영향을 미침",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622372?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼성전자 노조 '일부 양보'…핵심 쟁점 아직 이견 못 좁혀(종합)",
+            "sentiment": "호재",
+            "reason": "노조의 일부 양보로 합의 가능성이 커짐",
+            "link": "https://n.news.naver.com/mnews/article/421/0008953656?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼성전자 노사, 오후 사후조정 시작…막판 줄다리기",
+            "sentiment": "호재",
+            "reason": "노조의 일부 양보로 타결 가능성이 커짐",
+            "link": "https://n.news.naver.com/mnews/article/421/0008953623?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼전 타결되면 삼성바이오도?…실적 자신감에 노사전선 장기화 촉각",
+            "sentiment": "호재",
+            "reason": "삼성전자 노사 협상이 긍정적으로 진행될 경우 삼성바이오로직스에도 긍정적 영향을 미칠 것으로 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/421/0008953580?sid=103"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "중노위 \"삼성전자, 두 가지 이견 안 좁혀져…오후에 대안 제시\"(상보)",
+            "sentiment": "악재",
+            "reason": "노사 협상에서 이견이 좁혀지지 않아 불확실성이 증가하고 있음",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4415673"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "박수근 중노위원장 “삼전 노사 쟁점 안 좁혀져”",
+            "sentiment": "악재",
+            "reason": "삼성전자 노사 간 성과급 문제로 이견이 좁혀지지 않아 불확실성이 증가함.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622357?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "중노위 “삼성전자 노사 2가지 쟁점 안 좁혀져”... 조정안 5시간 앞두고...",
+            "sentiment": "악재",
+            "reason": "노사 간 쟁점이 해결되지 않아 불확실성이 증가하고 있다.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622355?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "김정관 \"악영향 아는 삼성전자 파업조차 해결 못하면 사회가 뭘 하겠나...",
+            "sentiment": "악재",
+            "reason": "삼성전자 노동조합의 파업 예고로 인한 불확실성 증가",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4415666"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "최승호 삼성전자 노조위원장 “조합원 최대한 만족할 안 만들겠다”",
+            "sentiment": "악재",
+            "reason": "노조의 성과급 제도화 요구가 사측과의 교섭에서 갈등을 초래할 가능성이 있음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622332?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "[서울데이터랩]코스피 시총 상위주 장중 약세…한화에어로스페이스만 ...",
+            "sentiment": "악재",
+            "reason": "삼성전자가 전일 대비 2.49% 하락하여 투자 심리가 위축됨.",
+            "link": "https://n.news.naver.com/mnews/article/081/0003645022?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "1만원 팔아 1525원 남겨…SK하이닉스 영업이익률 1위[1분기 코스피 결산...",
+            "sentiment": "호재",
+            "reason": "영업이익률이 42.75%로 증가하여 경쟁력 강화",
+            "link": "https://n.news.naver.com/mnews/article/018/0006285082?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "코스피 상장사 1분기 영업익 176% 급증…삼전·하닉 빼도 44% 늘었다[1분...",
+            "sentiment": "호재",
+            "reason": "코스피 상장사 영업익이 40% 이상 증가하여 시장 전반의 실적 개선을 시사",
+            "link": "https://n.news.naver.com/mnews/article/018/0006285079?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "1분기 영업익 3배 뛴 코스피…코스닥은 적자기업 40%",
+            "sentiment": "호재",
+            "reason": "반도체 호황으로 영업이익이 크게 증가함",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622328?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼성전자 ‘운명의 날’…초유의 파업 임박, 협상 쟁점과 전망은",
+            "sentiment": "악재",
+            "reason": "노조 파업 가능성으로 인한 생산 차질 우려",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622326?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "코스피 상장사, 1분기 영업익 3배 늘었지만…삼전닉스 빼면 2%↑",
+            "sentiment": "악재",
+            "reason": "삼성전자의 영업익 증가가 다른 기업들에 비해 부진함",
+            "link": "https://n.news.naver.com/mnews/article/421/0008953224?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "“절차 위반” 삼성전자 초기업노조 교섭 중지 가처분 20일 첫 기일",
+            "sentiment": "악재",
+            "reason": "교섭 중단 요구로 인한 노동 갈등 우려",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622320?sid=102"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "악재 겹친 코스피, 4%대 급락…장중 7140선 '털썩'[장중시황]",
+            "sentiment": "악재",
+            "reason": "미국 반도체주 급락과 금리 상승 부담으로 주가 하락",
+            "link": "https://n.news.naver.com/mnews/article/421/0008953179?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "[ET특징주] 미국發 한파에 얼어붙은 코스피… 삼성전자·SK하이닉스 동반...",
+            "sentiment": "악재",
+            "reason": "미국 증시 하락으로 인해 삼성전자 주가가 하락세를 보임",
+            "link": "https://n.news.naver.com/mnews/article/030/0003429028?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "다시 열린 삼성 노사 담판…성과급 규모·배분방식이 막판 쟁점",
+            "sentiment": "호재",
+            "reason": "성과급 지급 협상이 긍정적으로 진행될 가능성",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622298?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼성·닉스 낙폭 키워…코스피 3%대 하락한 7230선[장중시황]",
+            "sentiment": "악재",
+            "reason": "삼성전자가 3.74% 하락하며 시장 지수 하락을 주도함.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008952890?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "[서울데이터랩]코스피, 장 초반 7397.91로 1.57% 하락…외국인 팔자에 반...",
+            "sentiment": "악재",
+            "reason": "외국인 매도세로 주가 하락",
+            "link": "https://n.news.naver.com/mnews/article/081/0003644990?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "코스피, 반·차 흔들리자 3%대 급락…코스닥도 뚝",
+            "sentiment": "악재",
+            "reason": "삼성전자가 4%대 하락하며 시장 전반에 부정적인 영향을 미침",
+            "link": "https://n.news.naver.com/mnews/article/018/0006284985?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "'총파업 D-2' 삼성전자 노사, 극적 타결 이룰까",
+            "sentiment": "호재",
+            "reason": "노사 협상이 극적 타결될 경우 생산 차질 우려 해소",
+            "link": "http://www.newsprime.co.kr/news/article.html?no=733941"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼전 노사 2차 사후조정서 타결하나…\"이견 일부 좁혀져\"(종합)",
+            "sentiment": "호재",
+            "reason": "노사 간 합의 가능성이 높아져 경영 안정성이 증가할 것으로 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/421/0008952808?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "중노위원장 \"삼성전자 노사, 일부 이견 좁혀져…아직 타결 가능성 있어...",
+            "sentiment": "호재",
+            "reason": "삼성전자 노사 간 이견이 좁혀지고 있어 타결 가능성이 높아짐.",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4415602"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼전·닉스에 현차까지 주르륵…코스피, 2%대 뚝",
+            "sentiment": "악재",
+            "reason": "삼성전자가 2% 이상 하락하며 시장에서 부정적인 반응을 보임.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006284955?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "박수근 중노위원장 “오늘 웬만하면 끝낸다”…삼전 노사 최후의 담판",
+            "sentiment": "호재",
+            "reason": "노사 교섭이 마무리될 가능성이 높아져 경영 안정성이 증가할 것으로 기대됨",
+            "link": "https://n.news.naver.com/mnews/article/011/0004622268?sid=101"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "삼성전자 ‘패밀리허브’ 냉장고, 美·英 매체로부터 연이은 호평",
+            "sentiment": "호재",
+            "reason": "삼성전자의 '패밀리허브' 냉장고가 미국과 유럽에서 호평받아 브랜드 이미지와 판매 증가 기대",
+            "link": "https://www.inthenews.co.kr/news/article.html?no=87009"
+        },
+        {
+            "date": "2026-05-19",
+            "title": "코스피, 외인·기관 팔자에 1%대 하락…코스닥은 상승",
+            "sentiment": "악재",
+            "reason": "삼성전자가 2%대 하락하며 시장에서 부정적인 반응을 보이고 있다.",
+            "link": "https://n.news.naver.com/mnews/article/018/0006284925?sid=101"
+        }
+    ]
+}
