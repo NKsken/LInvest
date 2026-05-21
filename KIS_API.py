@@ -197,47 +197,38 @@ class KISApi:
             print(f"다중 웹소켓 에러: {e}")
 
     def get_daily_chart_data(self, code):
-        url = "https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quoting/inquire-daily-itemchartprice"
-        
-        # 1. 먼저 날짜 계산
-        from datetime import datetime, timedelta
-        today_str = datetime.today().strftime('%Y%m%d')
-        start_str = (datetime.today() - timedelta(days=120)).strftime('%Y%m%d')
+        url = "https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice"
 
-        # 2. headers 정의
         headers = {
-            "Content-Type": "application/json; charset=utf-8",
-            "authorization": f"Bearer {self.token}",
-            "appkey": self.key,
-            "appsecret": self.secret,
-            "tr_id": "FHKST03010100",
-            "custtype": "P"
+            "content_type":"application/json; charset=utf-8",
+            "authorization":f"Bearer {self.token}",
+            "appkey":self.key,
+            "appsecret":self.secret,
+            "tr_id":"FHKST03010200",
+            "custtype":"P"
         }
-        
-        # 3. params 정의 (여기서 먼저 정의되어야 함!)
-        params = {
-            "FID_COND_MRKT_DIV_CODE": "J",
-            "FID_INPUT_ISCD": code,
-            "FID_INPUT_DATE_1": start_str,
-            "FID_INPUT_DATE_2": today_str,
-            "FID_PERIOD_DIV_CODE": "D",
-            "FID_ORG_ADPR": "0"
-        }
-        
-        # 4. 이제 requests.get 실행
-        res = requests.get(url, headers=headers, params=params)
-        
-        # [디버깅용] 주소가 맞는지 확인하기 위해 url도 출력해 보세요
-        print(f"DEBUG: Request URL: {url}")
-        print(f"DEBUG: Status Code: {res.status_code}")
 
+        params = {
+            "FID_COND_MRKT_DIV_CODE":"UN",
+            "FID_INPUT_ISCD":code,
+            "FID_INPUT_HOUR_1":"1",
+            "FID_PW_DATA_INCU_YN":"Y",
+            "FID_ETC_CLS_CODE":"0"
+        }
+
+        res = requests.get(url=url, headers=headers, params=params)
         if res.status_code == 200:
             data = res.json()
-            if data.get('rt_cd') == '0':
-                chart_list = []
-                for day in reversed(data.get('output2', [])[:30]):
-                    chart_list.append({
-                        'date': f"{day['stck_bsop_date'][4:6]}/{day['stck_bsop_date'][6:8]}",
-                        'close': int(day['stck_clpr'])
-                    })
-                return chart_list
+
+            # API 내부 응답코드 확인(0이어야 정상)
+            if data['rt_cd'] == 0:
+                chart_list = data["output2"]
+
+                import pandas as pd
+                df = pd.DataFrame(chart_list)
+                return df
+            else:
+                print("API 오류", data['msg1'])
+        else: 
+            print(f"네트워크 오류 {res.status_code}")
+            return None
