@@ -1,9 +1,8 @@
 import os
 import json
 import requests
-from openai import OpenAI
+import ollama
 from dotenv import load_dotenv, find_dotenv
-from pathlib import Path
 import urllib.parse
 import datetime
 
@@ -13,13 +12,6 @@ class NewsCollector:
         load_dotenv(find_dotenv())
         self.NAVER_KEY = os.getenv("NAVER_KEY")
         self.NAVER_SECRET = os.getenv("NAVER_SECRET")
-        COPILOT_API_KEY = os.getenv("COPILOT_KEY")
-
-        # 2. 클라이언트 인스턴스 생성
-        self.client = OpenAI(
-            base_url="https://models.inference.ai.azure.com",
-            api_key=COPILOT_API_KEY,
-        )
 
     def sanitize_news(self, text):
         bad_words = {
@@ -35,7 +27,7 @@ class NewsCollector:
             text = text.replace(word, replacement)
         return text
 
-    def auto_analyze_stock(self, code, display=50, date=datetime.datetime.now().strftime('%Y%m%d')):
+    def auto_analyze_stock(self, code, display=100, date = datetime.datetime.now().strftime("%Y%m%d")):
         encoded_query = urllib.parse.quote(f"{code}")
         url = f"https://openapi.naver.com/v1/search/news.json?query={encoded_query}&display={display}&sort=date"
 
@@ -53,22 +45,26 @@ class NewsCollector:
         master_details = []
         positive_count = 0
         negative_count = 0
+        number = 0
 
         print(f"총 {len(news_items)}개의 뉴스 분석을 시작합니다.")
 
         for r in news_items:
+            number += 1
+            full_text = ''
             title = r['title'].replace('<b>','').replace('</b>','').replace('&quot;','"')
             description = r['description'].replace('<b>','').replace('</b>','').replace('&quot;','"')
-            context = f"제목: {title}\n내용: {description}\n링크: {r['link']}"
+
+            context = f"제목 : {title}\n내용 : {description}"
 
             prompt = f"""
-            당신은 금융 분석가입니다. 다음 1개의 뉴스 검색 결과를 바탕으로 '{code}'의 분석일({datetime.datetime.now().strftime('%Y-%m-%d')}) 기준 호재와 악재를 분석하세요.
+            당신은 금융 분석가입니다. 다음 1개의 뉴스 검색 결과를 바탕으로 '{code}'의 호재와 악재를 분석하세요.
+            오늘의 날짜는 {date}입니다.
             반드시 아래의 JSON 형식으로만 응답하세요.
 
             {{
                 "date": "YYYY-MM-DD",
                 "sentiment": "호재",
-                "reason": "한 줄 이유"
             }}
 
             검색결과:
@@ -77,17 +73,40 @@ class NewsCollector:
 
             try:
                 # AI 분석 요청
-                ai_response = self.client.chat.completions.create(
-                    model="gpt-4o-mini",
-                    messages=[{"role": "user", "content": prompt}],
-                    temperature=0.1,
-                    response_format={"type": "json_object"}
-                )
-                
-                full_text = ai_response.choices[0].message.content.strip()
-                item_data = json.loads(full_text)
-                
+                if (r != display):
+                    resp = ollama.chat(
+                        model = "gemma4:E4b",
+                        messages = 
+                        [
+                            {
+                            'role': 'system',
+                            'content': prompt
+                            }
+                        ]
+                    )
+                    full_text = resp['message']['content']
+                else:
+                    resp = ollama.chat(
+                        model = "gemma4:E4b",
+                        messages = 
+                        [
+                            {
+                            'role': 'system',
+                            'content': prompt
+                            }
+                        ],
+                        options =  # 답변이 끝나면 더이상 답변을 하지 않음으로 모델 Kill
+                        {
+                            "keep_alive": '0'
+                        }
+                    )
+                    full_text = resp['message']['content']
+
+                clean_text = full_text.replace("```json", "").replace("```", "")
+                item_data = json.loads(clean_text)
                 sentiment = item_data.get("sentiment", "중립")
+                print(clean_text)
+                print(f"{number}/{display}")
                 
                 if sentiment == "호재":
                     positive_count += 1
@@ -95,7 +114,7 @@ class NewsCollector:
                     negative_count += 1
 
                 master_details.append({
-                    "date": item_data.get("date", date),
+                    "date": item_data.get("date", "None"),
                     "title": title,
                     "sentiment": sentiment,
                     "reason": item_data.get("reason", "이유 없음"),
@@ -105,7 +124,7 @@ class NewsCollector:
             except Exception as e:
                 # 토큰 초과나 기타 에러 발생 시 현재까지의 결과만 저장하기 위해 루프 탈출
                 print(f"중단 사유 (에러 혹은 토큰 초과): {e}")
-                break
+                continue
 
         # 최종 데이터 구성 (루프가 정상 종료되거나 중간에 break 되어도 실행됨)
         final_data = {
