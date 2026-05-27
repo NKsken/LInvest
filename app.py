@@ -1,9 +1,7 @@
 import pandas as pd
 import numpy as np
 import threading
-import time
 import asyncio
-from datetime import datetime
 from News import NewsManager
 from KIS_API import KISApi
 from list import list_request
@@ -88,15 +86,16 @@ def stock_page(code_tag):
                             past_price=past_price,
                             current_page=page)
 
-# 차트
+# app.py 의 차트 조회 라우트 변경
 @app.route('/api/chart/<code>')
 def get_chart_data(code):
     try:
         chart_data = kis.get_daily_chart_data(code)
-        return jsonify({"success": True, "data": chart_data})
+        # 리스트 자체를 바로 리턴해 프론트에서 가공 없이 파싱하게 유도
+        return jsonify(chart_data)
     except Exception as e:
-        print(f"에러 발생: {e}")
-        return jsonify({"success": False, "message": str(e)}), 500
+        print(f"차트 API 내부 에러 발생: {e}")
+        return jsonify([]), 500
 
 def background_price_update(code):
     # 클라이언트에 데이터를 전송할 콜백 함수 정의

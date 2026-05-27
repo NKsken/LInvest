@@ -197,38 +197,70 @@ class KISApi:
             print(f"다중 웹소켓 에러: {e}")
 
     def get_daily_chart_data(self, code):
+        """당일 분봉 차트 데이터를 시간 구분 없이 안전하게 전체 조회"""
         url = "https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice"
 
         headers = {
-            "content_type":"application/json; charset=utf-8",
-            "authorization":f"Bearer {self.token}",
-            "appkey":self.key,
-            "appsecret":self.secret,
-            "tr_id":"FHKST03010200",
-            "custtype":"P"
+            "content_type": "application/json; charset=utf-8",
+            "authorization": f"Bearer {self.token}",
+            "appkey": self.key,
+            "appsecret": self.secret,
+            "tr_id": "FHKST03010200",
+            "custtype": "P"
         }
 
+        # FID_INPUT_HOUR_1을 비워두거나 현재 시간 기준으로 맞추어야 장 마감 후에도 안전하게 데이터를 당겨옵니다.
         params = {
-            "FID_COND_MRKT_DIV_CODE":"UN",
-            "FID_INPUT_ISCD":code,
-            "FID_INPUT_HOUR_1":"1",
-            "FID_PW_DATA_INCU_YN":"Y",
-            "FID_ETC_CLS_CODE":"0"
+            "FID_COND_MRKT_DIV_CODE": "J",  # 국내주식 시장 구분은 대문자 'J'가 표준 규격입니다.
+            "FID_INPUT_ISCD": code,
+            "FID_INPUT_HOUR_1": "",         # 공백으로 전송 시 최신 시점부터 역산하여 전체 분봉을 가져옵니다.
+            "FID_PW_DATA_INCU_YN": "Y",
+            "FID_ETC_CLS_CODE": "0"
         }
 
-        res = requests.get(url=url, headers=headers, params=params)
-        if res.status_code == 200:
-            data = res.json()
-
-            # API 내부 응답코드 확인(0이어야 정상)
-            if data['rt_cd'] == 0:
-                chart_list = data["output2"]
-
-                import pandas as pd
-                df = pd.DataFrame(chart_list)
-                return df
+        try:
+            res = requests.get(url=url, headers=headers, params=params)
+            if res.status_code == 200:
+                data = res.json()
+                
+                if data.get('rt_cd') == '0' and "output2" in data:
+                    chart_list = data["output2"]
+                    
+                    # 데이터가 유효한지 검증
+                    if not chart_list:
+                        print("한투 API 응답 성공했으나 데이터 내용이 비어있습니다.")
+                        return []
+                        
+                    # TradingView 호환성을 위해 과거 -> 미래 순서로 역순 정렬
+                    chart_list = chart_list[::-1]
+                    
+                    processed_data = []
+                    import datetime
+                    for item in chart_list:
+                        if not item.get('stck_bsop_date') or not item.get('stck_cntg_hour'):
+                            continue
+                            
+                        # 일자(YYYYMMDD) + 체결시각(HHMMSS) 결합
+                        dt_str = f"{item['stck_bsop_date']}{item['stck_cntg_hour']}"
+                        try:
+                            dt = datetime.datetime.strptime(dt_str, '%Y%m%d%H%M%S')
+                            ts = int(dt.timestamp())
+                        except Exception:
+                            continue
+                        
+                        processed_data.append({
+                            "time": ts,
+                            "open": int(item['stck_oprc']),
+                            "high": int(item['stck_hgpr']),
+                            "low": int(item['stck_lwpr']),
+                            "close": int(item['stck_prpr'])  # 현재가를 종가로 활용
+                        })
+                    print(f"성공적으로 {len(processed_data)}개의 분봉 데이터를 가공했습니다.")
+                    return processed_data
+                else:
+                    print("한투 API 오류 응답:", data.get('msg1'))
             else:
-                print("API 오류", data['msg1'])
-        else: 
-            print(f"네트워크 오류 {res.status_code}")
-            return None
+                print(f"네트워크 오류 상태코드: {res.status_code}")
+        except Exception as e:
+            print(f"데이터 파싱 중 에러 발생: {e}")
+        return []
