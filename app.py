@@ -65,15 +65,31 @@ def stock_page(code_tag):
     try:
         # 처음 접속 시점에만 REST API로 현재가 정보를 가져옴
         price_info = kis.get_current_price(code_tag) 
+        print("KIS 응답 데이터:", price_info) # 디버깅용 출력
         
         if price_info:
-            if price_info:
-                now_price = format(int(price_info['current_price']), ',')
-                prdy_ctrt = price_info['change_rate']
-                prdy_vrss = format(int(price_info['prdy_vrss']), ',')
-                past_price = format(int(price_info['past_price']), ',')
+            # 1. KIS_API가 제공하는 정확한 키명('current_price', 'change_amt')으로 숫자 추출
+            raw_current = int(price_info['current_price'])
+            raw_diff = int(price_info['change_amt'])
+            prdy_ctrt = price_info['change_rate']
+            
+            # 2. 화면 표시용 콤마 포맷팅 변환
+            now_price = format(raw_current, ',')
+            prdy_vrss = format(raw_diff, ',')
+            
+            # 3. [핵심] 전일 종가(past_price) 역산 로직
+            # 등락률이 마이너스(-)로 시작하면 어제보다 떨어진 것이므로 [어제 종가 = 오늘 현재가 + 등락액]
+            if prdy_ctrt.startswith('-'):
+                raw_past = raw_current + raw_diff
+            else:
+                # 보합이거나 상승한 것이므로 [어제 종가 = 오늘 현재가 - 등락액]
+                raw_past = raw_current - raw_diff
+                
+            # 역산한 전일 종가를 콤마 포맷팅하여 대입
+            past_price = format(raw_past, ',')
+            
     except Exception as e:
-        print(f"초기 로딩 실패: {e}")
+        print(f"초기 로딩 실패 (오류 발생): {e}")
     
     return render_template('stock.html', 
                             code=code_tag,

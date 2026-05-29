@@ -51,7 +51,7 @@ class KISApi:
             return None
 
     def get_current_price(self, code):
-        url = "https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quoting/inquire-price"
+        url = "https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotations/inquire-price"
         headers = {
             "Content-Type": "application/json",
             "authorization": f"Bearer {self.token}",
@@ -65,13 +65,14 @@ class KISApi:
         }
         res = requests.get(url, headers=headers, params=params)
         if res.status_code == 200:
+            print("조회 성공")
             data = res.json()
             if data.get('rt_cd') == '0':
                 output = data.get('output', {})
                 return {
-                    'current_price': output.get('stck_prpr'),
-                    'change_rate': output.get('prdy_ctrt'),
-                    'change_amt': output.get('prdy_vrss')
+                    'current_price': output.get('stck_prpr'), # 현재가
+                    'change_rate': output.get('prdy_ctrt'), # 등락률
+                    'change_amt': output.get('prdy_vrss') # 등락가
                 }
         return None
 
