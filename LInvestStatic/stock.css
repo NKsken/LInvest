@@ -471,20 +471,9 @@ input:checked + .slider:before {
     border-top: 1px solid var(--gray-100);
 }
 
-.predicted-value-disabled{
-    padding: 50px;
-    text-align: center;
-    color: var(--gray-400);
-}
-
-.predicted-value-enabled{
-    padding: 50px;
-    text-align: center;
-}
-
 
 .empty-msg {
-    padding: 50px;
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -602,6 +591,11 @@ input:checked + .slider:before {
     padding: 14px;
     font-weight: 600;
     color: #36527a;
+    height: 50%;
+}
+
+#predict-status{
+    padding-top: 50px;
 }
 
 /* 로딩 애니메이션 (선택 사항) */

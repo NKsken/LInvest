@@ -1,55 +1,41 @@
 // GetStockPrice.js
 
-// Socket.IO 객체 안전하게 확보
 let socket = typeof io !== 'undefined' ? (window.socket || io()) : null;
 if (socket) window.socket = socket;
 
 function initStockPriceSocket() {
-    // ==========================================
-    // [REST API 초기 진입 가격 강제 동기화 로직 추가]
-    // ==========================================
     const priceElement = document.getElementById('realtime-price');
     const rateElement = document.getElementById('realtime-rate');
 
-    // stock.html 상단에 등록되어 있는 Flask REST API 결과 변수(NOW_PRICE, PAST_PRICE)를 활용합니다.
     if (typeof NOW_PRICE !== 'undefined' && NOW_PRICE > 0) {
-        if (priceElement) {
-            priceElement.innerText = NOW_PRICE.toLocaleString() + "원";
-        }
+        if (priceElement) priceElement.innerText = NOW_PRICE.toLocaleString() + "원";
     }
 
     if (typeof PAST_PRICE !== 'undefined' && typeof NOW_PRICE !== 'undefined' && NOW_PRICE > 0 && PAST_PRICE > 0) {
         if (rateElement) {
-            // 변동 금액 계산 (현재가 - 전일종가)
             const diffPrice = NOW_PRICE - PAST_PRICE;
-            // 변동률 계산 (변동금액 / 전일종가 * 100)
             const diffRate = ((diffPrice / PAST_PRICE) * 100).toFixed(2);
-            
             const sign = diffPrice > 0 ? "+" : "";
             rateElement.innerHTML = `${sign}${diffPrice.toLocaleString()}원(${sign}${diffRate}%)`;
-
-            // 초기 REST 가격 색상 조건 매핑
-            if (diffPrice > 0) {
-                rateElement.style.color = "#ff4d4f"; // 상승 시 빨간색
-            } else if (diffPrice < 0) {
-                rateElement.style.color = "#4096ff"; // 하락 시 파란색
-            } else {
-                rateElement.style.color = "#888888"; // 보합 시 회색
-            }
+            if (diffPrice > 0) rateElement.style.color = "#ff4d4f"; 
+            else if (diffPrice < 0) rateElement.style.color = "#4096ff"; 
+            else rateElement.style.color = "#888888";
         }
     }
-    // ==========================================
 
-    // 1. 현재 종목 코드 전용 채널(Room)에 입장 요청
-    if (socket && typeof STOCK_CODE !== 'undefined') {
-        socket.emit('join', { code: STOCK_CODE });
+    // 종목 코드 방어 로직 통일
+    let targetCode = typeof STOCK_CODE !== 'undefined' ? STOCK_CODE : null;
+    if (!targetCode) {
+        const match = window.location.href.match(/\b\d{6}\b/);
+        if (match) targetCode = match[0];
     }
 
-    // 2. 서버로부터 'price_update' 이벤트를 받았을 때의 처리 (실시간 소켓)
+    if (socket && targetCode) {
+        socket.emit('join', { code: targetCode });
+    }
+
     if (socket) {
         socket.on('price_update', function(data) {
-            // data: { current: "75,000", diff: "500", rate: "0.67" }
-            
             const priceElementLive = document.getElementById('realtime-price');
             const rateElementLive = document.getElementById('realtime-rate');
 
@@ -57,25 +43,63 @@ function initStockPriceSocket() {
 
             if (rateElementLive) {
                 const rateNum = parseFloat(data.rate);
-                const sign = rateNum > 0 ? "+" : ""; // 양수일 때만 + 기호 추가
-                
-                // 새로운 형식으로 업데이트
+                const sign = rateNum > 0 ? "+" : "";
                 rateElementLive.innerHTML = `${sign}${data.diff}원(${sign}${data.rate}%)`;
+                if (rateNum > 0) rateElementLive.style.color = "#ff4d4f";
+                else if (rateNum < 0) rateElementLive.style.color = "#4096ff";
+                else rateElementLive.style.color = "#888";
+            }
+            if (window.mainCandleSeries) {
+                try {
+                    const liveClosePrice = parseInt(data.current.replace(/,/g, ''));
+                    
+                    // 현재 Unix 타임스탬프 (초)
+                    const currentUnix = Math.floor(Date.now() / 1000);
+                    // 1분(60초) 단위로 시간을 묶음
+                    const roundedTime = Math.floor(currentUnix / 60) * 60;
 
-                // 색상 변경
-                if (rateNum > 0) {
-                    rateElementLive.style.color = "#ff4d4f";
-                } else if (rateNum < 0) {
-                    rateElementLive.style.color = "#4096ff";
-                } else {
-                    rateElementLive.style.color = "#888";
+                    // 1. 현재 차트 시리즈에서 가장 최근(마지막) 캔들의 데이터를 가져옵니다.
+                    //    (Lightweight Charts v4 API 기준)
+                    const dataList = window.mainCandleSeries.data();
+                    const lastCandle = dataList.length > 0 ? dataList[dataList.length - 1] : null;
+
+                    let newCandle;
+
+                    // 2. 만약 가장 마지막 캔들이 방금 들어온 실시간 데이터와 같은 1분(roundedTime) 내에 있다면
+                    if (lastCandle && lastCandle.time === roundedTime) {
+                        // 같은 1분 봉 안이므로: 시가는 유지하고 고/저/종가만 새 가격과 비교해서 갱신! (몸통이 생기는 원리)
+                        newCandle = {
+                            time: roundedTime,
+                            open: lastCandle.open, 
+                            high: Math.max(lastCandle.high, liveClosePrice), // 더 큰 가격 갱신
+                            low: Math.min(lastCandle.low, liveClosePrice),   // 더 작은 가격 갱신
+                            close: liveClosePrice                            // 현재가를 종가로
+                        };
+                    } else {
+                        // 3. 시간이 지나서 새로운 1분 봉이 시작될 경우
+                        // 이전 캔들의 '종가'를 이번 새 캔들의 '시가'로 부드럽게 이어받습니다.
+                        const previousClose = lastCandle ? lastCandle.close : liveClosePrice;
+                        
+                        newCandle = {
+                            time: roundedTime,
+                            open: previousClose, // 점프 방지: 이전 봉의 끝점을 시작점으로
+                            high: Math.max(previousClose, liveClosePrice),
+                            low: Math.min(previousClose, liveClosePrice),
+                            close: liveClosePrice
+                        };
+                    }
+
+                    // 4. 차트에 뚱뚱해지는 캔들 데이터 밀어 넣기
+                    window.mainCandleSeries.update(newCandle);
+                    
+                } catch (chartError) {
+                    console.error("[차트 라이브 연동 에러]:", chartError);
                 }
             }
         });
     }
 }
 
-// 페이지 로드 시 초기화 구동
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initStockPriceSocket);
 } else {

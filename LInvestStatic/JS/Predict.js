@@ -52,7 +52,7 @@ async function runPrediction(stockCode) {
     if (!statusContainer || !gaugeBar) return;
 
     // 초기 상태: 로딩 표시
-    statusContainer.innerHTML = `<p style="padding-top:100px;">분석 중...</p><div class="loader"></div>`;
+    statusContainer.innerHTML = `<p style="padding-top:25px;">분석 중...</p><div class="loader"></div>`;
     gaugeBar.style.width = '0%';
     gaugeBar.style.left = '50%';
     gaugeBar.className = 'gauge-bar';
@@ -81,8 +81,7 @@ async function runPrediction(stockCode) {
         } else {
             // 서버에서 실패 응답을 보낸 경우 (데이터 부족 등)
             statusContainer.innerHTML = `
-                <p class="predicted-value-disabled">어제보다 +0.00%로 예측되었어요</p>
-                <p class="empty-msg" style="color: #888;">${data.text || '데이터가 부족하여 예측할 수 없습니다.'}</p>
+                <p class="empty-msg" style="padding-top: 50px; color: #888;">${data.text || '데이터가 부족하여 예측할 수 없습니다.'}</p>
                 <button onclick="runPrediction('${stockCode}')" class="tab-btn active" style="margin-top: 15px;">재시도</button>
             `;
         }

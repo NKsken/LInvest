@@ -1,23 +1,18 @@
 // DrawChart.js
 
-// 1. 전역 인스턴스로 관리하여 실시간 테마 전환기(Observer)가 언제든 접근할 수 있게 합니다.
 let globalChartInstance = null;
 let globalCandleSeriesInstance = null;
 
 async function initTradingViewChart() {
     const container = document.getElementById('tv_chart_container');
-    if (!container) {
-        console.error("tv_chart_container 요소를 찾을 수 없습니다.");
-        return;
-    }
+    if (!container) return;
 
     const parentContainer = container.parentElement;
     const initialWidth = container.clientWidth || 700;
     const initialHeight = parentContainer.clientHeight || 450; 
     
-    container.innerHTML = ''; // 중복 생성 방지 청소
+    container.innerHTML = ''; 
 
-    // 2. [실시간 연동 핵심] stock.css의 실제 변수값을 읽어오는 함수 정의
     function getThemeColors() {
         const cssVars = getComputedStyle(document.documentElement);
         return {
@@ -31,7 +26,6 @@ async function initTradingViewChart() {
 
     let colors = getThemeColors();
 
-    // 3. 부모의 100% 크기로 차트 초기화
     const chart = LightweightCharts.createChart(container, {
         width: initialWidth,
         height: initialHeight,
@@ -49,7 +43,6 @@ async function initTradingViewChart() {
         }
     });
 
-    // 4. 캔들스틱 데이터 시리즈 추가
     const candleSeries = chart.addCandlestickSeries({
         upColor: colors.upRed,
         downColor: colors.downBlue,
@@ -59,70 +52,97 @@ async function initTradingViewChart() {
         wickDownColor: colors.downBlue,
     });
 
-    // 테마 체인저가 인지할 수 있도록 전역 저장
     globalChartInstance = chart;
     globalCandleSeriesInstance = candleSeries;
 
-    // 창 크기 변동 시 자동 대응
     window.addEventListener('resize', () => {
         chart.resize(container.clientWidth, parentContainer.clientHeight || 450);
     });
 
-    // 5. [F5 생략의 주역] MutationObserver 설정
-    // 사용자가 웹 화면에서 테마 토글(클릭)을 할 때 HTML/BODY 태그의 클래스 변화를 실시간으로 감시합니다.
     const themeObserver = new MutationObserver(() => {
         if (!globalChartInstance || !globalCandleSeriesInstance) return;
-        
-        // 바뀐 CSS 테마 색깔을 즉시 재계산
         const newColors = getThemeColors();
         
-        // 차트 옵션에 즉시 때려 박기 (새로고침 불필요)
         globalChartInstance.applyOptions({
-            layout: {
-                background: { type: 'solid', color: newColors.bgColor },
-                textColor: newColors.textColor
-            },
-            grid: {
-                vertLines: { color: newColors.gridColor },
-                horzLines: { color: newColors.gridColor }
-            }
+            layout: { background: { type: 'solid', color: newColors.bgColor }, textColor: newColors.textColor },
+            grid: { vertLines: { color: newColors.gridColor }, horzLines: { color: newColors.gridColor } }
         });
 
-        // 캔들 옵션도 즉시 때려 박기
         globalCandleSeriesInstance.applyOptions({
-            upColor: newColors.upRed,
-            downColor: newColors.downBlue,
-            borderUpColor: newColors.upRed,
-            borderDownColor: newColors.downBlue,
-            wickUpColor: newColors.upRed,
-            wickDownColor: newColors.downBlue,
+            upColor: newColors.upRed, downColor: newColors.downBlue,
+            borderUpColor: newColors.upRed, borderDownColor: newColors.downBlue,
+            wickUpColor: newColors.upRed, wickDownColor: newColors.downBlue,
         });
     });
 
-    // HTML 속성 변경점 추적 시작
     themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['class', 'data-theme'] });
     themeObserver.observe(document.body, { attributes: true, attributeFilter: ['class', 'data-theme'] });
 
-    // 6. Flask REST API 백엔드 데이터 동기화
-    const stockCode = flaskStockCode;
+    // [수정 핵심 1] 오직 "숫자 6자리"만 종목코드로 확실하게 인식합니다.
+    let stockCode = "";
+    if (typeof STOCK_CODE !== 'undefined' && STOCK_CODE) {
+        stockCode = STOCK_CODE;
+    } else {
+        const match = window.location.href.match(/\b\d{6}\b/);
+        if (match) stockCode = match[0];
+    }
+
+    if (!stockCode) {
+        console.error("❌ 종목코드를 찾을 수 없어 차트를 그릴 수 없습니다.");
+        return;
+    }
+
     try {
         const response = await fetch(`/api/chart/${stockCode}`);
         const result = await response.json();
         
         let chartData = [];
-        if (result && result.success && Array.isArray(result.data)) {
-            chartData = result.data;
-        } else if (Array.isArray(result)) {
-            chartData = result;
-        }
+        if (Array.isArray(result)) chartData = result;
+        else if (result && Array.isArray(result.data)) chartData = result.data;
 
-        if (chartData && chartData.length > 0) {
-            candleSeries.setData(chartData);
-            window.mainCandleSeries = candleSeries;
-            console.log("TradingView 100% 실시간 테마 감지 차트 셋팅 대성공!");
+        if (chartData.length > 0) {
+            const uniqueTimes = new Set();
+            const validatedData = [];
+            
+            // [수정 핵심 2] TradingView가 에러를 뿜는 '중복 시간 데이터' 강제 제거 및 안전한 숫자 파싱
+            chartData.forEach(item => {
+                const t = parseInt(item.time);
+                if (!isNaN(t) && !uniqueTimes.has(t)) {
+                    uniqueTimes.add(t);
+                    validatedData.push({
+                        time: t, 
+                        open: Number(item.open),
+                        high: Number(item.high),
+                        low: Number(item.low),
+                        close: Number(item.close)
+                    });
+                }
+            });
+
+            // 과거 -> 미래 순서로 무조건 오름차순 정렬
+            validatedData.sort((a, b) => a.time - b.time);
+
+            try {
+                candleSeries.setData(validatedData);
+                window.mainCandleSeries = candleSeries;
+                console.log(`차트 로드 성공(정상 캔들: ${validatedData.length}개)`);
+                // 차트 데이터를 그린 후 최신 봉(우측 끝)으로 자동 스크롤
+                chart.timeScale().scrollToPosition(0, false);
+                
+                // 차트 배율 수정
+                const defaultVisibleCandles = 30;
+                chart.timeScale().setVisibleLogicalRange({
+                    from: validatedData.length - defaultVisibleCandles,
+                    to: validatedData.length - 1
+                });
+            } catch (err) {
+                console.error("차트 setData 실패 (데이터 규칙 위반):", err);
+            }
+        } else {
+            console.warn("백엔드에서 넘어온 차트 데이터가 0개입니다. (장이 안 열렸거나 에러)");
         }
     } catch (error) {
-        console.error("백엔드 차트 API 통신 실패:", error);
+        console.error("백엔드 통신 실패:", error);
     }
 }
 
