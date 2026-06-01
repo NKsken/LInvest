@@ -1,14 +1,19 @@
-<h1>LInvestFinalSession</h1>
-Python 3.13.7(venv)</br>
-Requried Package : flask, numpy, pandas, tensorflow, keras, openai, dotenv, flask-socketio</br>
-Project created at : March-31-2026</br></br>
-## 주의 :  본 프로젝트에서 제공하는 데이터는 예측 모델의 결과물이며 실제 주가 흐름과 다를 수 있습니다. 모든 투자의 책임은 사용자 본인에게 있으며, 개발자는 해당 정보를 사용함에 있어 발생하는 어떠한 손해에 대해서도 책임을 지지 않습니다.
-</br></br>
-## Disclaimer: All prediction data provided by this service is based on data analysis models and is for informational purposes only. It does not constitute investment advice or a recommendation to buy or sell any securities. The final responsibility for any investment decisions lies solely with the user. The developer shall not be held liable for any financial losses or damages resulting from the use of this information.
-</br></br>
-.env</br>
-KRX_API = YOUR_KRX_KEY_HERE</br>
-NAVER_KEY = YOUR_NAVER_API_KEY_HERE</br>
-NAVER_SECRET = YOUR_NAVER_SECRET_KEY_HERE</br>
-COPILOT_KEY = YOUR_GITHUB_COPILOT_KEY_HERE</br>
+# 사용 방법
+이 가이드는 기본적으로 Windows 11 환경 기준으로 작성되었어요.
 
+### 1. Python 설치
+  - Python 버전은 기본적으로 최신 버전으로 깔아도 괜찮아요.
+  - 하지만 가장 완벽하게 작동하는 환경은 Python 3.13.7 버전이에요.
+  - Python 설치중 뜨는 **Add Python {Python 버전} to PATH** 옵션은 반드시 체크해주세요.
+### 2. Python 패키지 설치
+  1. 윈도우 + R을 눌러 '실행' 창이 열리면 cmd.exe를 적고 엔터를 눌러 명령 프롬포트를 실행해주세요.
+  2. 검정색 바탕에 흰색 글씨가 나오는 콘솔 창이 열리면 다음 명령어를 입력해주세요.
+```bash
+pip install flask, numpy, pandas, tensorflow, keras, ollama, dotenv, flask-socketio
+```
+### 3. ollama로 로컬 AI 환경 구축하기
+  1. 2.에서 열었던 CMD 창에 다음 명령어를 입력해주세요.
+```bash
+irm https://ollama.com/install.ps1 | iex
+```
+  2. 
