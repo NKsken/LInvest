@@ -42,10 +42,21 @@
                 장 상태 확인
                 </div>
             </div>
-            <div class = "index-wrap">
-                <div class = "index">
-                    <div id = "index-kospi">KSP01</div>
-                    <div id = "index-kosdaq">KSP02</div>
+            <div class="index-wrap">
+                <div class="index">
+                    <div class="market-card">
+                        <div class="market-header">코스피 <span id="kospi-value" class="loading">조회중...</span></div>
+                        <div class="market-canvas-container">
+                            <canvas id="kospiChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="market-card">
+                        <div class="market-header">코스닥 <span id="kosdaq-value" class="loading">조회중...</span></div>
+                        <div class="market-canvas-container">
+                            <canvas id="kosdaqChart"></canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="wishlist-section">
@@ -75,6 +86,8 @@
             const stockData = {{ stock_names | tojson | safe }};
         </script>
         <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="{{ url_for('static', filename='JS/IndexChart.js') }}"></script>
         <script src="{{ url_for('static', filename='JS/MainWishList.js') }}"></script>
         <script src="{{ url_for('static', filename='JS/SearchBox.js') }}"></script>
         <script src="{{ url_for('static', filename='JS/MarketStatus.js') }}"></script>

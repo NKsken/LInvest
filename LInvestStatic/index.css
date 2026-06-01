@@ -287,16 +287,45 @@ input:checked + .slider:before {
 /* 장 상태 표시 */
 
 /* 인덱스 */
-.index-wrap{
-    display: block;
-    border: 2px solid var(--primary-blue);
-    border-radius: 12px;
-    padding: 5px 10px;
-    margin-bottom: 5px;
-}
-.index{
+.index {
+    width: 100%;
     display: flex;
-    gap: 30px;
+    gap: 20px; /* 두 차트 사이의 간격 */
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.market-card {
+    flex: 1; /* 가용 공간을 빈틈없이 1:1로 꽉 채움 */
+    box-sizing: border-box; /* 패딩을 넓이 계산에 포함시켜 삐져나가지 않게 함 */
+    background-color: var(--bg-color, #ffffff);
+    border: 2px solid var(--sky-blue, #eef2f6);
+    border-radius: 16px; /* 둥근 외곽선 */
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.market-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--dark-navy, #333);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 상승/하락에 따른 텍스트 색상 */
+.market-header span.up { color: #ff4d4f; }
+.market-header span.down { color: #4096ff; }
+.market-header span.loading { color: #888; font-size: 0.9rem; font-weight: normal; }
+
+.market-canvas-container {
+    position: relative;
+    height: 150px; /* 미니 차트 높이 고정 */
+    width: 100%;
 }
 
 /* 인덱스 */
@@ -355,7 +384,6 @@ input:checked + .slider:before {
     box-shadow: 0 0 3px rgba(0, 255, 200, 0.2);
 }
 
-/* 숫자 입력창의 화살표 제거 (선택 사항) */
 .price-input::-webkit-outer-spin-button,
 .price-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
