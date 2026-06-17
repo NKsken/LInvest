@@ -85,6 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 코스피, 코스닥 차트 그리기 실행
-    drawIndexChart('kospiChart', 'kospi-value', 'KSP01', '코스피');
-    drawIndexChart('kosdaqChart', 'kosdaq-value', 'KSP02', '코스닥');
+    drawIndexChart('kospiChart', 'kospi-value', '1001', '코스피');
+    drawIndexChart('kosdaqChart', 'kosdaq-value', '1002', '코스닥');
 });

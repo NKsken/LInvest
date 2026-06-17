@@ -1,0 +1,357 @@
+{
+    "code": "005930",
+    "positive_count": 43,
+    "negative_count": 7,
+    "details": [
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자 임단협 투표율 87% 돌파…'노노 갈등·주주 반발' 소송전 비화...",
+            "sentiment": "악재",
+            "reason": "임단협 갈등이 소송전으로 번지며 불확실성이 증가하고 있다.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964861?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "‘흰개미’ 투심 가늠자 된 GDR…“독일·런던장 먼저 본다”",
+            "sentiment": "호재",
+            "reason": "GDR 시세가 국내 주가에 긍정적인 영향을 미칠 것으로 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/011/0004624225?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "코스피 시총 7~10위 격차 4.7조…유례없는 순위 쟁탈전",
+            "sentiment": "호재",
+            "reason": "2024~2026년 잉여현금흐름 확대에 따른 특별 배당 가능성",
+            "link": "https://n.news.naver.com/mnews/article/011/0004624221?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자 노노 갈등 결국 법정으로…동행노조 \"26일 투표 중지 가처분\"",
+            "sentiment": "악재",
+            "reason": "임금협상 관련 법적 분쟁으로 인한 불확실성 증가",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964837?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "억대 성과급은 ‘그림의 떡’…공공硏 박사 초봉 4800만원",
+            "sentiment": "호재",
+            "reason": "삼성전자의 성과급 이슈로 인해 기업의 연봉 경쟁력이 강화되고 있다.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004624208?sid=105"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성·하이닉스 레버리지 27일 상장…당국 \"하루 최대 60% 손실 주의\"",
+            "sentiment": "악재",
+            "reason": "레버리지 상품으로 인한 손실 위험 증가",
+            "link": "http://www.seouleconews.com/news/articleView.html?idxno=91422"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자 노조, 성과급 투표율 88% 달성",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 노사 간 합의가 원활하게 진행될 가능성을 시사함",
+            "link": "https://n.news.naver.com/mnews/article/011/0004624204?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "[그래픽] 단일종목 레버리지·인버스 상품 발행사 현황",
+            "sentiment": "호재",
+            "reason": "단일종목 레버리지 ETF 출시로 투자자 관심 증가",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964784?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "'삼전닉스 레버리지'에 10만명 대기…금융당국은 '변동성 주의보'(종합...",
+            "sentiment": "호재",
+            "reason": "레버리지 ETF 출시로 투자자 관심 증가 예상",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964782?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자의 앞날은?",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 노동조합의 안정성을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964461?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자 노조의 합의안 찬반 투표율 86% 돌파",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 직원들의 합의안에 대한 긍정적인 반응을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964462?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "86% 돌파한 삼성전자 임단협 합의안 찬반 투표율",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 노동조합의 합의안에 대한 긍정적인 신호로 해석될 수 있다.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964457?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자 노조, 임단협 잠정 합의안 찬반 투표율 86% 돌파",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 노조의 지지와 안정적인 경영 환경을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964469?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "86% 돌파한 삼성전자 노조의 임단협 합의안 찬반 투표율",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 노조의 결속력을 나타내며, 안정적인 임금 협상이 기대됨.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964465?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "초일류 삼성…노조의 합의안 찬반 투표율 86% 돌파",
+            "sentiment": "호재",
+            "reason": "노조 합의안 찬반 투표율이 86%를 넘어 안정적인 노사 관계 기대",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964458?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자 노조, 임단협 잠정 합의안 찬반 투표율 86% 돌파",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 노조의 지지와 안정적인 경영 환경을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964464?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자 노조, 임단협 합의안 찬반 투표율 86% 돌파",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 노조의 지지와 안정성을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964467?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "86% 돌파한 삼성전자 임단협 합의안 찬반 투표율",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 노동조합의 합의안에 대한 긍정적인 신호로 해석될 수 있음",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964459?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자 노조, 임단협 잠정 합의안 찬반 투표율 86% 돌파",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 노조의 지지와 안정적인 경영 환경을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964468?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자 노조, 임단협 잠정 합의안 찬반 투표율 86% 돌파",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 노조의 단결을 나타내며, 안정적인 노동 환경을 기대할 수 있음",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964466?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "86% 돌파한 삼성전자 노조의 임단협 합의안 찬반 투표율",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 노조의 결속력을 나타내며, 안정적인 임금 협상이 기대됨.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964470?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "86% 돌파한 삼성전자 임단협 합의안 찬반 투표율",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 노동조합의 안정성과 회사의 긍정적인 노사 관계를 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964460?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자 노조, 임단협 잠정 합의안 찬반 투표율 86% 돌파",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 노조의 지지와 안정적인 경영 환경을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964463?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자 노조, 임단협 합의안 찬반 투표율 86% 돌파",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 직원들의 합의안에 대한 긍정적인 반응을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964455?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼전닉스 레버리지 27일 18개 동시 상장…\"하루 최대 60% 손실 가능\"",
+            "sentiment": "호재",
+            "reason": "삼성전자 관련 레버리지 ETF 상장으로 투자자 관심 증가",
+            "link": "https://n.news.naver.com/mnews/article/018/0006290114?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "금융위 “삼성전자·하이닉스 변동성 유의”",
+            "sentiment": "악재",
+            "reason": "금융당국의 경고로 주가 변동성 우려가 커짐",
+            "link": "https://n.news.naver.com/mnews/article/011/0004624159?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "\"크게 벌고 크게 잃는다\"…금융당국, '삼전닉스' 레버리지 투자주의보",
+            "sentiment": "호재",
+            "reason": "레버리지 ETF 출시로 인해 삼성전자 주식의 거래량과 관심이 증가할 것으로 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964386?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자 ‘6억 성과급’에 계열사도 줄줄이 요구 목소리",
+            "sentiment": "호재",
+            "reason": "성과급 지급 합의로 직원 사기 증진 및 생산성 향상 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004624154?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "코스피 거래대금 첫 40조 돌파…‘삼전닉스’ 쏠림에 회전율은 하락[이...",
+            "sentiment": "악재",
+            "reason": "대형주 쏠림으로 시장 전체 거래량과 회전율이 감소함.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004624152?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자, 중남미·중동·동남아서 스마트폰 1위",
+            "sentiment": "호재",
+            "reason": "삼성전자가 중남미, 중동, 동남아시아에서 스마트폰 점유율 1위를 달성하여 시장 경쟁력을 강화함.",
+            "link": "https://n.news.naver.com/mnews/article/011/0004624141?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자 성과급 투표 나흘째…노조 투표율 86% 돌파",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 노조의 지지와 안정적인 임금 협상이 예상됨을 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/011/0004624135?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자 '잠정합의안' 나흘만에 투표율 86% 돌파…4만 9363명 참여",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 노동조합의 안정성과 회사의 긍정적인 노사 관계를 나타냄",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964208?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성폰, 1분기 중남미·중동·동남아 점유율 1위",
+            "sentiment": "호재",
+            "reason": "삼성전자가 중남미, 중동, 동남아에서 스마트폰 점유율 1위를 기록하여 시장 경쟁력을 강화하고 있다.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964189?sid=105"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자, 올해 1분기 중남미·중동·동남아 스마트폰 '점유율 1위'",
+            "sentiment": "호재",
+            "reason": "중남미, 중동, 동남아에서 스마트폰 점유율 1위 기록",
+            "link": "https://n.news.naver.com/mnews/article/018/0006290005?sid=105"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "“삼성·하이브·넷플릭스가 기술 침해”... BTS 걸고 넘어진 특허 소송...",
+            "sentiment": "악재",
+            "reason": "특허 소송으로 인한 법적 리스크 증가",
+            "link": "https://n.news.naver.com/mnews/article/011/0004624114?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "[기업 이모저모] '공동의 적' 앞서 뭉친 고려아연 노사",
+            "sentiment": "호재",
+            "reason": "노조와의 협력이 경영 안정성에 기여할 것으로 예상됨",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4416520"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "외국인 삼전 지분율 48.32%로 12년8개월만에 최저…SK하닉도 50% 근접",
+            "sentiment": "악재",
+            "reason": "외국인 투자자의 매도세가 지속되어 지분율이 최저 수준으로 하락",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4416519"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "단일종목 레버리지 출격…'포모' 수요 집중, 단기 변동성 불가피",
+            "sentiment": "호재",
+            "reason": "단일종목 레버리지 상품 출시로 삼성전자 주가에 긍정적 영향 예상",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964062?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "현금 하이닉스·주식 삼성…'성과급 머니' 셔세권 자극",
+            "sentiment": "호재",
+            "reason": "삼성전자의 성과급 지급이 소비 증가를 촉진할 것으로 기대됨",
+            "link": "https://n.news.naver.com/mnews/article/421/0008964058?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자 노조 '잠정합의안' 투표율 85% 돌파…4만 8805명 참여(종합)",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 노조의 안정성과 협상 결과에 대한 긍정적인 신호로 해석될 수 있음",
+            "link": "https://n.news.naver.com/mnews/article/421/0008963953?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "배경훈 부총리, “AI가 만든 부, 대중에게 돌아가야”… 삼성전자 노사...",
+            "sentiment": "호재",
+            "reason": "AI 시대에 대한 긍정적인 정부의 지원 의지",
+            "link": "https://n.news.naver.com/mnews/article/018/0006289626?sid=105"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자 노조 '잠정합의안' 투표율 83% 육박…4만 7473명 참여",
+            "sentiment": "호재",
+            "reason": "높은 투표율은 노조의 안정성과 협상 결과에 대한 긍정적인 신호로 해석될 수 있음",
+            "link": "https://n.news.naver.com/mnews/article/421/0008963441?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "“공짜폰 광고 믿었다간 통신비 폭탄”… 갤럭시 S26 지원금 확대에도 ...",
+            "sentiment": "호재",
+            "reason": "갤럭시 S26 시리즈에 대한 지원금 경쟁이 삼성전자의 판매 증가를 이끌 것으로 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/018/0006289613?sid=105"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성 상업용 시스템에어컨 세척 프로모션",
+            "sentiment": "호재",
+            "reason": "상업용 에어컨 세척 프로모션으로 매출 증가 기대",
+            "link": "https://n.news.naver.com/mnews/article/011/0004624024?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "소액주주 플랫폼 액트 \"삼전 주주명부 열람 허가…'지분 1.5%' 결집 나설...",
+            "sentiment": "호재",
+            "reason": "소액주주 플랫폼의 주주 명부 열람 허가로 주주 결집 가능성 증가",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4416496"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "삼성전자, ‘HBM 소프트웨어’도 갖췄다... ‘커스텀 HBM’ 정조준",
+            "sentiment": "호재",
+            "reason": "HBM 소프트웨어 개발로 통합 경쟁력 강화",
+            "link": "https://n.news.naver.com/mnews/article/011/0004623989?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "\"정치·이념 투쟁 대신 실리\"…'MZ 주축' 삼성 노조, 노동운동 변곡점",
+            "sentiment": "호재",
+            "reason": "MZ세대 중심의 실리 추구가 노동운동의 긍정적 변화를 이끌 것으로 기대됨",
+            "link": "https://n.news.naver.com/mnews/article/421/0008963048?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "(주간증시전망)중동 협상·금통위 변수 속 상승 추세 이어가나",
+            "sentiment": "호재",
+            "reason": "삼성전자 노사의 성과급 합의와 엔비디아 어닝 서프라이즈로 긍정적인 시장 반응",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1301845&inflow=N"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "942만원 vs 176만원…반도체 호황 속 벌어지는 임금 격차",
+            "sentiment": "호재",
+            "reason": "반도체 호황으로 인한 임금 상승이 긍정적인 영향을 미칠 것으로 예상됨",
+            "link": "https://n.news.naver.com/mnews/article/001/0016095875?sid=101"
+        },
+        {
+            "date": "2026-05-25",
+            "title": "소액주주 액트 \"삼성전자 주주명부 확보…'지분 1.5%' 결집 나선다\"",
+            "sentiment": "호재",
+            "reason": "소액주주들이 지분 결집을 통해 주주 권리를 강화할 수 있는 기회가 마련됨.",
+            "link": "https://n.news.naver.com/mnews/article/421/0008962921?sid=101"
+        }
+    ]
+}

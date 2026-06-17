@@ -198,23 +198,42 @@ class KISApi:
             print(f"다중 웹소켓 에러: {e}")
 
     def get_daily_chart_data(self, code):
-        """당일 분봉 차트 데이터를 시간 구분 없이 안전하게 전체 조회"""
-        url = "https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice"
+        """당일 분봉 차트 데이터를 시간 구분 없이 전체 조회 (주식 및 종합지수 완벽 대응)"""
+        
+        # [분기 처리] 프론트엔드의 임의 코드를 한투 표준 업종 지수 코드로 매핑
+        is_index = False
+        if code == "KSP01":
+            real_code = "0001"  # 코스피 종합지수
+            is_index = True
+        elif code == "KSP02":
+            real_code = "1001"  # 코스닥 종합지수
+            is_index = True
+        else:
+            real_code = code
+
+        # [교정 완료] 한투 공식 주소 명세 규칙 반영: inquire-time-indexchartprice
+        if is_index:
+            url = "https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotations/inquire-time-indexchartprice"
+            tr_id = "FHKST03010240"  # 국내업종 당일 분봉 조회 TR
+            market_div = "U"        # 업종/지수 구분 코드 'U'
+        else:
+            url = "https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice"
+            tr_id = "FHKST03010200"  # 국내주식 당일 분봉 조회 TR
+            market_div = "J"        # 주식 구분 코드 'J'
 
         headers = {
             "content_type": "application/json; charset=utf-8",
             "authorization": f"Bearer {self.token}",
             "appkey": self.key,
             "appsecret": self.secret,
-            "tr_id": "FHKST03010200",
+            "tr_id": tr_id,
             "custtype": "P"
         }
 
-        # FID_INPUT_HOUR_1을 비워두거나 현재 시간 기준으로 맞추어야 장 마감 후에도 안전하게 데이터를 당겨옵니다.
         params = {
-            "FID_COND_MRKT_DIV_CODE": "J",  # 국내주식 시장 구분은 대문자 'J'가 표준 규격입니다.
-            "FID_INPUT_ISCD": code,
-            "FID_INPUT_HOUR_1": "",         # 공백으로 전송 시 최신 시점부터 역산하여 전체 분봉을 가져옵니다.
+            "FID_COND_MRKT_DIV_CODE": market_div,
+            "FID_INPUT_ISCD": real_code,
+            "FID_INPUT_HOUR_1": "",         # 공백 전송 시 최신 시점부터 전체 분봉 조회
             "FID_PW_DATA_INCU_YN": "Y",
             "FID_ETC_CLS_CODE": "0"
         }
@@ -227,39 +246,52 @@ class KISApi:
                 if data.get('rt_cd') == '0' and "output2" in data:
                     chart_list = data["output2"]
                     
-                    # 데이터가 유효한지 검증
                     if not chart_list:
-                        print("한투 API 응답 성공했으나 데이터 내용이 비어있습니다.")
+                        print(f"한투 API 응답 성공했으나 [{code}] 데이터 내용이 비어있습니다.")
                         return []
                         
-                    # TradingView 호환성을 위해 과거 -> 미래 순서로 역순 정렬
+                    # 과거 -> 미래 순서로 데이터 정렬 역순 처리
                     chart_list = chart_list[::-1]
                     
                     processed_data = []
                     import datetime
                     for item in chart_list:
-                        if not item.get('stck_bsop_date') or not item.get('stck_cntg_hour'):
+                        date_str = item.get('stck_bsop_date') or item.get('bstp_bsop_date')
+                        time_str = item.get('stck_cntg_hour') or item.get('bstp_cntg_hour')
+                        
+                        if not date_str or not time_str:
                             continue
                             
-                        # 일자(YYYYMMDD) + 체결시각(HHMMSS) 결합
-                        dt_str = f"{item['stck_bsop_date']}{item['stck_cntg_hour']}"
+                        dt_str = f"{date_str}{time_str}"
                         try:
                             dt = datetime.datetime.strptime(dt_str, '%Y%m%d%H%M%S')
                             ts = int(dt.timestamp())
                         except Exception:
                             continue
                         
+                        # 종합지수(소수점 데이터 float)와 일반 주식(정수 데이터 int) 필드 분기 파싱
+                        if is_index:
+                            open_p = float(item.get('bstp_nmix_oprc') or item.get('stck_oprc', 0))
+                            high_p = float(item.get('bstp_nmix_hgpr') or item.get('stck_hgpr', 0))
+                            low_p = float(item.get('bstp_nmix_lwpr') or item.get('stck_lwpr', 0))
+                            close_p = float(item.get('bstp_nmix_prpr') or item.get('stck_prpr', 0))
+                        else:
+                            open_p = int(item.get('stck_oprc', 0))
+                            high_p = int(item.get('stck_hgpr', 0))
+                            low_p = int(item.get('stck_lwpr', 0))
+                            close_p = int(item.get('stck_prpr', 0))
+
                         processed_data.append({
                             "time": ts,
-                            "open": int(item['stck_oprc']),
-                            "high": int(item['stck_hgpr']),
-                            "low": int(item['stck_lwpr']),
-                            "close": int(item['stck_prpr'])  # 현재가를 종가로 활용
+                            "open": open_p,
+                            "high": high_p,
+                            "low": low_p,
+                            "close": close_p
                         })
-                    print(f"성공적으로 {len(processed_data)}개의 분봉 데이터를 가공했습니다.")
+                    print(f"성공적으로 {code} 지수/주식 {len(processed_data)}개의 분봉 데이터를 가공했습니다.")
                     return processed_data
                 else:
-                    print("한투 API 오류 응답:", data.get('msg1'))
+                    print(f"한투 API 오류 응답 [{code}]:", data.get('msg1'))
             else:
                 print(f"네트워크 오류 상태코드: {res.status_code}")
         except Exception as e:

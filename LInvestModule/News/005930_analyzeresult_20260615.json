@@ -1,0 +1,707 @@
+{
+    "code": "005930",
+    "positive_count": 87,
+    "negative_count": 13,
+    "details": [
+        {
+            "date": "2026-06-15",
+            "title": "데이터센터·SMR까지…PM 넘어 ‘종합 프로젝트 플랫폼 기업’ 전환",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004631362?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "수도권 레미콘 운송 재개…잠정합의안 가결로 공급 정상화 수순(상보)",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009004956?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "“중동發 뉴노멀 준비”…삼성 경영전략 리셋",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004631350?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성·LG, 중동 수출 확대…현대차는 사우디공장 속도",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004631346?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "점유율 소폭 늘린 삼성 엑시노스…하반기 플립8로 성능 재확인",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1304047&inflow=N"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성전자, 내일부터 글로벌전략회의…하반기 전략 모색",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "http://www.newsprime.co.kr/news/article.html?no=736743"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "종전랠리 코스피, 외국인도 '사자'…올들어 26번째 사이드카 [시황종합...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009004794?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "이란戰 종전에 반도체 소재 공급망 ‘정상화’ 나섰다",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004631281?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "美·이란 종전에 코스피 5% 상승…'돌아온 외인' 1조 순매수[마감]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006306864?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "AI로 GDP 2배 성장, 불완전 고용률도 2배…2030년 미국의 역설",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004631236?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "미래에셋, 스페이스X 공모 0주…골드만 개장 직전 통보",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004631233?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "미국 AI 규제 시작…앤스로픽 직격탄",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004631229?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "금리 동결 유력…글로벌 증시 긴장",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004631230?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "코스피, 5%대 강세 지속…외인·기관 '쌍끌이' 매수",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006306659?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "다시 삼성전자 살 때?…‘초고수’들 순매수 1위 [주식 초고수는 지금]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004631197?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "'셀 코리아' 멈춘 외국인…코스피 5% 오르며 8500선 회복 [장중시황]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009003995?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "\"아직 10억 이하\" 동탄 외곽 단지에 매수세 이동…신고가 잇따라",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009003994?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "[특징주] 외국인·기관 '대한항공' 러브콜...흥아·삼성·한전도 '픽'",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://www.newstnt.com/news/articleView.html?idxno=706344"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "레미콘 노사 재합의했지만…조합원 투표에 건설현장 촉각",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009003967?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "산업부, 8천억 들여 AI칩 국산화 가동…삼성전자가 후방 기지 역할",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4419980"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성 아트 스토어, ‘아트 바젤 인 바젤 2026’ 컬렉션 공개",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://www.inthenews.co.kr/news/article.html?no=88025"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성전자 글로벌 전략회의, 종전 후 판매전략 다시 짠다",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004631141?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성과 협력할 스타트업 ‘C랩 아웃사이드’ 모집",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004631139?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "카카오·삼성전자, AI 인재 양성 맞손…공동 해커톤 개최",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006306477?sid=105"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성전자, 유망 스타트업 발굴 나선다…‘C랩 아웃사이드’ 9기 모집",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://www.inthenews.co.kr/news/article.html?no=88020"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "'미-이란 종전' 소식에 코스피 8560선 돌파…이틀 연속 사이드카 [개장시...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009003479?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "카카오-삼성전자, 공동 AI 해커톤 개최…인재 양성 맞손",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009003463?sid=105"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성전자 오르자 지분 가치↑…삼성물산 13%대 급등[핫종목]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009003450?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성, 슈퍼컴 517대 동원해 디지털트윈 구축",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004631113?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성전자, 고성능 컴퓨팅 인프라 본격 가동…검증 기간 1/7 단축",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009003349?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성전자, 스타트업 지원 'C랩 아웃사이드' 9기 모집",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4419919"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "시리, 제미나이 품었지만…‘일일 한도’로 추가 결제 유도하나",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004631091?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성전자, AI·디지털헬스 등 'C랩 아웃사이드' 9기 스타트업 모집",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009003323?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "미래에셋證 \"삼성전자 풀스택 메모리 내재화, 중장기 프리미엄\"",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009003319?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "집에서 만나는 아트 바젤…삼성 아트 스토어에 작품 24점 공개",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009003308?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "“삼성생명 주가, 삼성전자랑 같이 간다…목표주가는 45만 원” [줍줍리...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004631080?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "'미-이란 휴전' 기대감에 프리마켓 급등…삼전·SK하닉 6%대↑",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009003237?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼전 6%·닉스 5%…종전 소식에 프리마켓 4% 급등 [마켓시그널]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004631073?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성전자, '풀스택 내재화' 경쟁력 부각…업종 최저 수준 밸류-미래",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006306319?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "“로봇, 주도주로 볼 수 없어…반도체·배터리와 보조 맞추는 AI 짝꿍”",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630967?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "당장은 어려워도…“韓, MSCI 선진국 재편입 시간 문제”",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006306000?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "눌렸던 소부장株 기지개…외인 매수에 주가도 '꿈틀'",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006305796?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "과기정통부, 앤트로픽 미토스 접근 제한에 \"사실관계 파악 중\"",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4419865"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "신고가에 매물 부족까지…동탄 아파트, 경매도 감정가 넘겼다",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009002283?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "SK하이닉스 임직원 2152명↑... 반도체 종사자 ‘10만 명 선’ 굳건",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630869?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성전자, 뉴욕·런던서 '마이크로 RGB' TV 옥외광고 선봬",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009002205?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성전자, 뉴욕·런던·홍콩 랜드마크서 ‘마이크로 RGB’ TV 옥외광고 ...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630857?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "미래에셋증권, 6월 둘째주 LG이노텍 등 3종목 매수 추천",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://www.bigtanews.co.kr/article/view/big202606140002"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "KB증권, 6월 둘째주 NAVER 등 10종목 매수 추천",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://www.bigtanews.co.kr/article/view/big202606140001"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "(주간증시전망)전쟁 우려 덜고 AI 랠리 재시동…FOMC는 변수",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1303854&inflow=N"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "비트코인 한때 6만 달러 아래로…23억 달러 이상 자금 유출",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/057/0001953673?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성 한진만 “파운드리 2028년 흑자 기대…체질 개선 총력”",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1303884&inflow=N"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "TSMC가 “감당 한계” 토로한 날…구글이 삼성에 전화한 이유",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630754?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성 파운드리 반격 시작…구글 물량 잡나",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630746?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "중동 전쟁 끝나나…미국·이란 협상 급물살",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630745?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "정부 7500억 승부수…전력반도체 키운다",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630744?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "비트코인, 6만 달러 밑으로 '뚝'…최고가 대비 반토막",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://www.kbsm.net/news/view.php?idx=522795"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성전자·삼성SDI·에치에프알[하나證 주간추천주]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006304996?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성전자 노조, 한진만 파운드리 사업부장에 공식 사과 요구",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630675?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "오픈AI 방한 연기…네카오 회동도 미뤄져",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1303885&inflow=N"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "한진만 삼성전자 사장 “파운드리 2028년 흑자 기대”",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630640?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성 파운드리, 구글 차세대 TPU 수주 유력",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630624?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "포모에 추격매수…하닉 개미 29%가 한달새 신규 진입 [이런국장 저런주...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630627?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성전자 한진만 \"파운드리, 2028년 흑자 전환 기대\"",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009001225?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "TSMC 병목이 바꾼 AI 공급망…구글과 2나노·HBM 전방위 협력",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630615?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "ABB, 삼성전자와 스마트 빌딩 IoT 파트너십",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006304603?sid=105"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "TSMC, 1Q 글로벌 파운드리 점유율 72.3%…2위 삼성전자와 격차↑",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009001198?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성 ‘꿈의 메모리’ 선점 속도전…5나노 M램셀 세계 최초로 구현",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630583?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "오픈AI 샘 올트먼 방한 연기…삼성·네이버·카카오 회동 무산",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009001146?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "\"삼전닉스 살 때\" 외국인 '2조 순매수'…스페이스X 상장 후 '수급 뇌관'",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009001145?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "[속보] 오픈AI 샘 올트먼 방한 연기…“일정 재조정”",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630569?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "돌아온 외국인…코스피, 8100선 '안착'",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1303861&inflow=N"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "[뉴스1 PICK] 팔천피·천스닥·30만전자 회복…외인 25거래일 만 순매수",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009001046?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "\"너무 오른 韓 AI 반도체주\"…월가, 삼전닉스 레버리지 베팅 줄인다",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009001039?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "25거래일 만에 외국인 귀환…코스피 8100선 회복[시황종합]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009001028?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "다음주 꿈의 9000피 실현하나…돌아온 외국인에 코스피 '급등'[마감]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006304438?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "[마감시황] 코스피 8123.62로 4.63% 급등 마감…외국인·기관 동반 순매...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/081/0003652124?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "[서울데이터랩]마감 직후 인기 검색 종목 20選",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/081/0003652122?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "SK하이닉스, 챗GPT 도입 검토…“AI 활용이 경쟁력”",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1303852&inflow=N"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "레미콘 운송거부, 105곳 타설 지연…평택 삼성·용인 SK하닉도 비상",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009000776?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "코스피, 8%대 급등해 8천피 탈환…이란전쟁 종전 기대감에 급등",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://www.kbsm.net/news/view.php?idx=522766"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "'반도체 급등' 코스피, 최고치 앞까지 성큼…삼전 12%↑·원익IPS 상한가",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006304294?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "'돌아온 외국인' 2조 순매수…코스피 8400선 회복[장중시황]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009000635?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성 역대급 ‘할인’에 LG도 ‘맞불’…가전업계 ‘반값 경쟁’",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1303832&inflow=N"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "[특징주] 외국인 '한온시스템·후성·케이뱅크'…기관 '삼성전자·현대...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://www.newstnt.com/news/articleView.html?idxno=706164"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "[ET특징주] 중동 종전 기대감에… 삼성전자·SK하이닉스 동반 강세",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/030/0003437084?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "'젠슨 황 AI 동맹' 대기업 재직 만족도 1위는 'SK하이닉스'",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009000122?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "한은 ‘복합 양극화’ 경보…2030 최하위 소득·자산 비중 5년 새 2배",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630424?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "LG전자, 양재에 1만 평 로봇 훈련소 구축…7월 클로이드 투입",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630425?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "퇴직 직원 접근도 못 막았다…쿠팡, 역대 최대 개인정보 과징금 6247억",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630423?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "빚투 확산에 내 마통 한도도 줄어드나…고심하는 은행들",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004630420?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "신세계 노조도 성과급 확대 요구…\"TF 구성하자\"",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006304048?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "[서울데이터랩]코스피 8279.04로 급등 출발…삼성전자·SK하이닉스 강세",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/081/0003651952?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "[서울데이터랩]개장 직후 인기 검색 종목 20選",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/081/0003651953?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "(특징주)삼성전자 11%·SK하이닉스 8% 급등…미 반도체 랠리 훈풍",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1303811&inflow=N"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "S&amp;P \"메모리 반도체 2028년까지 호황…삼전·하닉이 최대 수혜\"",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4419649"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성전자, 11% 급등 33만원 돌파…SK하이닉스 8% 강세[핫종목]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0008999867?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "'단숨에 8300피' 코스피, 매수 사이드카 발동…천스닥 탈환",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006304011?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "종전 기대에 반도체주 급등…삼성전자 10%대↑[특징주]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006304009?sid=101"
+        },
+        {
+            "date": "2026-06-15",
+            "title": "삼성전자 감사 페스티벌, 네이버에서…환급·적립 혜택도",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0008999833?sid=101"
+        }
+    ]
+}
