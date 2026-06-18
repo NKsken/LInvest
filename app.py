@@ -21,6 +21,7 @@ kis = KISApi()
 socketio = SocketIO(app, cors_allowed_origins = "*")
 
 active_threads = {}
+multi_codes = set()
 
 # 주식 데이터
 STOCK_DATA = krx_list.load()
@@ -118,8 +119,15 @@ def background_price_update(code):
     def handle_ws_data(c, price, change, rate):
         # [수정] 가격과 대비 금액에 천 단위 콤마(,) 추가
         try:
-            formatted_price = format(int(price), ',')
-            formatted_change = format(int(change), ',')
+            if '.' in str(price):
+                formatted_price = format(float(price), ',')
+            else:
+                formatted_price = format(int(price), ',')
+                
+            if '.' in str(change):
+                formatted_change = format(float(change), ',')
+            else:
+                formatted_change = format(int(change), ',')
         except (ValueError, TypeError):
             formatted_price = price
             formatted_change = change
@@ -160,34 +168,48 @@ def on_join(data):
     
 @socketio.on('join_all')
 def on_join_all(data):
+    global multi_codes
     codes = data.get('codes', [])
     if not codes: return
     
+    new_codes = []
     # 소켓 룸에는 각각 입장시킵니다. (데이터를 따로 뿌려주기 위함)
     for code in codes:
         join_room(code)
+        if code not in multi_codes:
+            new_codes.append(code)
+            multi_codes.add(code)
         
     thread_name = "multi_stock_thread"
     
-    # 이미 다중 종목 스레드가 실행 중이면 새로 만들지 않음
+    # 이미 다중 종목 스레드가 실행 중이면 새로 만들지 않고 동적 구독(add_subscriptions) 처리
     if thread_name in active_threads and active_threads[thread_name].is_alive():
-        print("이미 다중 종목 실시간 스레드가 실행 중입니다.")
+        print("이미 다중 종목 실시간 스레드가 실행 중입니다. 새로운 종목을 추가 구독합니다.")
+        if new_codes:
+            kis.add_subscriptions(new_codes)
         return
 
-    # 다중 종목을 처리할 새로운 스레드 시작
-    thread = threading.Thread(target=background_multi_price_update, args=(codes,))
+    # 다중 종목을 처리할 새로운 스레드 시작 (전체 multi_codes 기준)
+    thread = threading.Thread(target=background_multi_price_update, args=(list(multi_codes),))
     thread.daemon = True
     active_threads[thread_name] = thread
     thread.start()
-    print(f"다중 실시간 수집 시작: {codes}")
+    print(f"다중 실시간 수집 시작: {list(multi_codes)}")
 
 def background_multi_price_update(codes):
     # KIS_API에서 데이터를 받으면 해당 종목(c)의 룸으로 전송
     def handle_ws_data(c, price, change, rate):
         # [수정] 가격과 대비 금액에 천 단위 콤마(,) 추가
         try:
-            formatted_price = format(int(price), ',')
-            formatted_change = format(int(change), ',')
+            if '.' in str(price):
+                formatted_price = format(float(price), ',')
+            else:
+                formatted_price = format(int(price), ',')
+                
+            if '.' in str(change):
+                formatted_change = format(float(change), ',')
+            else:
+                formatted_change = format(int(change), ',')
         except (ValueError, TypeError):
             formatted_price = price
             formatted_change = change
@@ -348,6 +370,7 @@ def get_wishlist_info():
                 'change_rate': change_rate
         })
     return jsonify(result)
+    
     
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=False)

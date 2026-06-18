@@ -214,7 +214,7 @@ class KISApi:
         # [교정 완료] 한투 공식 주소 명세 규칙 반영: inquire-time-indexchartprice
         if is_index:
             url = "https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotations/inquire-time-indexchartprice"
-            tr_id = "FHKST03010240"  # 국내업종 당일 분봉 조회 TR
+            tr_id = "FHKUP03500200"  # 국내업종 당일 분봉 조회 TR
             market_div = "U"        # 업종/지수 구분 코드 'U'
         else:
             url = "https://openapi.koreainvestment.com:9443/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice"
@@ -281,12 +281,15 @@ class KISApi:
                             low_p = int(item.get('stck_lwpr', 0))
                             close_p = int(item.get('stck_prpr', 0))
 
+                        # [핵심 보강] 프론트엔드 라인차트(IndexChart.js)가 어떤 key값을 요구하든 전부 뚫리도록 매핑 확장
                         processed_data.append({
                             "time": ts,
                             "open": open_p,
                             "high": high_p,
                             "low": low_p,
-                            "close": close_p
+                            "close": close_p,
+                            "price": close_p,  # 미니 차트용 호환성 필드 1
+                            "value": close_p   # 미니 차트용 호환성 필드 2
                         })
                     print(f"성공적으로 {code} 지수/주식 {len(processed_data)}개의 분봉 데이터를 가공했습니다.")
                     return processed_data
@@ -297,3 +300,4 @@ class KISApi:
         except Exception as e:
             print(f"데이터 파싱 중 에러 발생: {e}")
         return []
+        
