@@ -25,7 +25,7 @@ KIS_SECRET = 한국투자증권 API 시크릿 키
   1. 윈도우 + R을 눌러 '실행' 창이 열리면 cmd.exe를 적고 엔터를 눌러 명령 프롬포트를 실행해주세요.
   2. 검정색 바탕에 흰색 글씨가 나오는 콘솔 창이 열리면 다음 명령어를 입력해주세요.
 ```bash
-pip install flask, numpy, pandas, tensorflow, keras, ollama, dotenv, flask-socketio
+pip install flask, numpy, pandas, tensorflow, keras, ollama, dotenv, flask-socketio, websockets
 ```
 ### 3. ollama로 로컬 AI 환경 구축하기 (Gemma4)
   1. 2-1에서 열었던 CMD 창에 다음 명령어를 입력해주세요.
