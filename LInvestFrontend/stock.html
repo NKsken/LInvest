@@ -148,7 +148,7 @@
             let CURRENT_PAGE = parseInt("{{ current_page }}") || 1;
             const STOCK_CODE = "{{ code }}".trim();
             
-            // 현재가 (콤마 제거)
+            // 현재
             const NOW_PRICE = parseInt("{{ now_price }}".replace(/,/g, '')) || 0; 
             
             // [추가된 부분] 전일 종가 (콤마 제거 후 숫자로 변환)
