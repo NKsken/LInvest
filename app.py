@@ -253,12 +253,12 @@ def news_collect():
         return jsonify({
             "status":"success",
             "message":"뉴스 분석이 완료되었습니다."
-        })
+        }), 200
     except Exception as e:
         return jsonify({
             "status":"error",
             "message":f"오류 발생! {str(e)}"
-        })
+        }), 500
 
 @app.route('/predict', methods=['POST'])
 def predict():

@@ -1,0 +1,707 @@
+{
+    "code": "005930",
+    "positive_count": 73,
+    "negative_count": 27,
+    "details": [
+        {
+            "date": "2026-06-26",
+            "title": "[서울데이터랩]마감 직후 인기 검색 종목 20選",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/081/0003656253?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "코스피, 5%대 급락해 8400선 후퇴…올해 5번째 서킷브레이커",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006315910?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "[마감시황] 코스피, 5.81% 급락한 8411.21 마감…장중 사이드카·서킷브...",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/081/0003656254?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "삼성, 천문학적 투자…호남·충청 ‘반도체 클러스터’ 윤곽",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1305337&inflow=N"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "애플·오픈AI에 꺾인 반도체 랠리…삼전·SK하닉, 6%대 급락 [장중시황]",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009026009?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "[서울데이터랩]코스피 시총 상위주 일제히 급락…반도체·자동차·2차전...",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/081/0003656187?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "[서울데이터랩]코스피 거래상위 종목 희비…금호전기·금호건설 상한가...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/081/0003656188?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "코스피 8400선까지 밀렸다…매도 사이드카 발동",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://www.jnilbo.com/news/articleView.html?idxno=90000045622"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "\"메모리 수요 감소 우려\" 삼전닉스 8%대 급락…코스피 8250선[장중시황]",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009025506?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "코스피 7%대 급락에 매도 사이드카…코스닥도 연저점 추락",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006315564?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "코스피, 5%대 급락에 매도 사이드카 …8,400대까지 밀려",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://www.kbsm.net/news/view.php?idx=524538"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "[특징주] 외국인 '빛과전자·대원전선' …기관 '대한항공·삼성중공업' ...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://www.newstnt.com/news/articleView.html?idxno=707890"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "[속보] 코스피 5%대 급락 '매도 사이드카' 발동 …삼전 6%·닉스 7% 하락",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/654/0000187654?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "삼성전자·SK하이닉스, 5%대 동반 약세···美 기술주 부진 영향",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "http://www.finomy.com/news/articleView.html?idxno=256358"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "[카드] 삼성 감사페스티벌 기간 삼성스토어 방문 75% 증가",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "http://www.newsprime.co.kr/news/article.html?no=738122"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "美 기술주 약세에 국내 증시도 흔들···코스피 3% 넘게 하락",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "http://www.finomy.com/news/articleView.html?idxno=256353"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "삼전·SK하닉 호남 투자설에…금호건설·남화토건 '上' [핫종목]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009025242?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "성과급·AI 고용 이견 못 좁혀…현대차 노조 2년 연속 파업 기로",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004635246?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "크래프톤, AI에 1000억 베팅…‘돈 버는 AI’ 본격 시동",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004635240?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "코스피 9000 코앞 마감…JP모건 “1만2500 간다”",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004635241?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "규제 조이면 집값 오르고, 풀면 폭락…23년째 엇박자",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004635244?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "마이크론이 터뜨린 ‘HBM 대박’",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004635242?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "SK하이닉스, 작년 20대 신입 2560명 채용…3년 만에 최대",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004635245?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "마이크론 호실적에 코스피 8930…JP모건 “1만 2500 간다”",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004635243?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "차익실현에 숨 고르는 삼전·SK하닉, 4%대 동반 약세 [핫종목]",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009025080?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "코스피, 장 초반 3%대 약세…美 혼조세·차익매물 출회 영향[개장시황]",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009025054?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "[서울데이터랩]코스피, 장 초반 8751.54로 하락…외국인 순매도에 약세",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/081/0003656096?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "[서울데이터랩]개장 직후 인기 검색 종목 20選",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/081/0003656095?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "(특징주)호남 반도체 투자 기대감에…남화토건 상한가·금호건설 급등",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1305299&inflow=N"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "삼성전자 ‘감사 페스티벌’ 막바지 흥행…매장 방문객 최대 2배 늘어",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004635218?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "'시총1위 엎치락뒤치락' 삼전닉스…ADR 부스터 단 SK하이닉스",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4421979"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "신한證 \"단일종목 레버리지 상장…코스피 변동성, 금융위기 넘어\"",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009024973?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "삼성전자, ‘감사 페스티벌’ 종료 D-9…방문객 75% 증가",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://www.inthenews.co.kr/news/article.html?no=88549"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "‘메모리 3등’도 수주량 155조, 맥북 값만 급등 [트럼프 스톡커]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004635207?sid=104"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "코스피, 장 초반 2%대 약세…외국인·기관 동반 매도",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006315323?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "마이크론 시총, 메타 추월…장중 테슬라도 제쳐",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006315308?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "삼성전자 '감사 페스티벌' 종료 D-9…삼성스토어 방문객 전년比 75% 증가",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009024849?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "메모리 공급난에…애플 이어 MS도 엑스박스 가격 인상",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006315201?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "마이크론 영업익 51조원? 삼성 99조원·하이닉스는 70조원 바라본다[biz-...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004635163?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "민트색 폴드8·스냅드래곤 워치9…언팩 한달 앞두고 정보 '속속'",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009024703?sid=105"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "삼성·SK, HBM 경쟁할 때 中 ‘범용 메모리’ 시장 잠식 [biz-플러스]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004635135?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "SK하닉, 나스닥 ADR 상장…3등 마이크론보다 '싼값' 바로잡는다",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009024688?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "애플, 메모리 수급난에 맥북 등 가격 줄인상…주가 6%↓",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006315160?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "IBM, 세계 최초 0.7나노 칩 기술 내놨다",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004635075?sid=104"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "마이크론 ‘공급 우위’ SCA로 고정 매출 확보…4분기 실적 또 신기록 쓴...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004635067?sid=104"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "마이크론 훈풍 타고 반도체 다시 질주…JP모건 “1만 2500 간다”",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004635045?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "매출 4배·순익 15배…AI 거품론 날린 마이크론",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004635011?sid=104"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "삼성·SK, M&amp;A 조직 강화…‘MBB’부터 해외 변호사까지 전방위 채용",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004634979?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "10% 폭락한 이튿날 반대매매 1108억원…역대급 빚투에 '개미 지옥'",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009024391?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "삼전닉스 랠리에 시총 상위주 지각변동…삼성·SK그룹주 싹쓸이",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006315019?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "“반도체 아직 뜨겁다”…마이크론 호실적에 삼전·닉스도 질주",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006315017?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "9000선 다가선 코스피…'마이크론 호실적' SK하닉 13% 급등[시황종합]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009024342?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "삼성, D램·낸드 1위 수성…HBM은 SK하이닉스 58%",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004634969?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "'반도체 훈풍' 코스피 5% 급등…코스닥은 하락",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1305224&inflow=N"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "코스피, 마이크론 실적 호조에 5%↑···8900선 마감",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "http://www.finomy.com/news/articleView.html?idxno=256301"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "이 대통령, 이재용 회동…막판 조율 호남 반도체팹 관건은?",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1305197&inflow=N"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "\"DX 패싱 안된다\"…삼성전자 2·3대 노조, 자사주 1000% 보상 요구",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009024292?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "[마감시황] 코스피, 8,930.30으로 급등 마감…SK하이닉스 13% 뛰고 기관 ...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/081/0003655900?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "[서울데이터랩]마감 직후 인기 검색 종목 20選",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/081/0003655899?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "3.7조 투입하는 한국형 GPS…개발단계부터 산업계 참여",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009024193?sid=105"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "외신 “반도체에 웃고 울고…韓·대만 ‘K자형 격차’ 심화”",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006314944?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "코스피, 마이크론 훈풍에 5%대 상승…'삼전닉스' 질주[마감]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006314942?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "“스마트 홈 서비스 집약체”…가전업계, ‘모듈러 홈’ 경쟁",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1305189&inflow=N"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "삼전은 목표가 유지 vs SK하닉은 10% 상향...엇갈린 '이유는'",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006314843?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "왕좌 되찾은 SK하이닉스…14% 급등 3거래일 만에 시총 1위 복귀 (상보)",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009023992?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "\"땡큐 마이크론\" 코스피 9030선 회복…SK하닉 15%·삼전 6% [장중시황]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009023934?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "코스피, 9000선 회복…삼전·SK하닉 시총 2000조 복귀",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006314734?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "메모리 반도체 시장 휩쓴 한국…D램은 삼성전자, HBM은 SK하이닉스 1위",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://www.inthenews.co.kr/news/article.html?no=88519"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "'메모리 랠리' 9000선 향하는 코스피…SK하이닉스 13% 급등 [장중시황]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009023747?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "비수기 공략…통신3사, 갤럭시 구형폰도 지원금 인상",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "http://www.newstomato.com/ReadNews.aspx?no=1305171&inflow=N"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "[서울데이터랩]삼성전자·SK하이닉스 급등 속 거래 집중…보해양조는 하...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/081/0003655817?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "[서울데이터랩]반도체·지주사 급등에 시총 상위주 강세…SK 17%대, SK하이...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/081/0003655815?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "삼성전자, 1Q D램 점유율 38% '1위'…SK하이닉스, HBM '선두'",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009023295?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "\"3위 마이크론 이 정도야?\"…삼전닉스 메모리 실적랠리 '기대'",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009023212?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "AI 인프라發 메가사이클…‘삼성 100조·하닉 70조’ 2분기 영업익 새역...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004634867?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "[특징주] 외국인 '샤페론·대한항공' 담고…기관 '삼성전자·SK하이닉스...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://www.newstnt.com/news/articleView.html?idxno=707686"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "급등장에 전자·닉스 팔아치운 초고수…삼성전기는 순매수 1위 [주식 초...",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004634860?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "블룸버그 \"SK하닉·마이크론, AI 산업 새로운 주역으로 부상\"",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009023100?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "중국도 슈퍼사이클? 반도체 관련주 줄줄이 신고가 경신",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006314515?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "[ET특징주] 마이크론 '어닝서프라이즈'에 韓 반도체 '웃음꽃'… 하닉·삼...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/030/0003441198?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "\"55만전자 간다\" 美 ADR 상장 가능성에 주가 재평가…신세계, 외국인 명...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/014/0005539526?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "‘삼성전자, 설마 지금이 고점?’ 개미들 불안에 떠는데…“흔들리지 말...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004634820?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "코스피, 마이크론 훈풍에 4%↑··· 8800선 회복",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "http://www.finomy.com/news/articleView.html?idxno=256256"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "삼성전자 \"OLED TV, 미국 소비자 전문지 평가 1위\"",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://news.einfomax.co.kr/news/articleView.html?idxno=4421798"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "코스피, '마이크론 훈풍'에 9천피 눈앞…삼전·닉스 급등",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://www.kbsm.net/news/view.php?idx=524379"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "국민연금, 5년 만에 최대 매도…삼성전자도 팔아치웠다",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004634796?sid=102"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "6.6조 몰렸다…AI 스타트업 IPO 신기록",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004634797?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "30년 영업맨 사장 된 뒤 깨달은 것…“고민의 결이 달랐다”",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004634802?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "삼성·SK ETF가 美 증시까지 흔들었다",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004634798?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "연기금, 6월 코스피서 2.3조 순매도…5년 만에 최대",
+            "sentiment": "악재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004634800?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "AI 전쟁 시작…반도체 클러스터 ‘10년 앞당긴다’",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004634799?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "[특징주] 삼성전자·SK하이닉스 급등…\"하반기 메모리 공급 부족 지속 전...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://www.newstnt.com/news/articleView.html?idxno=707654"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "\"삼성카드, 2분기 순이익 7.4% 증가 전망\"&lt;iM證&gt;",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://www.news2day.co.kr/article/20260625500042"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "\"엔비디아 마진도 제쳤다\"…마이크론 이익률 85%, 美빅테크 선두",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009022530?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "화질·음질·시야각 모두 1위…삼성 OLED TV, 美 컨슈머리포트 상위 ‘싹...",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/011/0004634781?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "'마이크론 훈풍' 코스피 8400→8900 '급등'…삼전 7%·하닉 9%[개장시황]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009022486?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "'마이크론 효과' AI 반도체주 반등…나스닥 선물 2%·닛케이 2% ↑",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009022466?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "\"나스닥 간다\" SK하이닉스 10% 급등…삼성전자도 5%↑ [핫종목]",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/421/0009022451?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "[서울데이터랩]코스피 8,888.16로 급등 마감…반도체·지주사 강세에 4....",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/081/0003655714?sid=101"
+        },
+        {
+            "date": "2026-06-26",
+            "title": "마이크론 깜짝 실적에 코스피 5%대 급등…8900선 회복",
+            "sentiment": "호재",
+            "reason": "이유 없음",
+            "link": "https://n.news.naver.com/mnews/article/018/0006314356?sid=101"
+        }
+    ]
+}
