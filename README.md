@@ -27,7 +27,9 @@ KIS_SECRET = 한국투자증권 API 시크릿 키
 ```bash
 pip install flask, numpy, pandas, tensorflow, keras, ollama, dotenv, flask-socketio, websockets
 ```
-### 3. ollama로 로컬 AI 환경 구축하기 (Gemma4)
+### 3. Node.JS 설치
+ - Node.JS 또한 가장 최신버전으로 깔아도 괜찮아요
+### 4. ollama로 로컬 AI 환경 구축하기 (Gemma4)
   1. 2-1에서 열었던 CMD 창에 다음 명령어를 입력해주세요.
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
@@ -38,4 +40,9 @@ ollama run gemma4:e4b
 ```
 ### 4. Python으로 서버 실행하기
   1. Release의 파일을 압축 해제해주세요.
+  2. LInvest의 파일중 app.py라고 적혀있는 파일을 더블클릭 하거나 폴더의 주소창에 CMD라고 입력해 다음 명령어를 실행해주세요
+```bash
+python app.py
+```
+  3. 잠시 후 서버가 실행되며 127.0.0.1:5000 주소로 접속이 가능하게 됩니다
   
